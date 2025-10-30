@@ -6,388 +6,455 @@
         <title>Document</title>
     </head>
     <script language="javascript">
-        // *********************************************************
-        // Carrega o Primeiro Número NE01 nos campos JG11, JG21 e JG31   
-        // *********************************************************
-        function carregaNE01() {
-            document.frm.JG11.value = document.frm.NE01.value;
-            document.frm.JG21.value = document.frm.NE01.value;
-            document.frm.JG31.value = document.frm.NE01.value;
-        }
 
-        // *********************************************************
-        // Carrega o Primeiro Número NE02 nos campos JG12, JG22 e JG32
-        // *********************************************************
-        function carregaNE02() {
-            document.frm.JG12.value = document.frm.NE02.value;
-            document.frm.JG22.value = document.frm.NE02.value;
-            document.frm.JG32.value = document.frm.NE02.value;
-        }
+    var escreveJogos;
+    function mostraJogos(x) {
+                        
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        var ordem = document.getElementById('ordem');
+        console.log(ordem);
+        ordem.innerText = x;
 
-        // *********************************************************
-        // Carrega o Primeiro Número NE03 nos campos JG13, JG23 e JG33
-        // *********************************************************
-        function carregaNE03() {
-            document.frm.JG13.value = document.frm.NE03.value;
-            document.frm.JG23.value = document.frm.NE03.value;
-            document.frm.JG33.value = document.frm.NE03.value;
-        }
-
-        // *********************************************************
-        // Carrega o Primeiro Número NE04 nos campos JG14, JG34 e JG35
-        // *********************************************************
-        function carregaNE04() {
-            document.frm.JG14.value = document.frm.NE04.value;
-            document.frm.JG41.value = document.frm.NE04.value;
-            document.frm.JG51.value = document.frm.NE04.value;
-        }
-
-        // *********************************************************
-        // Carrega o Primeiro Número NE05 nos campos JG15, JG42 e JG52
-        // *********************************************************
-        function carregaNE05() {
-            document.frm.JG15.value = document.frm.NE05.value;
-            document.frm.JG42.value = document.frm.NE05.value;
-            document.frm.JG52.value = document.frm.NE05.value;
-        }
-
-        // *********************************************************
-        // Carrega o Primeiro Número NE06 nos campos JG16, JG43 e JG53
-        // *********************************************************
-        function carregaNE06() {
-            document.frm.JG16.value = document.frm.NE06.value;
-            document.frm.JG43.value = document.frm.NE06.value;
-            document.frm.JG53.value = document.frm.NE06.value;
-        }
-
-        // *********************************************************
-        // Carrega o Primeiro Número NE06 nos campos JG16, JG43 e JG53
-        // *********************************************************
-        function carregaNE07() {
-            document.frm.JG24.value = document.frm.NE07.value;
-            document.frm.JG61.value = document.frm.NE07.value;
-            document.frm.JG44.value = document.frm.NE07.value;
-        }
-
-        // *********************************************************
-        // Carrega o Primeiro Número NE08 nos campos JG25, JG62 e JG45
-        // *********************************************************
-        function carregaNE08() {
-            document.frm.JG25.value = document.frm.NE08.value;
-            document.frm.JG62.value = document.frm.NE08.value;
-            document.frm.JG45.value = document.frm.NE08.value;
-        }
-
-        // *********************************************************
-        // Carrega o Primeiro Número NE09 nos campos JG26, JG46 e JG63
-        // *********************************************************
-        function carregaNE09() {
-            document.frm.JG26.value = document.frm.NE09.value;
-            document.frm.JG46.value = document.frm.NE09.value;
-            document.frm.JG63.value = document.frm.NE09.value;
-        }
-
-        // *********************************************************
-        // Carrega o Primeiro Número NE10 nos campos JG34, JG54 e JG64
-        // *********************************************************
-        function carregaNE10() {
-            document.frm.JG34.value = document.frm.NE10.value;
-            document.frm.JG54.value = document.frm.NE10.value;
-            document.frm.JG64.value = document.frm.NE10.value;
-        }
-
-        // *********************************************************
-        // Carrega o Primeiro Número NE11 nos campos JG35, JG55 e JG65
-        // *********************************************************
-        function carregaNE11() {
-            document.frm.JG35.value = document.frm.NE11.value;
-            document.frm.JG55.value = document.frm.NE11.value;
-            document.frm.JG65.value = document.frm.NE11.value;
-        }
-
-        // *********************************************************
-        // Carrega o Primeiro Número NE12 nos campos JG36, JG56 e JG66
-        // *********************************************************
-        function carregaNE12() {
-            document.frm.JG36.value = document.frm.NE12.value;
-            document.frm.JG56.value = document.frm.NE12.value;
-            document.frm.JG66.value = document.frm.NE12.value;
-        }
-
-        // *********************************************************
-        // Carrega os campos de soma de cada cartela
-        // *********************************************************
-        function soma() {
-            // Campos do primeiro jogo
-            document.frm.JG11.value = parseFloat(0 + document.frm.JG11.value);
-            document.frm.JG12.value = parseFloat(0 + document.frm.JG12.value);
-            document.frm.JG13.value = parseFloat(0 + document.frm.JG13.value);
-            document.frm.JG14.value = parseFloat(0 + document.frm.JG14.value);
-            document.frm.JG15.value = parseFloat(0 + document.frm.JG15.value);
-            document.frm.JG16.value = parseFloat(0 + document.frm.JG16.value);
-            // Campos do segundo jogo
-            document.frm.JG21.value = parseFloat(0 + document.frm.JG21.value);
-            document.frm.JG22.value = parseFloat(0 + document.frm.JG22.value);
-            document.frm.JG23.value = parseFloat(0 + document.frm.JG23.value);
-            document.frm.JG24.value = parseFloat(0 + document.frm.JG24.value);
-            document.frm.JG25.value = parseFloat(0 + document.frm.JG25.value);
-            document.frm.JG26.value = parseFloat(0 + document.frm.JG26.value);
-            // Campos do terceiro jogo
-            document.frm.JG31.value = parseFloat(0 + document.frm.JG31.value);
-            document.frm.JG32.value = parseFloat(0 + document.frm.JG32.value);
-            document.frm.JG33.value = parseFloat(0 + document.frm.JG33.value);
-            document.frm.JG34.value = parseFloat(0 + document.frm.JG34.value);
-            document.frm.JG35.value = parseFloat(0 + document.frm.JG35.value);
-            document.frm.JG36.value = parseFloat(0 + document.frm.JG36.value);
-            // Campos do quarto jogo
-            document.frm.JG41.value = parseFloat(0 + document.frm.JG41.value);
-            document.frm.JG42.value = parseFloat(0 + document.frm.JG42.value);
-            document.frm.JG43.value = parseFloat(0 + document.frm.JG43.value);
-            document.frm.JG44.value = parseFloat(0 + document.frm.JG44.value);
-            document.frm.JG45.value = parseFloat(0 + document.frm.JG45.value);
-            document.frm.JG46.value = parseFloat(0 + document.frm.JG46.value);
-            // Campos do quinto jogo
-            document.frm.JG51.value = parseFloat(0 + document.frm.JG51.value);
-            document.frm.JG52.value = parseFloat(0 + document.frm.JG52.value);
-            document.frm.JG53.value = parseFloat(0 + document.frm.JG53.value);
-            document.frm.JG54.value = parseFloat(0 + document.frm.JG54.value);
-            document.frm.JG55.value = parseFloat(0 + document.frm.JG55.value);
-            document.frm.JG56.value = parseFloat(0 + document.frm.JG56.value);
-            // Campos do sexto jogo
-            document.frm.JG61.value = parseFloat(0 + document.frm.JG61.value);
-            document.frm.JG62.value = parseFloat(0 + document.frm.JG62.value);
-            document.frm.JG63.value = parseFloat(0 + document.frm.JG63.value);
-            document.frm.JG64.value = parseFloat(0 + document.frm.JG64.value);
-            document.frm.JG65.value = parseFloat(0 + document.frm.JG65.value);
-            document.frm.JG66.value = parseFloat(0 + document.frm.JG66.value);
-
-            var total01;
-            var total02;
-            var total03;
-            var total04;
-            var total05;
-            var total06;
-
-            total01 = parseFloat(document.frm.JG11.value) + parseFloat(document.frm.JG12.value) + parseFloat(document.frm.JG13.value) + parseFloat(document.frm.JG14.value) + parseFloat(document.frm.JG15.value) + parseFloat(document.frm.JG16.value);
-            total02 = parseFloat(document.frm.JG21.value) + parseFloat(document.frm.JG22.value) + parseFloat(document.frm.JG23.value) + parseFloat(document.frm.JG24.value) + parseFloat(document.frm.JG25.value) + parseFloat(document.frm.JG26.value);
-            total03 = parseFloat(document.frm.JG31.value) + parseFloat(document.frm.JG32.value) + parseFloat(document.frm.JG33.value) + parseFloat(document.frm.JG34.value) + parseFloat(document.frm.JG35.value) + parseFloat(document.frm.JG36.value);
-            total04 = parseFloat(document.frm.JG41.value) + parseFloat(document.frm.JG42.value) + parseFloat(document.frm.JG43.value) + parseFloat(document.frm.JG44.value) + parseFloat(document.frm.JG45.value) + parseFloat(document.frm.JG46.value);
-            total05 = parseFloat(document.frm.JG51.value) + parseFloat(document.frm.JG52.value) + parseFloat(document.frm.JG53.value) + parseFloat(document.frm.JG54.value) + parseFloat(document.frm.JG55.value) + parseFloat(document.frm.JG56.value);
-            total06 = parseFloat(document.frm.JG61.value) + parseFloat(document.frm.JG62.value) + parseFloat(document.frm.JG63.value) + parseFloat(document.frm.JG64.value) + parseFloat(document.frm.JG65.value) + parseFloat(document.frm.JG66.value);
-
-            document.frm.SOMA01.value = total01;
-            document.frm.SOMA02.value = total02;
-            document.frm.SOMA03.value = total03;
-            document.frm.SOMA04.value = total04;
-            document.frm.SOMA05.value = total05;
-            document.frm.SOMA06.value = total06;
-        }
-
-        // *********************************************************
-        // Muda a cor do botão igual ao numero digitado 
-        // *********************************************************
-        function numero_escolhido(nr) {
-            if (1 == nr) {
-                document.frm.nr01.style.background = "#638cb5";
-            }
-            if (2 == nr) {
-                document.frm.nr02.style.background = "#638cb5";
-            }
-            if (3 == nr) {
-                document.frm.nr03.style.background = "#638cb5";
-            }
-            if (4 == nr) {
-                document.frm.nr04.style.background = "#638cb5";
-            }
-            if (5 == nr) {
-                document.frm.nr05.style.background = "#638cb5";
-            }
-
-            if (6 == nr) {
-                document.frm.nr06.style.background = "#638cb5";
-            }
-            if (7 == nr) {
-                document.frm.nr07.style.background = "#638cb5";
-            }
-            if (8 == nr) {
-                document.frm.nr08.style.background = "#638cb5";
-            }
-            if (9 == nr) {
-                document.frm.nr09.style.background = "#638cb5";
-            }
-            if (10 == nr) {
-                document.frm.nr10.style.background = "#638cb5";
-            }
-
-            if (11 == nr) {
-                document.frm.nr11.style.background = "#638cb5";
-            }
-            if (12 == nr) {
-                document.frm.nr12.style.background = "#638cb5";
-            }
-            if (13 == nr) {
-                document.frm.nr13.style.background = "#638cb5";
-            }
-            if (14 == nr) {
-                document.frm.nr14.style.background = "#638cb5";
-            }
-            if (15 == nr) {
-                document.frm.nr15.style.background = "#638cb5";
-            }
-
-            if (16 == nr) {
-                document.frm.nr16.style.background = "#638cb5";
-            }
-            if (17 == nr) {
-                document.frm.nr17.style.background = "#638cb5";
-            }
-            if (18 == nr) {
-                document.frm.nr18.style.background = "#638cb5";
-            }
-            if (19 == nr) {
-                document.frm.nr19.style.background = "#638cb5";
-            }
-            if (20 == nr) {
-                document.frm.nr20.style.background = "#638cb5";
-            }
-
-            if (21 == nr) {
-                document.frm.nr21.style.background = "#638cb5";
-            }
-            if (22 == nr) {
-                document.frm.nr22.style.background = "#638cb5";
-            }
-            if (23 == nr) {
-                document.frm.nr23.style.background = "#638cb5";
-            }
-            if (24 == nr) {
-                document.frm.nr24.style.background = "#638cb5";
-            }
-            if (25 == nr) {
-                document.frm.nr25.style.background = "#638cb5";
-            }
-
-            if (26 == nr) {
-                document.frm.nr26.style.background = "#638cb5";
-            }
-            if (27 == nr) {
-                document.frm.nr27.style.background = "#638cb5";
-            }
-            if (28 == nr) {
-                document.frm.nr28.style.background = "#638cb5";
-            }
-            if (29 == nr) {
-                document.frm.nr29.style.background = "#638cb5";
-            }
-            if (30 == nr) {
-                document.frm.nr30.style.background = "#638cb5";
-            }
-
-            if (31 == nr) {
-                document.frm.nr31.style.background = "#638cb5";
-            }
-            if (32 == nr) {
-                document.frm.nr32.style.background = "#638cb5";
-            }
-            if (33 == nr) {
-                document.frm.nr33.style.background = "#638cb5";
-            }
-            if (34 == nr) {
-                document.frm.nr34.style.background = "#638cb5";
-            }
-            if (35 == nr) {
-                document.frm.nr35.style.background = "#638cb5";
-            }
-
-            if (36 == nr) {
-                document.frm.nr36.style.background = "#638cb5";
-            }
-            if (37 == nr) {
-                document.frm.nr37.style.background = "#638cb5";
-            }
-            if (38 == nr) {
-                document.frm.nr38.style.background = "#638cb5";
-            }
-            if (39 == nr) {
-                document.frm.nr39.style.background = "#638cb5";
-            }
-            if (40 == nr) {
-                document.frm.nr40.style.background = "#638cb5";
-            }
-
-            if (41 == nr) {
-                document.frm.nr41.style.background = "#638cb5";
-            }
-            if (42 == nr) {
-                document.frm.nr42.style.background = "#638cb5";
-            }
-            if (43 == nr) {
-                document.frm.nr43.style.background = "#638cb5";
-            }
-            if (44 == nr) {
-                document.frm.nr44.style.background = "#638cb5";
-            }
-            if (45 == nr) {
-                document.frm.nr45.style.background = "#638cb5";
-            }
-
-            if (46 == nr) {
-                document.frm.nr46.style.background = "#638cb5";
-            }
-            if (47 == nr) {
-                document.frm.nr47.style.background = "#638cb5";
-            }
-            if (48 == nr) {
-                document.frm.nr48.style.background = "#638cb5";
-            }
-            if (49 == nr) {
-                document.frm.nr49.style.background = "#638cb5";
-            }
-            if (50 == nr) {
-                document.frm.nr50.style.background = "#638cb5";
-            }
-
-            if (51 == nr) {
-                document.frm.nr51.style.background = "#638cb5";
-            }
-            if (52 == nr) {
-                document.frm.nr52.style.background = "#638cb5";
-            }
-            if (53 == nr) {
-                document.frm.nr53.style.background = "#638cb5";
-            }
-            if (54 == nr) {
-                document.frm.nr54.style.background = "#638cb5";
-            }
-            if (55 == nr) {
-                document.frm.nr55.style.background = "#638cb5";
-            }
-
-            if (56 == nr) {
-                document.frm.nr56.style.background = "#638cb5";
-            }
-            if (57 == nr) {
-                document.frm.nr57.style.background = "#638cb5";
-            }
-            if (58 == nr) {
-                document.frm.nr58.style.background = "#638cb5";
-            }
-            if (59 == nr) {
-                document.frm.nr59.style.background = "#638cb5";
-            }
-            if (60 == nr) {
-                document.frm.nr60.style.background = "#638cb5";
-            }
-        }         
+        modal.style.display = "block";
+        // Get the button that opens the modal
         
-                                            
-    </script>    
-    </head>
+        //var btn = document.getElementById("myBtn");
 
-    <!-- Corpo do HTML -->
-    <body  background="100reais1000dolares.jpg">
-    <center>
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        //btn.onclick = function() {
+            //modal.style.display = "block";
+        //}
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it  
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+                
+        console.log(escreveJogos);
+
+    }
+
+
+
+    // *********************************************************
+    // Carrega o Primeiro Número NE01 nos campos JG11, JG21 e JG31   
+    // *********************************************************
+    function carregaNE01() {
+        document.frm.JG11.value = document.frm.NE01.value;
+        document.frm.JG21.value = document.frm.NE01.value;
+        document.frm.JG31.value = document.frm.NE01.value;
+    }
+
+    // *********************************************************
+    // Carrega o Primeiro Número NE02 nos campos JG12, JG22 e JG32
+    // *********************************************************
+    function carregaNE02() {
+        document.frm.JG12.value = document.frm.NE02.value;
+        document.frm.JG22.value = document.frm.NE02.value;
+        document.frm.JG32.value = document.frm.NE02.value;
+    }
+
+    // *********************************************************
+    // Carrega o Primeiro Número NE03 nos campos JG13, JG23 e JG33
+    // *********************************************************
+    function carregaNE03() {
+        document.frm.JG13.value = document.frm.NE03.value;
+        document.frm.JG23.value = document.frm.NE03.value;
+        document.frm.JG33.value = document.frm.NE03.value;
+    }
+
+    // *********************************************************
+    // Carrega o Primeiro Número NE04 nos campos JG14, JG34 e JG35
+    // *********************************************************
+    function carregaNE04() {
+        document.frm.JG14.value = document.frm.NE04.value;
+        document.frm.JG41.value = document.frm.NE04.value;
+        document.frm.JG51.value = document.frm.NE04.value;
+    }
+
+    // *********************************************************
+    // Carrega o Primeiro Número NE05 nos campos JG15, JG42 e JG52
+    // *********************************************************
+    function carregaNE05() {
+        document.frm.JG15.value = document.frm.NE05.value;
+        document.frm.JG42.value = document.frm.NE05.value;
+        document.frm.JG52.value = document.frm.NE05.value;
+    }
+
+    // *********************************************************
+    // Carrega o Primeiro Número NE06 nos campos JG16, JG43 e JG53
+    // *********************************************************
+    function carregaNE06() {
+        document.frm.JG16.value = document.frm.NE06.value;
+        document.frm.JG43.value = document.frm.NE06.value;
+        document.frm.JG53.value = document.frm.NE06.value;
+    }
+
+    // *********************************************************
+    // Carrega o Primeiro Número NE06 nos campos JG16, JG43 e JG53
+    // *********************************************************
+    function carregaNE07() {
+        document.frm.JG24.value = document.frm.NE07.value;
+        document.frm.JG61.value = document.frm.NE07.value;
+        document.frm.JG44.value = document.frm.NE07.value;
+    }
+
+    // *********************************************************
+    // Carrega o Primeiro Número NE08 nos campos JG25, JG62 e JG45
+    // *********************************************************
+    function carregaNE08() {
+        document.frm.JG25.value = document.frm.NE08.value;
+        document.frm.JG62.value = document.frm.NE08.value;
+        document.frm.JG45.value = document.frm.NE08.value;
+    }
+
+    // *********************************************************
+    // Carrega o Primeiro Número NE09 nos campos JG26, JG46 e JG63
+    // *********************************************************
+    function carregaNE09() {
+        document.frm.JG26.value = document.frm.NE09.value;
+        document.frm.JG46.value = document.frm.NE09.value;
+        document.frm.JG63.value = document.frm.NE09.value;
+    }
+
+    // *********************************************************
+    // Carrega o Primeiro Número NE10 nos campos JG34, JG54 e JG64
+    // *********************************************************
+    function carregaNE10() {
+        document.frm.JG34.value = document.frm.NE10.value;
+        document.frm.JG54.value = document.frm.NE10.value;
+        document.frm.JG64.value = document.frm.NE10.value;
+    }
+
+    // *********************************************************
+    // Carrega o Primeiro Número NE11 nos campos JG35, JG55 e JG65
+    // *********************************************************
+    function carregaNE11() {
+        document.frm.JG35.value = document.frm.NE11.value;
+        document.frm.JG55.value = document.frm.NE11.value;
+        document.frm.JG65.value = document.frm.NE11.value;
+    }
+
+    // *********************************************************
+    // Carrega o Primeiro Número NE12 nos campos JG36, JG56 e JG66
+    // *********************************************************
+    function carregaNE12() {
+        document.frm.JG36.value = document.frm.NE12.value;
+        document.frm.JG56.value = document.frm.NE12.value;
+        document.frm.JG66.value = document.frm.NE12.value;
+    }
+
+    // *********************************************************
+    // Carrega os campos de soma de cada cartela
+    // *********************************************************
+    function soma() {
+        var total01;
+        var total02;
+        var total03;
+        var total04;
+        var total05;
+        var total06;
+
+        total01 = parseFloat(0 + document.frm.JG11.value) + parseFloat(0 + document.frm.JG12.value) + parseFloat(0 + document.frm.JG13.value) + parseFloat(0 + document.frm.JG14.value) + parseFloat(0 + document.frm.JG15.value) + parseFloat(0 + document.frm.JG16.value);
+        
+        total02 = parseFloat(0 + document.frm.JG21.value) + parseFloat(0 + document.frm.JG22.value) + parseFloat(0 + document.frm.JG23.value) + parseFloat(0 + document.frm.JG24.value) + parseFloat(0 + document.frm.JG25.value) + parseFloat(0 + document.frm.JG26.value);
+        
+        total03 = parseFloat(0 + document.frm.JG31.value) + parseFloat(0 + document.frm.JG32.value) + parseFloat(0 + document.frm.JG33.value) + parseFloat(0 + document.frm.JG34.value) + parseFloat(0 + document.frm.JG35.value) + parseFloat(0 + document.frm.JG36.value);
+        
+        total04 = parseFloat(0 + document.frm.JG41.value) + parseFloat(0 + document.frm.JG42.value) + parseFloat(0 + document.frm.JG43.value) + parseFloat(0 + document.frm.JG44.value) + parseFloat(0 + document.frm.JG45.value) + parseFloat(0 + document.frm.JG46.value);
+        
+        total05 = parseFloat(0 + document.frm.JG51.value) + parseFloat(0 + document.frm.JG52.value) + parseFloat(0 + document.frm.JG53.value) + parseFloat(0 + document.frm.JG54.value) + parseFloat(0 + document.frm.JG55.value) + parseFloat(0 + document.frm.JG56.value);
+        
+        total06 = parseFloat(0 + document.frm.JG61.value) + parseFloat(0 + document.frm.JG62.value) + parseFloat(0 + document.frm.JG63.value) + parseFloat(0 + document.frm.JG64.value) + parseFloat(0 + document.frm.JG65.value) + parseFloat(0 + document.frm.JG66.value);
+
+        document.frm.SOMA01.value = total01;
+        document.frm.SOMA02.value = total02;
+        document.frm.SOMA03.value = total03;
+        document.frm.SOMA04.value = total04;
+        document.frm.SOMA05.value = total05;
+        document.frm.SOMA06.value = total06;
+    }
+
+    // *********************************************************
+    // Muda a cor do botão igual ao numero digitado 
+    // *********************************************************
+    function numero_escolhido(nr) {
+        if (1 == nr) {
+            document.frm.nr01.style.background = "#638cb5";
+        }
+        if (2 == nr) {
+            document.frm.nr02.style.background = "#638cb5";
+        }
+        if (3 == nr) {
+            document.frm.nr03.style.background = "#638cb5";
+        }
+        if (4 == nr) {
+            document.frm.nr04.style.background = "#638cb5";
+        }
+        if (5 == nr) {
+            document.frm.nr05.style.background = "#638cb5";
+        }
+
+        if (6 == nr) {
+            document.frm.nr06.style.background = "#638cb5";
+        }
+        if (7 == nr) {
+            document.frm.nr07.style.background = "#638cb5";
+        }
+        if (8 == nr) {
+            document.frm.nr08.style.background = "#638cb5";
+        }
+        if (9 == nr) {
+            document.frm.nr09.style.background = "#638cb5";
+        }
+        if (10 == nr) {
+            document.frm.nr10.style.background = "#638cb5";
+        }
+
+        if (11 == nr) {
+            document.frm.nr11.style.background = "#638cb5";
+        }
+        if (12 == nr) {
+            document.frm.nr12.style.background = "#638cb5";
+        }
+        if (13 == nr) {
+            document.frm.nr13.style.background = "#638cb5";
+        }
+        if (14 == nr) {
+            document.frm.nr14.style.background = "#638cb5";
+        }
+        if (15 == nr) {
+            document.frm.nr15.style.background = "#638cb5";
+        }
+
+        if (16 == nr) {
+            document.frm.nr16.style.background = "#638cb5";
+        }
+        if (17 == nr) {
+            document.frm.nr17.style.background = "#638cb5";
+        }
+        if (18 == nr) {
+            document.frm.nr18.style.background = "#638cb5";
+        }
+        if (19 == nr) {
+            document.frm.nr19.style.background = "#638cb5";
+        }
+        if (20 == nr) {
+            document.frm.nr20.style.background = "#638cb5";
+        }
+
+        if (21 == nr) {
+            document.frm.nr21.style.background = "#638cb5";
+        }
+        if (22 == nr) {
+            document.frm.nr22.style.background = "#638cb5";
+        }
+        if (23 == nr) {
+            document.frm.nr23.style.background = "#638cb5";
+        }
+        if (24 == nr) {
+            document.frm.nr24.style.background = "#638cb5";
+        }
+        if (25 == nr) {
+            document.frm.nr25.style.background = "#638cb5";
+        }
+
+        if (26 == nr) {
+            document.frm.nr26.style.background = "#638cb5";
+        }
+        if (27 == nr) {
+            document.frm.nr27.style.background = "#638cb5";
+        }
+        if (28 == nr) {
+            document.frm.nr28.style.background = "#638cb5";
+        }
+        if (29 == nr) {
+            document.frm.nr29.style.background = "#638cb5";
+        }
+        if (30 == nr) {
+            document.frm.nr30.style.background = "#638cb5";
+        }
+
+        if (31 == nr) {
+            document.frm.nr31.style.background = "#638cb5";
+        }
+        if (32 == nr) {
+            document.frm.nr32.style.background = "#638cb5";
+        }
+        if (33 == nr) {
+            document.frm.nr33.style.background = "#638cb5";
+        }
+        if (34 == nr) {
+            document.frm.nr34.style.background = "#638cb5";
+        }
+        if (35 == nr) {
+            document.frm.nr35.style.background = "#638cb5";
+        }
+
+        if (36 == nr) {
+            document.frm.nr36.style.background = "#638cb5";
+        }
+        if (37 == nr) {
+            document.frm.nr37.style.background = "#638cb5";
+        }
+        if (38 == nr) {
+            document.frm.nr38.style.background = "#638cb5";
+        }
+        if (39 == nr) {
+            document.frm.nr39.style.background = "#638cb5";
+        }
+        if (40 == nr) {
+            document.frm.nr40.style.background = "#638cb5";
+        }
+
+        if (41 == nr) {
+            document.frm.nr41.style.background = "#638cb5";
+        }
+        if (42 == nr) {
+            document.frm.nr42.style.background = "#638cb5";
+        }
+        if (43 == nr) {
+            document.frm.nr43.style.background = "#638cb5";
+        }
+        if (44 == nr) {
+            document.frm.nr44.style.background = "#638cb5";
+        }
+        if (45 == nr) {
+            document.frm.nr45.style.background = "#638cb5";
+        }
+
+        if (46 == nr) {
+            document.frm.nr46.style.background = "#638cb5";
+        }
+        if (47 == nr) {
+            document.frm.nr47.style.background = "#638cb5";
+        }
+        if (48 == nr) {
+            document.frm.nr48.style.background = "#638cb5";
+        }
+        if (49 == nr) {
+            document.frm.nr49.style.background = "#638cb5";
+        }
+        if (50 == nr) {
+            document.frm.nr50.style.background = "#638cb5";
+        }
+
+        if (51 == nr) {
+            document.frm.nr51.style.background = "#638cb5";
+        }
+        if (52 == nr) {
+            document.frm.nr52.style.background = "#638cb5";
+        }
+        if (53 == nr) {
+            document.frm.nr53.style.background = "#638cb5";
+        }
+        if (54 == nr) {
+            document.frm.nr54.style.background = "#638cb5";
+        }
+        if (55 == nr) {
+            document.frm.nr55.style.background = "#638cb5";
+        }
+
+        if (56 == nr) {
+            document.frm.nr56.style.background = "#638cb5";
+        }
+        if (57 == nr) {
+            document.frm.nr57.style.background = "#638cb5";
+        }
+        if (58 == nr) {
+            document.frm.nr58.style.background = "#638cb5";
+        }
+        if (59 == nr) {
+            document.frm.nr59.style.background = "#638cb5";
+        }
+        if (60 == nr) {
+            document.frm.nr60.style.background = "#638cb5";
+        }
+    }         
+    
+    // *********************************************************
+    // Se o texto tiver 1 carater concatena com 0 antes 
+    // *********************************************************
+    function tamanhoTexto(textoNum, nomeComp) {
+        if (textoNum.length == 1) {
+            if (nomeComp == "NE01") {
+                document.frm.NE01.value = "0" + document.frm.NE01.value;
+            }
+            if (nomeComp == "NE02") {
+                document.frm.NE02.value = "0" + document.frm.NE02.value;
+            }				
+            if (nomeComp == "NE03") {
+                document.frm.NE03.value = "0" + document.frm.NE03.value;
+            }
+            if (nomeComp == "NE04") {
+                document.frm.NE04.value = "0" + document.frm.NE04.value;
+            }
+            if (nomeComp == "NE05") {
+                document.frm.NE05.value = "0" + document.frm.NE05.value;
+            }
+            if (nomeComp == "NE06") {
+                document.frm.NE06.value = "0" + document.frm.NE06.value;
+            }
+            if (nomeComp == "NE07") {
+                document.frm.NE07.value = "0" + document.frm.NE07.value;
+            }
+            if (nomeComp == "NE08") {
+                document.frm.NE08.value = "0" + document.frm.NE08.value;
+            }
+            if (nomeComp == "NE09") {
+                document.frm.NE09.value = "0" + document.frm.NE09.value;
+            }
+            if (nomeComp == "NE10") {
+                document.frm.NE10.value = "0" + document.frm.NE10.value;
+            }
+            if (nomeComp == "NE11") {
+                document.frm.NE11.value = "0" + document.frm.NE11.value;
+            }
+            if (nomeComp == "NE12") {
+                document.frm.NE12.value = "0" + document.frm.NE12.value;
+            }                                    
+        }
+    }
+
+
+    
+    // *********************************************************   
+    // Ordena os numeros distribuidos nos jogos
+    // *********************************************************   
+    function ordenarArray() {
+		
+        var jogosArray01 = [document.frm.JG11.value, document.frm.JG12.value, document.frm.JG13.value, document.frm.JG14.value, document.frm.JG15.value, document.frm.JG16.value];     // OK 		
+        var jogosArray02 = [document.frm.JG21.value, document.frm.JG22.value, document.frm.JG23.value, document.frm.JG24.value, document.frm.JG25.value, document.frm.JG26.value];     // OK 		
+        var jogosArray03 = [document.frm.JG31.value, document.frm.JG32.value, document.frm.JG33.value, document.frm.JG34.value, document.frm.JG35.value, document.frm.JG36.value];     // OK 		
+        var jogosArray04 = [document.frm.JG41.value, document.frm.JG42.value, document.frm.JG43.value, document.frm.JG44.value, document.frm.JG45.value, document.frm.JG46.value];     // OK 		
+        var jogosArray05 = [document.frm.JG51.value, document.frm.JG52.value, document.frm.JG53.value, document.frm.JG54.value, document.frm.JG55.value, document.frm.JG56.value];     // OK 		
+        var jogosArray06 = [document.frm.JG61.value, document.frm.JG62.value, document.frm.JG63.value, document.frm.JG64.value, document.frm.JG65.value, document.frm.JG66.value];     // OK             
+        escreveJogos = "\n" + jogosArray01.sort() + "\n" + jogosArray02.sort() + "\n" + jogosArray03.sort() + "\n" + jogosArray04.sort() + "\n" + jogosArray05.sort() + "\n" + jogosArray06.sort() + "\n\n"; 
+
+        /* Chama a função de mostraJogos */ 		
+        mostraJogos(escreveJogos); 
+        
+    }    
+                                        
+</script>    
+</head>
+
+<!-- Corpo do HTML -->
+<body  background="100reais1000dolares.jpg">
+    
     <form name="frm">
+    <center>
     <br>
 
     <table border="2" bgcolor="#87CEEB"> 
@@ -494,40 +561,40 @@
         </tr>
         <tr>	
             <td align="center">
-                <input type="text" size="1" maxlength="2" name="NE01" style="font-size:20px; font-weight:bold; width:35px;" onblur="carregaNE01();soma();numero_escolhido(this.value);">	
+                <input type="text" size="1" maxlength="2" name="NE01" style="font-size:20px; font-weight:bold; width:35px;" onblur="tamanhoTexto(this.value, this.name);carregaNE01();soma();numero_escolhido(this.value);">	
             </td>
             <td align="center">
-                <input type="text" size="3" maxlength="2" name="NE02" style="font-size:20px; font-weight:bold; width:35px;" onblur="carregaNE02();soma();numero_escolhido(this.value);">	
+                <input type="text" size="3" maxlength="2" name="NE02" style="font-size:20px; font-weight:bold; width:35px;" onblur="tamanhoTexto(this.value, this.name);carregaNE02();soma();numero_escolhido(this.value);">	
             </td>
             <td align="center">
-                <input type="text" size="3" maxlength="2" name="NE03" style="font-size:20px; font-weight:bold; width:35px;" onblur="carregaNE03();soma();numero_escolhido(this.value);">	
+                <input type="text" size="3" maxlength="2" name="NE03" style="font-size:20px; font-weight:bold; width:35px;" onblur="tamanhoTexto(this.value, this.name);carregaNE03();soma();numero_escolhido(this.value);">	
             </td>
             <td align="center">
-                <input type="text" size="3" maxlength="2" name="NE04" style="font-size:20px; font-weight:bold; width:35px;" onblur="carregaNE04();soma();numero_escolhido(this.value);">	
+                <input type="text" size="3" maxlength="2" name="NE04" style="font-size:20px; font-weight:bold; width:35px;" onblur="tamanhoTexto(this.value, this.name);carregaNE04();soma();numero_escolhido(this.value);">	
             </td>
             <td align="center">
-                <input type="text" size="3" maxlength="2" name="NE05" style="font-size:20px; font-weight:bold; width:35px;" onblur="carregaNE05();soma();numero_escolhido(this.value);">	
+                <input type="text" size="3" maxlength="2" name="NE05" style="font-size:20px; font-weight:bold; width:35px;" onblur="tamanhoTexto(this.value, this.name);carregaNE05();soma();numero_escolhido(this.value);">	
             </td>
             <td align="center">
-                <input type="text" size="3" maxlength="2" name="NE06" style="font-size:20px; font-weight:bold; width:35px;" onblur="carregaNE06();soma();numero_escolhido(this.value);">	
+                <input type="text" size="3" maxlength="2" name="NE06" style="font-size:20px; font-weight:bold; width:35px;" onblur="tamanhoTexto(this.value, this.name);carregaNE06();soma();numero_escolhido(this.value);">	
             </td>
             <td align="center">
-                <input type="text" size="3" maxlength="2" name="NE07" style="font-size:20px; font-weight:bold; width:35px;" onblur="carregaNE07();soma();numero_escolhido(this.value);">	
+                <input type="text" size="3" maxlength="2" name="NE07" style="font-size:20px; font-weight:bold; width:35px;" onblur="tamanhoTexto(this.value, this.name);carregaNE07();soma();numero_escolhido(this.value);">	
             </td>
             <td align="center">
-                <input type="text" size="3" maxlength="2" name="NE08" style="font-size:20px; font-weight:bold; width:35px;" onblur="carregaNE08();soma();numero_escolhido(this.value);">	
+                <input type="text" size="3" maxlength="2" name="NE08" style="font-size:20px; font-weight:bold; width:35px;" onblur="tamanhoTexto(this.value, this.name);carregaNE08();soma();numero_escolhido(this.value);">	
             </td>
             <td align="center">
-                <input type="text" size="3" maxlength="2" name="NE09" style="font-size:20px; font-weight:bold; width:35px;" onblur="carregaNE09();soma();numero_escolhido(this.value);">	
+                <input type="text" size="3" maxlength="2" name="NE09" style="font-size:20px; font-weight:bold; width:35px;" onblur="tamanhoTexto(this.value, this.name);carregaNE09();soma();numero_escolhido(this.value);">	
             </td>
             <td align="center">
-                <input type="text" size="3" maxlength="2" name="NE10" style="font-size:20px; font-weight:bold; width:35px;" onblur="carregaNE10();soma();numero_escolhido(this.value);">	
+                <input type="text" size="3" maxlength="2" name="NE10" style="font-size:20px; font-weight:bold; width:35px;" onblur="tamanhoTexto(this.value, this.name);carregaNE10();soma();numero_escolhido(this.value);">	
             </td>
             <td align="center">
-                <input type="text" size="3" maxlength="2" name="NE11" style="font-size:20px; font-weight:bold; width:35px;" onblur="carregaNE11();soma();numero_escolhido(this.value);">	
+                <input type="text" size="3" maxlength="2" name="NE11" style="font-size:20px; font-weight:bold; width:35px;" onblur="tamanhoTexto(this.value, this.name);carregaNE11();soma();numero_escolhido(this.value);">	
             </td>
             <td align="center">
-                <input type="text" size="3" maxlength="2" name="NE12" style="font-size:20px; font-weight:bold; width:35px;" onblur="carregaNE12();soma();numero_escolhido(this.value);">	
+                <input type="text" size="3" maxlength="2" name="NE12" style="font-size:20px; font-weight:bold; width:35px;" onblur="tamanhoTexto(this.value, this.name);carregaNE12();soma();numero_escolhido(this.value);">	
             </td>
         </tr>
     </table>
@@ -870,12 +937,32 @@
         </tr>				           
     </table>
 
-	<br> 
+	<br>
+    <table>
+		<tr>
+			<td align="center">
+				<input id="myBtn" type="button" name="ordenar"  value=" Ordenar Jogos " onclick="ordenarArray()"/>&nbsp;
+		    </td>	
+		</tr>	
+    </table>	
+	<br>
 	<b>                        
 		<a href="index.html">
            Retornar à Página Inicial
-        </a>
-	</b>
+    </a>
+	</b>	
+    <br>
+	<!-- The Modal -->
+	<div id="myModal" class="modal" style="background-color: darkorange;">  
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times; </span>
+			<p id="ordem"></p>
+		</div>
+		<br><br>
+
+	</div>  
         
     </center> 
     </form>   
