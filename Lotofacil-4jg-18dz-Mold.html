@@ -43,32 +43,6 @@
 		}
 
 
-
-        // *********************************************************
-        // Carrega os campos de soma de cada cartela
-        // *********************************************************
-        function soma() {
-            var total01;
-            var total02;
-            var total03;
-            var total04;						
-
-            total01 = parseFloat(0 + document.frm.JG0101.value) + parseFloat(0 + document.frm.JG0102.value) + parseFloat(0 + document.frm.JG0103.value) + parseFloat(0 + document.frm.JG0104.value) + parseFloat(0 + document.frm.JG0105.value) + parseFloat(0 + document.frm.JG0106.value) + parseFloat(0 + document.frm.JG0107.value) + parseFloat(0 + document.frm.JG0108.value) + parseFloat(0 + document.frm.JG0109.value) + parseFloat(0 + document.frm.JG0110.value) + parseFloat(0 + document.frm.JG0111.value) + parseFloat(0 + document.frm.JG0112.value) + parseFloat(0 + document.frm.JG0113.value) + parseFloat(0 + document.frm.JG0114.value) + parseFloat(0 + document.frm.JG0115.value);
-            
-			total02 = parseFloat(0 + document.frm.JG0201.value) + parseFloat(0 + document.frm.JG0202.value) + parseFloat(0 + document.frm.JG0203.value) + parseFloat(0 + document.frm.JG0204.value) + parseFloat(0 + document.frm.JG0205.value) + parseFloat(0 + document.frm.JG0206.value) + parseFloat(0 + document.frm.JG0207.value) + parseFloat(0 + document.frm.JG0208.value) + parseFloat(0 + document.frm.JG0209.value) + parseFloat(0 + document.frm.JG0210.value) + parseFloat(0 + document.frm.JG0211.value) + parseFloat(0 + document.frm.JG0212.value) + parseFloat(0 + document.frm.JG0213.value) + parseFloat(0 + document.frm.JG0214.value) + parseFloat(0 + document.frm.JG0215.value);
-            
-			total03 = parseFloat(0 + document.frm.JG0301.value) + parseFloat(0 + document.frm.JG0302.value) + parseFloat(0 + document.frm.JG0303.value) + parseFloat(0 + document.frm.JG0304.value) + parseFloat(0 + document.frm.JG0305.value) + parseFloat(0 + document.frm.JG0306.value) + parseFloat(0 + document.frm.JG0307.value) + parseFloat(0 + document.frm.JG0308.value) + parseFloat(0 + document.frm.JG0309.value) + parseFloat(0 + document.frm.JG0310.value) + parseFloat(0 + document.frm.JG0311.value) + parseFloat(0 + document.frm.JG0312.value) + parseFloat(0 + document.frm.JG0313.value) + parseFloat(0 + document.frm.JG0314.value) + parseFloat(0 + document.frm.JG0315.value);
-            
-			total04 = parseFloat(0 + document.frm.JG0401.value) + parseFloat(0 + document.frm.JG0402.value) + parseFloat(0 + document.frm.JG0403.value) + parseFloat(0 + document.frm.JG0404.value) + parseFloat(0 + document.frm.JG0405.value) + parseFloat(0 + document.frm.JG0406.value) + parseFloat(0 + document.frm.JG0407.value) + parseFloat(0 + document.frm.JG0408.value) + parseFloat(0 + document.frm.JG0409.value) + parseFloat(0 + document.frm.JG0410.value) + parseFloat(0 + document.frm.JG0411.value) + parseFloat(0 + document.frm.JG0412.value) + parseFloat(0 + document.frm.JG0413.value) + parseFloat(0 + document.frm.JG0414.value) + parseFloat(0 + document.frm.JG0415.value);
-
-			document.frm.SOMA01.value = total01;
-            document.frm.SOMA02.value = total02;
-            document.frm.SOMA03.value = total03;
-            document.frm.SOMA04.value = total04;
- 						
-        }
- 
-
         // *********************************************************
         // Carrega o Primeiro Número NE01 nos campos JG11, JG21 e JG31
         // *********************************************************
@@ -241,6 +215,7 @@
             document.frm.JG0414.value = document.frm.NE18.value;                      
         }
 
+ 
 
         // *********************************************************   
         // Ordena os numeros distribuidos nos jogos
@@ -326,6 +301,32 @@
             }
 		}
 
+
+
+        // *********************************************************
+        // Carrega os campos de soma de cada cartela
+        // *********************************************************
+        function soma() {
+            var total01;
+            var total02;
+            var total03;
+            var total04;						
+
+            total01 = parseFloat(0 + document.frm.JG0101.value) + parseFloat(0 + document.frm.JG0102.value) + parseFloat(0 + document.frm.JG0103.value) + parseFloat(0 + document.frm.JG0104.value) + parseFloat(0 + document.frm.JG0105.value) + parseFloat(0 + document.frm.JG0106.value) + parseFloat(0 + document.frm.JG0107.value) + parseFloat(0 + document.frm.JG0108.value) + parseFloat(0 + document.frm.JG0109.value) + parseFloat(0 + document.frm.JG0110.value) + parseFloat(0 + document.frm.JG0111.value) + parseFloat(0 + document.frm.JG0112.value) + parseFloat(0 + document.frm.JG0113.value) + parseFloat(0 + document.frm.JG0114.value) + parseFloat(0 + document.frm.JG0115.value);
+            
+			total02 = parseFloat(0 + document.frm.JG0201.value) + parseFloat(0 + document.frm.JG0202.value) + parseFloat(0 + document.frm.JG0203.value) + parseFloat(0 + document.frm.JG0204.value) + parseFloat(0 + document.frm.JG0205.value) + parseFloat(0 + document.frm.JG0206.value) + parseFloat(0 + document.frm.JG0207.value) + parseFloat(0 + document.frm.JG0208.value) + parseFloat(0 + document.frm.JG0209.value) + parseFloat(0 + document.frm.JG0210.value) + parseFloat(0 + document.frm.JG0211.value) + parseFloat(0 + document.frm.JG0212.value) + parseFloat(0 + document.frm.JG0213.value) + parseFloat(0 + document.frm.JG0214.value) + parseFloat(0 + document.frm.JG0215.value);
+            
+			total03 = parseFloat(0 + document.frm.JG0301.value) + parseFloat(0 + document.frm.JG0302.value) + parseFloat(0 + document.frm.JG0303.value) + parseFloat(0 + document.frm.JG0304.value) + parseFloat(0 + document.frm.JG0305.value) + parseFloat(0 + document.frm.JG0306.value) + parseFloat(0 + document.frm.JG0307.value) + parseFloat(0 + document.frm.JG0308.value) + parseFloat(0 + document.frm.JG0309.value) + parseFloat(0 + document.frm.JG0310.value) + parseFloat(0 + document.frm.JG0311.value) + parseFloat(0 + document.frm.JG0312.value) + parseFloat(0 + document.frm.JG0313.value) + parseFloat(0 + document.frm.JG0314.value) + parseFloat(0 + document.frm.JG0315.value);
+            
+			total04 = parseFloat(0 + document.frm.JG0401.value) + parseFloat(0 + document.frm.JG0402.value) + parseFloat(0 + document.frm.JG0403.value) + parseFloat(0 + document.frm.JG0404.value) + parseFloat(0 + document.frm.JG0405.value) + parseFloat(0 + document.frm.JG0406.value) + parseFloat(0 + document.frm.JG0407.value) + parseFloat(0 + document.frm.JG0408.value) + parseFloat(0 + document.frm.JG0409.value) + parseFloat(0 + document.frm.JG0410.value) + parseFloat(0 + document.frm.JG0411.value) + parseFloat(0 + document.frm.JG0412.value) + parseFloat(0 + document.frm.JG0413.value) + parseFloat(0 + document.frm.JG0414.value) + parseFloat(0 + document.frm.JG0415.value);
+
+			document.frm.SOMA01.value = total01;
+            document.frm.SOMA02.value = total02;
+            document.frm.SOMA03.value = total03;
+            document.frm.SOMA04.value = total04;
+ 						
+        }
+ 
 
 
         // *********************************************************
@@ -1054,16 +1055,13 @@
 		    </td>	
 		</tr>	
     </table>
-
 	<br>   
-
 	<b>                        
 		<a href="index.html">
            Retornar à Página Inicial
     	</a>
 	</b>	
 	<br>
-
 	<!-- The Modal -->
 	<div id="myModal" class="modal" style="background-color: darkorange;">  
 
