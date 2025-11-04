@@ -426,287 +426,277 @@
 <center>
 <form name="frm">
 
-    <br>
- 
-    <table border="1" bgcolor="#87CEEB"> 
-        <tr>
-            <td colspan="25" align="center">
-		        <b>4 JOGOS DA LOTOFÁCIL - OBJETIVANDO O ACERTO DE 12, 13 e 14 NÚMEROS ENTRE OS 18 COMBINADOS</b> 		
-		    </td>		    		    
-        </tr>
-	    <tr>
-		    <td colspan="25">
-                <hr size="2" color="black"/>
-		    </td>
-	    </tr>    
-        <tr>
-            <td colspan="25" nowrap>
-		        <b>TIPO: </b> 		
-                &nbsp;
-                <select name="TIPO">
-                  <option value="0"> LOTOFÁCIL </option>
-                </select>
-                &nbsp;&nbsp;&nbsp;
-		        <b>CONC. N. : </b> 		
-                &nbsp;
-		        <input type="text" size="25" maxlength="30" name="CONCNR">
-		        &nbsp;&nbsp;&nbsp;	
-		        <b>DATA CONC.: </b> 		
-		        <input type="text" size="25" maxlength="30" name="DTCONC">	
-		    </td>
-        </tr>
-	</table>
-  <table>
-    <tr>
-      <td>
-        <table>
-			<tr>	
-				<td>
-				<table border="1" bgcolor="#87CEEB"> 
-					<tr>
-						<td colspan="12" align="center">
-							<b>ESCOLHA 12 DEZENAS DA MOLDURA DE FORA</b> 		
-						</td>		    		    
-					</tr>
-					<tr>			
-						<td align="center">
-							<b>01º</b>
-						</td>
-						<td align="center">
-							<b>02º</b>
-						</td>	    
-						<td align="center">
-							<b>03º</b>
-						</td>
-						<td align="center">
-							<b>04º</b>
-						</td>
-						<td align="center">
-							<b>05º</b>
-						</td>
-						<td align="center">
-							<b>06º</b>
-						</td>		    
-						<td align="center">
-							<b>07º</b>
-						</td>
-						<td align="center">
-							<b>08º</b>
-						</td>		    
-						<td align="center">
-							<b>09º</b>
-						</td>
-						<td align="center">
-							<b>10º</b>
-						</td>
-						<td align="center">
-							<b>11º</b>
-						</td>
-						<td align="center">
-							<b>12º</b>
-						</td>
-					</tr>
-					<tr>							
-						<td align="center">
-							<input type="text" size="1" maxlength="2" name="NE01" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE01();soma();numero_escolhido(this.value);">	
-						</td>
-						<td align="center">
-							<input type="text" size="3" maxlength="2" name="NE02" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE02();soma();numero_escolhido(this.value);">	
-						</td>
-						<td align="center">
-							<input type="text" size="3" maxlength="2" name="NE03" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE03();soma();numero_escolhido(this.value);">	
-						</td>
-						<td align="center">
-							<input type="text" size="3" maxlength="2" name="NE04" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE04();soma();numero_escolhido(this.value);">	
-						</td>
-						<td align="center">
-							<input type="text" size="3" maxlength="2" name="NE05" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE05();soma();numero_escolhido(this.value);">	
-						</td>
-						<td align="center">
-							<input type="text" size="3" maxlength="2" name="NE06" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE06();soma();numero_escolhido(this.value);">	
-						</td>
-						<td align="center">
-							<input type="text" size="3" maxlength="2" name="NE07" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE07();soma();numero_escolhido(this.value);">	
-						</td>
-						<td align="center">
-							<input type="text" size="3" maxlength="2" name="NE08" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE08();soma();numero_escolhido(this.value);">	
-						</td>
-						<td align="center">
-							<input type="text" size="3" maxlength="2" name="NE09" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE09();soma();numero_escolhido(this.value);">	
-						</td>
-						<td align="center">
-							<input type="text" size="3" maxlength="2" name="NE10" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE10();soma();numero_escolhido(this.value);">	
-						</td>
-						<td align="center">
-							<input type="text" size="3" maxlength="2" name="NE11" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE11();soma();numero_escolhido(this.value);">	
-						</td>
-						<td align="center">
-							<input type="text" size="3" maxlength="2" name="NE12" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE12();soma();numero_escolhido(this.value);">	
-						</td>
-					</tr>
-					
-					<tr>
-						<td colspan="12">+ + + + + + + + + + + + &nbsp;
-							<input type="button" name="nr01"  value="01" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr02"  value="02" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr03"  value="03" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr04"  value="04" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr05"  value="05" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-						</td>
-					</tr>		
-					<tr>
-						<td colspan="12">+ + + + + + + + + + + + &nbsp;
-							<input type="button" name="nr06"  value="06" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT1"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT2"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT3"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr10"  value="10" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-						</td>
-					</tr>		
-					<tr>
-						<td colspan="12">+ + + + + + + + + + + + &nbsp;
-							<input type="button" name="nr11"  value="11" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT4"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT5"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT6"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr15"  value="15" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-						</td>
-					</tr>		
-					<tr>
-						<td colspan="12">+ + + + + + + + + + + + &nbsp;
-							<input type="button" name="nr16"  value="16" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT17"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT18"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT19"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr20"  value="20" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
-						</td>
-					</tr>		
-					<tr>
-						<td colspan="12">+ + + + + + + + + + + + &nbsp;
-							<input type="button" name="nr21"  value="21" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr22"  value="22" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr23"  value="23" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr24"  value="24" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr25"  value="25" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>                		    
-						</td>
-					</tr>		
-					
-				</table>
-				</td>
-			</tr>	
-        </table>
-      </td>
-      <td>
-        <table>
-          <tr>
-			<td>
-				<table border="1" bgcolor="#87CEEB"> 
-					<tr>
-						<td colspan="6" align="center">
-							<b>ESCOLHA 6 DEZENAS DA MOLDURA DE DENTRO</b> 		
-						</td>		    		    
-					</tr>
-					<tr>
-						<td align="center">
-							<b>13º</b>
-						</td>
-						<td align="center">
-							<b>14º</b>
-						</td>
-						<td align="center">
-							<b>15º</b>
-						</td>
-						<td align="center">
-							<b>16º</b>
-						</td>		    
-						<td align="center">
-							<b>17º</b>
-						</td>
-						<td align="center">
-							<b>18º</b>
-						</td>		    
-
-					</tr>					
-					<tr>
-						<td align="center">
-							<input type="text" size="1" maxlength="2" name="NE13" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE13();soma();numero_escolhido(this.value);">	
-						</td>
-						<td align="center">
-							<input type="text" size="3" maxlength="2" name="NE14" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE14();soma();numero_escolhido(this.value);">	
-						</td>
-						<td align="center">
-							<input type="text" size="3" maxlength="2" name="NE15" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE15();soma();numero_escolhido(this.value);">	
-						</td>
-						<td align="center">
-							<input type="text" size="3" maxlength="2" name="NE16" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE16();soma();numero_escolhido(this.value);">	
-						</td>
-						<td align="center">
-							<input type="text" size="3" maxlength="2" name="NE17" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE17();soma();numero_escolhido(this.value);">	
-						</td>
-						<td align="center">
-							<input type="text" size="3" maxlength="2" name="NE18" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE18();soma();numero_escolhido(this.value);">	
-						</td>
-					</tr>					
-					<tr style="align-items: center;">			
-						<td colspan="6">+ + + + + + &nbsp;
-							<input type="button" name="nrT10"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT11"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT12"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT13"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT14"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-						</td>
-					
-					</tr>		
-					<tr>
-						<td colspan="6">+ + + + + + &nbsp;
-								<input type="button" name="nrT15"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr07"  value="07" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr08"  value="08" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr09"  value="09" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nrT16"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							</td>
-					</tr>		
-					<tr>
-						<td colspan="6">+ + + + + + &nbsp;
-								<input type="button" name="nrT17"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr12"  value="12" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr13"  value="13" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr14"  value="14" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nrT18"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							</td>
-					</tr>		
-					<tr>
-						<td colspan="6">+ + + + + + &nbsp;
-								<input type="button" name="nrT19"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr17"  value="17" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr18"  value="18" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr19"  value="19" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nrT20"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
-							</td>
-					</tr>		
-					<tr>
-						<td colspan="6">+ + + + + + &nbsp;
-							<input type="button" name="nrT21"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT22"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT23"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT24"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrTT22"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>                		    
-						</td>
-					</tr>
-				</table>
+<br>
+	<table border="1" bgcolor="#87CEEB"> 
+		<tr>
+			<td colspan="25" align="center">
+				<b>4 JOGOS DA LOTOFÁCIL - OBJETIVANDO O ACERTO DE 12, 13 e 14 NÚMEROS ENTRE OS 18 COMBINADOS</b> 		
+			</td>		    		    
+		</tr>
+		<tr>
+			<td colspan="25">
+				<hr size="2" color="black"/>
 			</td>
-          </tr>		
-        </table>        
-      </td>
-    </tr>
-  </table>  
+		</tr>    
+		<tr>
+			<td colspan="25" nowrap>
+				<b>TIPO: </b> 		
+				&nbsp;
+				<select name="TIPO">
+					<option value="0"> LOTOFÁCIL </option>
+				</select>
+				&nbsp;&nbsp;&nbsp;
+				<b>CONC. N. : </b> 		
+				&nbsp;
+				<input type="text" size="25" maxlength="30" name="CONCNR">
+				&nbsp;&nbsp;&nbsp;	
+				<b>DATA CONC.: </b> 		
+				<input type="text" size="25" maxlength="30" name="DTCONC">	
+			</td>
+		</tr>
+	</table>
 
+	<table>
+		<tr>
+			<td>
 
+				<table>
+					<tr>	
+						<td>
 
+							<table border="1" bgcolor="#87CEEB"> 
+								<tr>
+									<td colspan="12" align="center">
+										<b>ESCOLHA 12 DEZENAS DA MOLDURA DE FORA</b> 		
+									</td>		    		    
+								</tr>
+								<tr>			
+									<td align="center">
+										<b>01º</b>
+									</td>
+									<td align="center">
+										<b>02º</b>
+									</td>	    
+									<td align="center">
+										<b>03º</b>
+									</td>
+									<td align="center">
+										<b>04º</b>
+									</td>
+									<td align="center">
+										<b>05º</b>
+									</td>
+									<td align="center">
+										<b>06º</b>
+									</td>		    
+									<td align="center">
+										<b>07º</b>
+									</td>
+									<td align="center">
+										<b>08º</b>
+									</td>		    
+									<td align="center">
+										<b>09º</b>
+									</td>
+									<td align="center">
+										<b>10º</b>
+									</td>
+									<td align="center">
+										<b>11º</b>
+									</td>
+									<td align="center">
+										<b>12º</b>
+									</td>
+								</tr>
+								<tr>							
+									<td align="center">
+										<input type="text" size="1" maxlength="2" name="NE01" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE01();soma();numero_escolhido(this.value);">	
+									</td>
+									<td align="center">
+										<input type="text" size="3" maxlength="2" name="NE02" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE02();soma();numero_escolhido(this.value);">	
+									</td>
+									<td align="center">
+										<input type="text" size="3" maxlength="2" name="NE03" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE03();soma();numero_escolhido(this.value);">	
+									</td>
+									<td align="center">
+										<input type="text" size="3" maxlength="2" name="NE04" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE04();soma();numero_escolhido(this.value);">	
+									</td>
+									<td align="center">
+										<input type="text" size="3" maxlength="2" name="NE05" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE05();soma();numero_escolhido(this.value);">	
+									</td>
+									<td align="center">
+										<input type="text" size="3" maxlength="2" name="NE06" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE06();soma();numero_escolhido(this.value);">	
+									</td>
+									<td align="center">
+										<input type="text" size="3" maxlength="2" name="NE07" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE07();soma();numero_escolhido(this.value);">	
+									</td>
+									<td align="center">
+										<input type="text" size="3" maxlength="2" name="NE08" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE08();soma();numero_escolhido(this.value);">	
+									</td>
+									<td align="center">
+										<input type="text" size="3" maxlength="2" name="NE09" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE09();soma();numero_escolhido(this.value);">	
+									</td>
+									<td align="center">
+										<input type="text" size="3" maxlength="2" name="NE10" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE10();soma();numero_escolhido(this.value);">	
+									</td>
+									<td align="center">
+										<input type="text" size="3" maxlength="2" name="NE11" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE11();soma();numero_escolhido(this.value);">	
+									</td>
+									<td align="center">
+										<input type="text" size="3" maxlength="2" name="NE12" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE12();soma();numero_escolhido(this.value);">	
+									</td>
+								</tr>
+								
+								<tr>
+									<td colspan="12">+ + + + + + + + + + + + &nbsp;
+										<input type="button" name="nr01"  value="01" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nr02"  value="02" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nr03"  value="03" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nr04"  value="04" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nr05"  value="05" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+									</td>
+								</tr>		
+								<tr>
+									<td colspan="12">+ + + + + + + + + + + + &nbsp;
+										<input type="button" name="nr06"  value="06" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nrT1"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nrT2"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nrT3"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nr10"  value="10" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+									</td>
+								</tr>		
+								<tr>
+									<td colspan="12">+ + + + + + + + + + + + &nbsp;
+										<input type="button" name="nr11"  value="11" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nrT4"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nrT5"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nrT6"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nr15"  value="15" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+									</td>
+								</tr>		
+								<tr>
+									<td colspan="12">+ + + + + + + + + + + + &nbsp;
+										<input type="button" name="nr16"  value="16" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nrT17"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nrT18"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nrT19"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nr20"  value="20" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
+									</td>
+								</tr>		
+								<tr>
+									<td colspan="12">+ + + + + + + + + + + + &nbsp;
+										<input type="button" name="nr21"  value="21" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nr22"  value="22" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nr23"  value="23" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nr24"  value="24" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nr25"  value="25" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>                		    
+									</td>
+								</tr>		
+							</table>
 
+						</td>
+						<td>
+							<table border="1" bgcolor="#87CEEB"> 
+								<tr>
+									<td colspan="6" align="center">
+										<b>ESCOLHA 6 DEZENAS DA MOLDURA DE DENTRO</b> 		
+									</td>		    		    
+								</tr>
+								<tr>
+									<td align="center">
+										<b>13º</b>
+									</td>
+									<td align="center">
+										<b>14º</b>
+									</td>
+									<td align="center">
+										<b>15º</b>
+									</td>
+									<td align="center">
+										<b>16º</b>
+									</td>		    
+									<td align="center">
+										<b>17º</b>
+									</td>
+									<td align="center">
+										<b>18º</b>
+									</td>		    
 
-    <br> 
-    <table border="2" bgcolor="#87CEEB"> 
+								</tr>					
+								<tr>
+									<td align="center">
+										<input type="text" size="1" maxlength="2" name="NE13" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE13();soma();numero_escolhido(this.value);">	
+									</td>
+									<td align="center">
+										<input type="text" size="3" maxlength="2" name="NE14" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE14();soma();numero_escolhido(this.value);">	
+									</td>
+									<td align="center">
+										<input type="text" size="3" maxlength="2" name="NE15" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE15();soma();numero_escolhido(this.value);">	
+									</td>
+									<td align="center">
+										<input type="text" size="3" maxlength="2" name="NE16" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE16();soma();numero_escolhido(this.value);">	
+									</td>
+									<td align="center">
+										<input type="text" size="3" maxlength="2" name="NE17" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE17();soma();numero_escolhido(this.value);">	
+									</td>
+									<td align="center">
+										<input type="text" size="3" maxlength="2" name="NE18" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE18();soma();numero_escolhido(this.value);">	
+									</td>
+								</tr>					
+								<tr style="align-items: center;">			
+									<td colspan="6">+ + + + + + &nbsp;
+										<input type="button" name="nrT10"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nrT11"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nrT12"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nrT13"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nrT14"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+									</td>
+								
+								</tr>		
+								<tr>
+									<td colspan="6">+ + + + + + &nbsp;
+											<input type="button" name="nrT15"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+											<input type="button" name="nr07"  value="07" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+											<input type="button" name="nr08"  value="08" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+											<input type="button" name="nr09"  value="09" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+											<input type="button" name="nrT16"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										</td>
+								</tr>		
+								<tr>
+									<td colspan="6">+ + + + + + &nbsp;
+											<input type="button" name="nrT17"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+											<input type="button" name="nr12"  value="12" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+											<input type="button" name="nr13"  value="13" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+											<input type="button" name="nr14"  value="14" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+											<input type="button" name="nrT18"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										</td>
+								</tr>		
+								<tr>
+									<td colspan="6">+ + + + + + &nbsp;
+											<input type="button" name="nrT19"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+											<input type="button" name="nr17"  value="17" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+											<input type="button" name="nr18"  value="18" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+											<input type="button" name="nr19"  value="19" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+											<input type="button" name="nrT20"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
+										</td>
+								</tr>		
+								<tr>
+									<td colspan="6">+ + + + + + &nbsp;
+										<input type="button" name="nrT21"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nrT22"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nrT23"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nrT24"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+										<input type="button" name="nrTT22"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>                		    
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>		
+				</table>        
+
+    			<br> 
+    
+				<table border="2" bgcolor="#87CEEB"> 
 	    <tr>
 		    <td>
 		        &nbsp;	
