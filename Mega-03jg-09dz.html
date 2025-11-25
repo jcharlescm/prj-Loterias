@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MegaSena - 03jg - 09dz</title>
 </head>
 <script language="javascript">
+	
+    var escreveJogos;
+    function mostraJogos(x) {
+                        
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        var ordem = document.getElementById('ordem');
+        console.log(ordem);
+        ordem.innerText = x;
+
+        modal.style.display = "block";
+        // Get the button that opens the modal
+        
+        //var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        //btn.onclick = function() {
+            //modal.style.display = "block";
+        //}
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it  
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+                
+        console.log(escreveJogos);
+
+    }
+
+
+
     // *********************************************************
     // Carrega o Primeiro Número NE01 nos campos JG11, JG21 e JG31
     // *********************************************************
@@ -82,37 +122,15 @@
     // Carrega os campos de soma de cada cartela
     // *********************************************************
     function soma() {
-        // Campos do primeiro jogo
-        document.frm.JG11.value = parseFloat(0 + document.frm.JG11.value);
-        document.frm.JG12.value = parseFloat(0 + document.frm.JG12.value);
-        document.frm.JG13.value = parseFloat(0 + document.frm.JG13.value);
-        document.frm.JG14.value = parseFloat(0 + document.frm.JG14.value);
-        document.frm.JG15.value = parseFloat(0 + document.frm.JG15.value);
-        document.frm.JG16.value = parseFloat(0 + document.frm.JG16.value);
-       
-        // Campos do segundo jogo
-        document.frm.JG21.value = parseFloat(0 + document.frm.JG21.value);
-        document.frm.JG22.value = parseFloat(0 + document.frm.JG22.value);
-        document.frm.JG23.value = parseFloat(0 + document.frm.JG23.value);
-        document.frm.JG24.value = parseFloat(0 + document.frm.JG24.value);
-        document.frm.JG25.value = parseFloat(0 + document.frm.JG25.value);
-        document.frm.JG26.value = parseFloat(0 + document.frm.JG26.value);
-
-        // Campos do terceiro jogo
-        document.frm.JG31.value = parseFloat(0 + document.frm.JG31.value);
-        document.frm.JG32.value = parseFloat(0 + document.frm.JG32.value);
-        document.frm.JG33.value = parseFloat(0 + document.frm.JG33.value);
-        document.frm.JG34.value = parseFloat(0 + document.frm.JG34.value);
-        document.frm.JG35.value = parseFloat(0 + document.frm.JG35.value);
-        document.frm.JG36.value = parseFloat(0 + document.frm.JG36.value);
-
         var total01;
         var total02;
         var total03;
 
-        total01 = parseFloat(document.frm.JG11.value) + parseFloat(document.frm.JG12.value) + parseFloat(document.frm.JG13.value) + parseFloat(document.frm.JG14.value) + parseFloat(document.frm.JG15.value) + parseFloat(document.frm.JG16.value);
-        total02 = parseFloat(document.frm.JG21.value) + parseFloat(document.frm.JG22.value) + parseFloat(document.frm.JG23.value) + parseFloat(document.frm.JG24.value) + parseFloat(document.frm.JG25.value) + parseFloat(document.frm.JG26.value);
-        total03 = parseFloat(document.frm.JG31.value) + parseFloat(document.frm.JG32.value) + parseFloat(document.frm.JG33.value) + parseFloat(document.frm.JG34.value) + parseFloat(document.frm.JG35.value) + parseFloat(document.frm.JG36.value);
+        total01 = parseFloat(0 + document.frm.JG11.value) + parseFloat(0 + document.frm.JG12.value) + parseFloat(0 + document.frm.JG13.value) + parseFloat(0 + document.frm.JG14.value) + parseFloat(0 + document.frm.JG15.value) + parseFloat(0 + document.frm.JG16.value);
+        
+        total02 = parseFloat(0 + document.frm.JG21.value) + parseFloat(0 + document.frm.JG22.value) + parseFloat(0 + document.frm.JG23.value) + parseFloat(0 + document.frm.JG24.value) + parseFloat(0 + document.frm.JG25.value) + parseFloat(0 + document.frm.JG26.value);
+        
+        total03 = parseFloat(0 + document.frm.JG31.value) + parseFloat(0 + document.frm.JG32.value) + parseFloat(0 + document.frm.JG33.value) + parseFloat(0 + document.frm.JG34.value) + parseFloat(0 + document.frm.JG35.value) + parseFloat(0 + document.frm.JG36.value);
 
         document.frm.SOMA01.value = total01;
         document.frm.SOMA02.value = total02;
@@ -316,16 +334,70 @@
             document.frm.nr60.style.background = "#638cb5";
         }
     }         
+
+
+    // *********************************************************
+    // Se o texto tiver 1 carater concatena com 0 antes 
+    // *********************************************************
+    function tamanhoTexto(textoNum, nomeComp) {
+        if (textoNum.length == 1) {
+            if (nomeComp == "NE01") {
+                document.frm.NE01.value = "0" + document.frm.NE01.value;
+            }
+            if (nomeComp == "NE02") {
+                document.frm.NE02.value = "0" + document.frm.NE02.value;
+            }				
+            if (nomeComp == "NE03") {
+                document.frm.NE03.value = "0" + document.frm.NE03.value;
+            }
+            if (nomeComp == "NE04") {
+                document.frm.NE04.value = "0" + document.frm.NE04.value;
+            }
+            if (nomeComp == "NE05") {
+                document.frm.NE05.value = "0" + document.frm.NE05.value;
+            }
+            if (nomeComp == "NE06") {
+                document.frm.NE06.value = "0" + document.frm.NE06.value;
+            }
+            if (nomeComp == "NE07") {
+                document.frm.NE07.value = "0" + document.frm.NE07.value;
+            }
+            if (nomeComp == "NE08") {
+                document.frm.NE08.value = "0" + document.frm.NE08.value;
+            }
+            if (nomeComp == "NE09") {
+                document.frm.NE09.value = "0" + document.frm.NE09.value;
+            }
+        }
+    }
+
+
     
+    // *********************************************************   
+    // Ordena os numeros distribuidos nos jogos
+    // *********************************************************   
+    function ordenarArray() {
+		
+        var jogosArray01 = [document.frm.JG11.value, document.frm.JG12.value, document.frm.JG13.value, document.frm.JG14.value, document.frm.JG15.value, document.frm.JG16.value];     // OK 		
+        var jogosArray02 = [document.frm.JG21.value, document.frm.JG22.value, document.frm.JG23.value, document.frm.JG24.value, document.frm.JG25.value, document.frm.JG26.value];     // OK 		
+        var jogosArray03 = [document.frm.JG31.value, document.frm.JG32.value, document.frm.JG33.value, document.frm.JG34.value, document.frm.JG35.value, document.frm.JG36.value];     // OK 		
+            
+        escreveJogos = "\n" + jogosArray01.sort() + "\n" + jogosArray02.sort() + "\n" + jogosArray03.sort() + "\n\n"; 
+
+        /* Chama a função de mostraJogos */ 		
+        mostraJogos(escreveJogos); 
+        
+    }    
                                            
 </script>    
 </head>
 
 <body background="100reais1000dolares.jpg" bgcolor="#87CEEB">
-<center>
-<form name="frm">
-<br>
 
+<form name="frm">
+<center>
+    
+    <br>    
     <table border="2" style="background-color: #87CEEB;"> 
         <tr>
             <td colspan="9">
@@ -416,31 +488,31 @@
         </tr>
         <tr>
             <td align="center">
-                <input type="text" size="1" maxlength="2" name="NE01" style="font-size:25px; font-weight:bold; width:34px;" onblur="carregaNE01();soma();numero_escolhido(this.value);">	
+                <input type="text" size="1" maxlength="2" name="NE01" style="font-size:25px; font-weight:bold; width:34px;" onblur="tamanhoTexto(this.value, this.name);carregaNE01();soma();numero_escolhido(this.value);">	           
             </td>
             <td align="center">
-                <input type="text" size="3" maxlength="2" name="NE02" style="font-size:25px; font-weight:bold; width:34px;" onblur="carregaNE02();soma();numero_escolhido(this.value);">	
+                <input type="text" size="3" maxlength="2" name="NE02" style="font-size:25px; font-weight:bold; width:34px;" onblur="tamanhoTexto(this.value, this.name);carregaNE02();soma();numero_escolhido(this.value);">	
             </td>
             <td align="center">
-                <input type="text" size="3" maxlength="2" name="NE03" style="font-size:25px; font-weight:bold; width:34px;" onblur="carregaNE03();soma();numero_escolhido(this.value);">	
+                <input type="text" size="3" maxlength="2" name="NE03" style="font-size:25px; font-weight:bold; width:34px;" onblur="tamanhoTexto(this.value, this.name);carregaNE03();soma();numero_escolhido(this.value);">	
             </td>
             <td align="center">
-                <input type="text" size="3" maxlength="2" name="NE04" style="font-size:25px; font-weight:bold; width:34px;" onblur="carregaNE04();soma();numero_escolhido(this.value);">	
+                <input type="text" size="3" maxlength="2" name="NE04" style="font-size:25px; font-weight:bold; width:34px;" onblur="tamanhoTexto(this.value, this.name);carregaNE04();soma();numero_escolhido(this.value);">	
             </td>
             <td align="center">
-                <input type="text" size="3" maxlength="2" name="NE05" style="font-size:25px; font-weight:bold; width:34px;" onblur="carregaNE05();soma();numero_escolhido(this.value);">	
+                <input type="text" size="3" maxlength="2" name="NE05" style="font-size:25px; font-weight:bold; width:34px;" onblur="tamanhoTexto(this.value, this.name);carregaNE05();soma();numero_escolhido(this.value);">	
             </td>
             <td align="center">
-                <input type="text" size="3" maxlength="2" name="NE06" style="font-size:25px; font-weight:bold; width:34px;" onblur="carregaNE06();soma();numero_escolhido(this.value);">	
+                <input type="text" size="3" maxlength="2" name="NE06" style="font-size:25px; font-weight:bold; width:34px;" onblur="tamanhoTexto(this.value, this.name);carregaNE06();soma();numero_escolhido(this.value);">	
             </td>
             <td align="center">
-                <input type="text" size="3" maxlength="2" name="NE07" style="font-size:25px; font-weight:bold; width:34px;" onblur="carregaNE07();soma();numero_escolhido(this.value);">	
+                <input type="text" size="3" maxlength="2" name="NE07" style="font-size:25px; font-weight:bold; width:34px;" onblur="tamanhoTexto(this.value, this.name);carregaNE07();soma();numero_escolhido(this.value);">	
             </td>
             <td align="center">
-                <input type="text" size="3" maxlength="2" name="NE08" style="font-size:25px; font-weight:bold; width:34px;" onblur="carregaNE08();soma();numero_escolhido(this.value);">	
+                <input type="text" size="3" maxlength="2" name="NE08" style="font-size:25px; font-weight:bold; width:34px;" onblur="tamanhoTexto(this.value, this.name);carregaNE08();soma();numero_escolhido(this.value);">	
             </td>
             <td align="center">
-                <input type="text" size="3" maxlength="2" name="NE09" style="font-size:25px; font-weight:bold; width:34px;" onblur="carregaNE09();soma();numero_escolhido(this.value);">	
+                <input type="text" size="3" maxlength="2" name="NE09" style="font-size:25px; font-weight:bold; width:34px;" onblur="tamanhoTexto(this.value, this.name);carregaNE09();soma();numero_escolhido(this.value);">	
             </td>
 
         </tr>
@@ -542,7 +614,7 @@
 
     <table border="2" bgcolor="#87CEEB"> 
         <tr>
-            <td weight="40" height="40" rowspan="">
+            <td>
                 &nbsp;	
             </td>	    				
             <td align="center">
@@ -563,7 +635,7 @@
             <td align="center">
                 <b>Nr 6 </b> 		
             </td>
-            <td align="center">
+            <td align="center" bgcolor="orange">
                 <b>SOMA </b> 		
             </td>
             
@@ -573,26 +645,26 @@
             <td align="center">
                 <b>1º Jogo </b> 		
             </td>
-            <td weight="40" height="40">
-                <input type="text" size="1" maxlength="2" name="JG11" style="font-size:34px; font-weight:bold; width:45px;">	
+            <td>
+                <input type="text" size="1" maxlength="2" name="JG11"  style="font-size:20px; font-weight:bold; width:35px;">	
             </td>
-            <td weight="40" height="40">
-                <input type="text" size="1" maxlength="2" name="JG12" style="font-size:34px; font-weight:bold; width:45px;">
+            <td>
+                <input type="text" size="1" maxlength="2" name="JG12"  style="font-size:20px; font-weight:bold; width:35px;">
             </td>
-            <td weight="40" height="40">
-                <input type="text" size="1" maxlength="2" name="JG13" style="font-size:34px; font-weight:bold; width:45px;">   	
+            <td>
+                <input type="text" size="1" maxlength="2" name="JG13"  style="font-size:20px; font-weight:bold; width:35px;">   	
             </td>
-            <td weight="40" height="40">
-                <input type="text" size="1" maxlength="2" name="JG14" style="font-size:34px; font-weight:bold; width:45px;">    	
+            <td>
+                <input type="text" size="1" maxlength="2" name="JG14"  style="font-size:20px; font-weight:bold; width:35px;">    	
             </td>
-            <td weight="40" height="40">
-                <input type="text" size="1" maxlength="2" name="JG15" style="font-size:34px; font-weight:bold; width:45px;">   	
+            <td>
+                <input type="text" size="1" maxlength="2" name="JG15"  style="font-size:20px; font-weight:bold; width:35px;">   	
             </td>
-            <td weight="40" height="40">
-                <input type="text" size="1" maxlength="2" name="JG16" style="font-size:34px; font-weight:bold; width:45px;">   	
+            <td>
+                <input type="text" size="1" maxlength="2" name="JG16"  style="font-size:20px; font-weight:bold; width:35px;">   	
             </td>
-            <td weight="40" height="40">
-                <input type="text" size="1" maxlength="2" name="SOMA01" style="font-size:30px; font-weight:bold; width:60px; background-color: orange;" value="0">   	
+            <td>
+                <input type="text" size="1" maxlength="2" name="SOMA01" style="font-size:20px; font-weight:bold; width:60px; background-color: orange;" value="0">   	
             </td>
         </tr>
 
@@ -600,26 +672,26 @@
             <td align="center">
                 <b>2º Jogo </b> 		
             </td>
-            <td weight="40" height="40">
-                <input type="text" size="1" maxlength="2" name="JG21" style="font-size:34px; font-weight:bold; width:45px;">
+            <td>
+                <input type="text" size="1" maxlength="2" name="JG21"  style="font-size:20px; font-weight:bold; width:35px;">
             </td>
-            <td weight="40" height="40">
-                <input type="text" size="1" maxlength="2" name="JG22" style="font-size:34px; font-weight:bold; width:45px;">
+            <td>
+                <input type="text" size="1" maxlength="2" name="JG22"  style="font-size:20px; font-weight:bold; width:35px;">
             </td>
-            <td weight="40" height="40">
-                <input type="text" size="1" maxlength="2" name="JG23" style="font-size:34px; font-weight:bold; width:45px;">
+            <td>
+                <input type="text" size="1" maxlength="2" name="JG23"  style="font-size:20px; font-weight:bold; width:35px;">
             </td>
-            <td weight="40" height="40">
-                <input type="text" size="1" maxlength="2" name="JG24" style="font-size:34px; font-weight:bold; width:45px;">
+            <td>
+                <input type="text" size="1" maxlength="2" name="JG24"  style="font-size:20px; font-weight:bold; width:35px;">
             </td>
-            <td weight="40" height="40">
-                <input type="text" size="1" maxlength="2" name="JG25" style="font-size:34px; font-weight:bold; width:45px;">
+            <td>
+                <input type="text" size="1" maxlength="2" name="JG25"  style="font-size:20px; font-weight:bold; width:35px;">
             </td>
-            <td weight="40" height="40">
-                <input type="text" size="1" maxlength="2" name="JG26" style="font-size:34px; font-weight:bold; width:45px;">
+            <td>
+                <input type="text" size="1" maxlength="2" name="JG26"  style="font-size:20px; font-weight:bold; width:35px;">
             </td>
-            <td weight="40" height="40">
-                <input type="text" size="1" maxlength="2" name="SOMA02" style="font-size:30px; font-weight:bold; width:60px; background-color: orange;" value="0">
+            <td>
+                <input type="text" size="1" maxlength="2" name="SOMA02" style="font-size:20px; font-weight:bold; width:60px; background-color: orange;" value="0">
             </td>
         </tr>
         
@@ -627,30 +699,57 @@
             <td align="center">
                 <b>3º Jogo </b> 		
             </td>
-            <td weight="40" height="40">
-                <input type="text" size="1" maxlength="2" name="JG31" style="font-size:34px; font-weight:bold; width:45px;">
+            <td>
+                <input type="text" size="1" maxlength="2" name="JG31"  style="font-size:20px; font-weight:bold; width:35px;">
             </td>
-            <td weight="40" height="40">
-                <input type="text" size="1" maxlength="2" name="JG32" style="font-size:34px; font-weight:bold; width:45px;">
+            <td>
+                <input type="text" size="1" maxlength="2" name="JG32"  style="font-size:20px; font-weight:bold; width:35px;">
             </td>
-            <td weight="40" height="40">
-                <input type="text" size="1" maxlength="2" name="JG33" style="font-size:34px; font-weight:bold; width:45px;">
+            <td>
+                <input type="text" size="1" maxlength="2" name="JG33"  style="font-size:20px; font-weight:bold; width:35px;">
             </td>
-            <td weight="40" height="40">
-                <input type="text" size="1" maxlength="2" name="JG34" style="font-size:34px; font-weight:bold; width:45px;">
+            <td>
+                <input type="text" size="1" maxlength="2" name="JG34"  style="font-size:20px; font-weight:bold; width:35px;">
             </td>
-            <td weight="40" height="40">
-                <input type="text" size="1" maxlength="2" name="JG35" style="font-size:34px; font-weight:bold; width:45px;">
+            <td>
+                <input type="text" size="1" maxlength="2" name="JG35"  style="font-size:20px; font-weight:bold; width:35px;">
             </td>
-            <td weight="40" height="40">
-                <input type="text" size="1" maxlength="2" name="JG36" style="font-size:34px; font-weight:bold; width:45px;">
-            </td>
-
-            <td weight="40" height="40">
-                <input type="text" size="1" maxlength="2" name="SOMA03" style="font-size:30px; font-weight:bold; width:60px; background-color: orange;" value="0">
+            <td>
+                <input type="text" size="1" maxlength="2" name="JG36"  style="font-size:20px; font-weight:bold; width:35px;">
             </td>
 
-        </tr>	    	
+            <td>
+                <input type="text" size="1" maxlength="2" name="SOMA03" style="font-size:20px; font-weight:bold; width:60px; background-color: orange;" value="0">
+            </td>
+
+        </tr>	
+        <tr>
+            <td>
+                &nbsp;	
+            </td>	    				
+            <td align="center">
+                <b>Nr 1 </b> 		
+            </td>
+            <td align="center">
+                <b>Nr 2 </b> 		
+            </td>
+            <td align="center">
+                <b>Nr 3 </b> 		
+            </td>
+            <td align="center">
+                <b>Nr 4 </b> 		
+            </td>
+            <td align="center">
+                <b>Nr 5 </b> 		
+            </td>
+            <td align="center">
+                <b>Nr 6 </b> 		
+            </td>
+            <td align="center" bgcolor="orange">
+                <b>SOMA </b> 		
+            </td>
+            
+        </tr>            	
     </table>  
 
     <div style="filter: alpha(opacity=40); font-size: 12px;">   
@@ -661,9 +760,36 @@
         <b style="color:MidnightBlue;">QUINA = O NÚMERO BALANCEADO É O 195, JÁ QUE 6/80 = 5 * 39 = 195. </b> <br>
         <b>UMA MÉDIA DE +30 OU -30, QUE DÁ 60 DE INTERVALO É UMA BOA SOMA.</b> <br>
         <b>PROGRAMA DESENVOVIDO POR : JOSÉ CHARLES</b> <br>
+
+        <br> 
+        <b>                        
+            <a href="index.html">
+            Retornar à Página Inicial
+            </a>
+        </b>        
     </div>   
 
-    </center> 
+    <table>
+		<tr>
+			<td align="center">
+				<input id="myBtn" type="button" name="ordenar"  value=" Ordenar Jogos " onclick="ordenarArray()"/>&nbsp;
+		    </td>	
+		</tr>	
+    </table>    
+
+    <br>
+	<!-- The Modal -->
+	<div id="myModal" class="modal" style="background-color: bisque;">  
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times; </span>
+			<p id="ordem"></p>
+		</div>
+
+	</div> 
+
+</center> 
 
 </form>   
     
