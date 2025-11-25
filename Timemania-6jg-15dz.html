@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+      <title>Timemania - 6 Jogos - 15 Dezenas</title>
+      <script language="javascript">
+  
+          // *********************************************************
+          // Carrega os campos de soma de cada cartela
+          // *********************************************************
+          function soma() {
+              // Campos do primeiro jogo
+              document.frm.JG0101.value = parseFloat(0 + document.frm.JG0101.value);
+              document.frm.JG0102.value = parseFloat(0 + document.frm.JG0102.value);
+              document.frm.JG0103.value = parseFloat(0 + document.frm.JG0103.value);
+              document.frm.JG0104.value = parseFloat(0 + document.frm.JG0104.value);
+              document.frm.JG0105.value = parseFloat(0 + document.frm.JG0105.value);                        
+              document.frm.JG0106.value = parseFloat(0 + document.frm.JG0106.value);                        
+              document.frm.JG0107.value = parseFloat(0 + document.frm.JG0107.value);                                            
+              document.frm.JG0108.value = parseFloat(0 + document.frm.JG0108.value);                                            
+              document.frm.JG0109.value = parseFloat(0 + document.frm.JG0109.value);                                            
+              document.frm.JG0110.value = parseFloat(0 + document.frm.JG0110.value);                                            
+  
+              // Campos do segundo jogo
+              document.frm.JG0201.value = parseFloat(0 + document.frm.JG0201.value);
+              document.frm.JG0202.value = parseFloat(0 + document.frm.JG0202.value);  
+              document.frm.JG0203.value = parseFloat(0 + document.frm.JG0203.value);  
+              document.frm.JG0204.value = parseFloat(0 + document.frm.JG0204.value);  
+              document.frm.JG0205.value = parseFloat(0 + document.frm.JG0205.value);  
+              document.frm.JG0206.value = parseFloat(0 + document.frm.JG0206.value);  
+              document.frm.JG0207.value = parseFloat(0 + document.frm.JG0207.value);  
+              document.frm.JG0208.value = parseFloat(0 + document.frm.JG0208.value);  
+              document.frm.JG0209.value = parseFloat(0 + document.frm.JG0209.value);  
+              document.frm.JG0210.value = parseFloat(0 + document.frm.JG0210.value);  
+  
+              // Campos do terceiro jogo
+              document.frm.JG0301.value = parseFloat(0 + document.frm.JG0301.value);
+              document.frm.JG0302.value = parseFloat(0 + document.frm.JG0302.value);
+              document.frm.JG0303.value = parseFloat(0 + document.frm.JG0303.value);
+              document.frm.JG0304.value = parseFloat(0 + document.frm.JG0304.value);
+              document.frm.JG0305.value = parseFloat(0 + document.frm.JG0305.value);
+              document.frm.JG0306.value = parseFloat(0 + document.frm.JG0306.value);
+              document.frm.JG0307.value = parseFloat(0 + document.frm.JG0307.value);
+              document.frm.JG0308.value = parseFloat(0 + document.frm.JG0308.value);
+              document.frm.JG0309.value = parseFloat(0 + document.frm.JG0309.value);
+              document.frm.JG0310.value = parseFloat(0 + document.frm.JG0310.value);
+  
+              // Campos do quarto jogo
+              document.frm.JG0401.value = parseFloat(0 + document.frm.JG0401.value);
+              document.frm.JG0402.value = parseFloat(0 + document.frm.JG0402.value);
+              document.frm.JG0403.value = parseFloat(0 + document.frm.JG0403.value);
+              document.frm.JG0404.value = parseFloat(0 + document.frm.JG0404.value);
+              document.frm.JG0405.value = parseFloat(0 + document.frm.JG0405.value);
+              document.frm.JG0406.value = parseFloat(0 + document.frm.JG0406.value);
+              document.frm.JG0407.value = parseFloat(0 + document.frm.JG0407.value);
+              document.frm.JG0408.value = parseFloat(0 + document.frm.JG0408.value);
+              document.frm.JG0409.value = parseFloat(0 + document.frm.JG0409.value);
+              document.frm.JG0410.value = parseFloat(0 + document.frm.JG0410.value);
+  
+              // Campos do quinto jogo
+              document.frm.JG0501.value = parseFloat(0 + document.frm.JG0501.value);
+              document.frm.JG0502.value = parseFloat(0 + document.frm.JG0502.value);
+              document.frm.JG0503.value = parseFloat(0 + document.frm.JG0503.value);
+              document.frm.JG0504.value = parseFloat(0 + document.frm.JG0504.value);
+              document.frm.JG0505.value = parseFloat(0 + document.frm.JG0505.value);
+              document.frm.JG0506.value = parseFloat(0 + document.frm.JG0506.value);
+              document.frm.JG0507.value = parseFloat(0 + document.frm.JG0507.value);
+              document.frm.JG0508.value = parseFloat(0 + document.frm.JG0508.value);
+              document.frm.JG0509.value = parseFloat(0 + document.frm.JG0509.value);
+              document.frm.JG0510.value = parseFloat(0 + document.frm.JG0510.value);
+  
+              // Campos do sexto jogo
+              document.frm.JG0601.value = parseFloat(0 + document.frm.JG0601.value);
+              document.frm.JG0602.value = parseFloat(0 + document.frm.JG0602.value);
+              document.frm.JG0603.value = parseFloat(0 + document.frm.JG0603.value);
+              document.frm.JG0604.value = parseFloat(0 + document.frm.JG0604.value);
+              document.frm.JG0605.value = parseFloat(0 + document.frm.JG0605.value);
+              document.frm.JG0606.value = parseFloat(0 + document.frm.JG0606.value);
+              document.frm.JG0607.value = parseFloat(0 + document.frm.JG0607.value);
+              document.frm.JG0608.value = parseFloat(0 + document.frm.JG0608.value);
+              document.frm.JG0609.value = parseFloat(0 + document.frm.JG0609.value);
+              document.frm.JG0610.value = parseFloat(0 + document.frm.JG0610.value);
+  
+
+              var total01;
+              var total02;
+              var total03;
+              var total04;
+              var total05;  
+              var total06;
+  
+              total01 = parseFloat(document.frm.JG0101.value) + parseFloat(document.frm.JG0102.value) + parseFloat(document.frm.JG0103.value) + parseFloat(document.frm.JG0104.value) + parseFloat(document.frm.JG0105.value) + parseFloat(document.frm.JG0106.value) + parseFloat(document.frm.JG0107.value) + parseFloat(document.frm.JG0108.value) + parseFloat(document.frm.JG0109.value) + parseFloat(document.frm.JG0110.value);
+              total02 = parseFloat(document.frm.JG0201.value) + parseFloat(document.frm.JG0202.value) + parseFloat(document.frm.JG0203.value) + parseFloat(document.frm.JG0204.value) + parseFloat(document.frm.JG0205.value) + parseFloat(document.frm.JG0206.value) + parseFloat(document.frm.JG0207.value) + parseFloat(document.frm.JG0208.value) + parseFloat(document.frm.JG0209.value) + parseFloat(document.frm.JG0210.value);
+              total03 = parseFloat(document.frm.JG0301.value) + parseFloat(document.frm.JG0302.value) + parseFloat(document.frm.JG0303.value) + parseFloat(document.frm.JG0304.value) + parseFloat(document.frm.JG0305.value) + parseFloat(document.frm.JG0306.value) + parseFloat(document.frm.JG0307.value) + parseFloat(document.frm.JG0308.value) + parseFloat(document.frm.JG0309.value) + parseFloat(document.frm.JG0310.value);
+              total04 = parseFloat(document.frm.JG0401.value) + parseFloat(document.frm.JG0402.value) + parseFloat(document.frm.JG0403.value) + parseFloat(document.frm.JG0404.value) + parseFloat(document.frm.JG0405.value) + parseFloat(document.frm.JG0406.value) + parseFloat(document.frm.JG0407.value) + parseFloat(document.frm.JG0408.value) + parseFloat(document.frm.JG0409.value) + parseFloat(document.frm.JG0410.value);
+              total05 = parseFloat(document.frm.JG0501.value) + parseFloat(document.frm.JG0502.value) + parseFloat(document.frm.JG0503.value) + parseFloat(document.frm.JG0504.value) + parseFloat(document.frm.JG0505.value) + parseFloat(document.frm.JG0506.value) + parseFloat(document.frm.JG0507.value) + parseFloat(document.frm.JG0508.value) + parseFloat(document.frm.JG0509.value) + parseFloat(document.frm.JG0510.value);
+  
+              total06 = parseFloat(document.frm.JG0601.value) + parseFloat(document.frm.JG0602.value) + parseFloat(document.frm.JG0603.value) + parseFloat(document.frm.JG0604.value) + parseFloat(document.frm.JG0605.value) + parseFloat(document.frm.JG0606.value) + parseFloat(document.frm.JG0607.value) + parseFloat(document.frm.JG0608.value) + parseFloat(document.frm.JG0609.value) + parseFloat(document.frm.JG0610.value);
+  
+              document.frm.SOMA01.value = total01;
+              document.frm.SOMA02.value = total02;
+              document.frm.SOMA03.value = total03;
+              document.frm.SOMA04.value = total04;
+              document.frm.SOMA05.value = total05;
+  
+              document.frm.SOMA06.value = total06;
+        
+          }
+  
+  
+          // *********************************************************
+          // Carrega o Primeiro Número NE01 nos campos JG11, JG21 e JG31
+          // *********************************************************
+          function carregaNE01() {
+              document.frm.JG0101.value = document.frm.NE01.value;
+              document.frm.JG0405.value = document.frm.NE01.value;
+              document.frm.JG0501.value = document.frm.NE01.value;
+              document.frm.JG0601.value = document.frm.NE01.value;
+          }
+  
+          // *********************************************************
+          // Carrega o Primeiro Número NE02 nos campos
+          // *********************************************************
+          function carregaNE02() {
+              document.frm.JG0102.value = document.frm.NE02.value;
+              document.frm.JG0201.value = document.frm.NE02.value;
+              document.frm.JG0502.value = document.frm.NE02.value;
+              document.frm.JG0602.value = document.frm.NE02.value; 
+          }
+  
+          // *********************************************************
+          // Carrega o Primeiro Número NE03 nos campos 
+          // *********************************************************
+          function carregaNE03() {
+              document.frm.JG0103.value = document.frm.NE03.value;
+              document.frm.JG0202.value = document.frm.NE03.value;
+              document.frm.JG0301.value = document.frm.NE03.value;
+              document.frm.JG0503.value = document.frm.NE03.value;
+              document.frm.JG0603.value = document.frm.NE03.value;
+          }
+  
+          // *********************************************************
+          // Carrega o Primeiro Número NE04 nos campos
+          // *********************************************************
+          function carregaNE04() {
+              document.frm.JG0104.value = document.frm.NE04.value;
+              document.frm.JG0203.value = document.frm.NE04.value;
+              document.frm.JG0302.value = document.frm.NE04.value;
+              document.frm.JG0401.value = document.frm.NE04.value;
+              document.frm.JG0604.value = document.frm.NE04.value;
+          }
+  
+          // *********************************************************
+          // Carrega o Primeiro Número NE05 nos campos 
+          // *********************************************************
+          function carregaNE05() {
+              document.frm.JG0105.value = document.frm.NE05.value;
+              document.frm.JG0204.value = document.frm.NE05.value;
+              document.frm.JG0303.value = document.frm.NE05.value;
+              document.frm.JG0402.value = document.frm.NE05.value;		
+          }
+  
+          // *********************************************************
+          // Carrega o Primeiro Número NE06 nos campos
+          // *********************************************************
+          function carregaNE06() {
+              document.frm.JG0205.value = document.frm.NE06.value;
+              document.frm.JG0304.value = document.frm.NE06.value;
+              document.frm.JG0403.value = document.frm.NE06.value;
+              document.frm.JG0505.value = document.frm.NE06.value;
+          }
+  
+          // *********************************************************
+          // Carrega o Primeiro Número NE06 nos campos
+          // *********************************************************
+          function carregaNE07() {
+              document.frm.JG0305.value = document.frm.NE07.value;
+              document.frm.JG0404.value = document.frm.NE07.value;
+              document.frm.JG0504.value = document.frm.NE07.value;
+              document.frm.JG0605.value = document.frm.NE07.value;
+          }
+  
+          // *********************************************************
+          // Carrega o Primeiro Número NE08 nos campos
+          // *********************************************************
+          function carregaNE08() {
+              document.frm.JG0106.value = document.frm.NE08.value;
+              document.frm.JG0510.value = document.frm.NE08.value;
+              document.frm.JG0606.value = document.frm.NE08.value;
+          }
+  
+          // *********************************************************
+          // Carrega o Primeiro Número NE09 nos campos
+          // *********************************************************
+          function carregaNE09() {
+              document.frm.JG0107.value = document.frm.NE09.value;
+              document.frm.JG0206.value = document.frm.NE09.value;
+              document.frm.JG0506.value = document.frm.NE09.value;
+              document.frm.JG0607.value = document.frm.NE09.value;
+          }
+  
+          // *********************************************************
+          // Carrega o Primeiro Número NE10 nos campos
+          // *********************************************************
+          function carregaNE10() {	
+              document.frm.JG0108.value = document.frm.NE10.value;
+              document.frm.JG0207.value = document.frm.NE10.value;
+              document.frm.JG0306.value = document.frm.NE10.value;
+              document.frm.JG0609.value = document.frm.NE10.value;
+          }
+  
+          // *********************************************************
+          // Carrega o Primeiro Número NE11 nos campos JG35, JG55 e JG65
+          // *********************************************************
+          function carregaNE11() {
+              document.frm.JG0109.value = document.frm.NE11.value;
+              document.frm.JG0208.value = document.frm.NE11.value;
+              document.frm.JG0307.value = document.frm.NE11.value;
+              document.frm.JG0406.value = document.frm.NE11.value;					
+          }
+  
+          // *********************************************************
+          // Carrega o Primeiro Número NE12 nos campos 
+          // *********************************************************
+          function carregaNE12() {
+              document.frm.JG0110.value = document.frm.NE12.value;
+              document.frm.JG0209.value = document.frm.NE12.value;
+              document.frm.JG0308.value = document.frm.NE12.value;
+              document.frm.JG0407.value = document.frm.NE12.value; 		
+          }
+  
+          // *********************************************************
+          // Carrega o Primeiro Número NE13 nos campos 
+          // *********************************************************
+          function carregaNE13() {
+              document.frm.JG0210.value = document.frm.NE13.value;
+              document.frm.JG0309.value = document.frm.NE13.value;
+              document.frm.JG0408.value = document.frm.NE13.value;
+              document.frm.JG0507.value = document.frm.NE13.value;
+          }
+  
+          // *********************************************************
+          // Carrega o Primeiro Número NE14 nos campos 
+          // *********************************************************
+          function carregaNE14() {
+              document.frm.JG0310.value = document.frm.NE14.value;
+              document.frm.JG0409.value = document.frm.NE14.value;
+              document.frm.JG0508.value = document.frm.NE14.value;
+              document.frm.JG0610.value = document.frm.NE14.value;
+          }
+  
+          // *********************************************************
+          // Carrega o Primeiro Número NE15 nos campos JG36, JG56 e JG66
+          // *********************************************************
+          function carregaNE15() {
+              document.frm.JG0410.value = document.frm.NE15.value;
+              document.frm.JG0509.value = document.frm.NE15.value;
+              document.frm.JG0608.value = document.frm.NE15.value;
+          }
+  
+       
+          // *********************************************************
+          // Muda a cor do botºo igual ao numero digitado 
+          // *********************************************************
+          function numero_escolhido(nr) {
+              if (1 == nr) {
+                  document.frm.nr01.style.background = "#638cb5";
+              }
+              if (2 == nr) {
+                  document.frm.nr02.style.background = "#638cb5";
+              }
+              if (3 == nr) {
+                  document.frm.nr03.style.background = "#638cb5";
+              }
+              if (4 == nr) {
+                  document.frm.nr04.style.background = "#638cb5";
+              }
+              if (5 == nr) {
+                  document.frm.nr05.style.background = "#638cb5";
+              }
+  
+  
+              if (6 == nr) {
+                  document.frm.nr06.style.background = "#638cb5";
+              }
+              if (7 == nr) {
+                  document.frm.nr07.style.background = "#638cb5";
+              }
+              if (8 == nr) {
+                  document.frm.nr08.style.background = "#638cb5";
+              }
+              if (9 == nr) {
+                  document.frm.nr09.style.background = "#638cb5";
+              }
+              if (10 == nr) {
+                  document.frm.nr10.style.background = "#638cb5";
+              }
+   
+  
+              if (11 == nr) {
+                  document.frm.nr11.style.background = "#638cb5";
+              }
+              if (12 == nr) {
+                  document.frm.nr12.style.background = "#638cb5";
+              }
+              if (13 == nr) {
+                  document.frm.nr13.style.background = "#638cb5";
+              }
+              if (14 == nr) {
+                  document.frm.nr14.style.background = "#638cb5";
+              }
+              if (15 == nr) {
+                  document.frm.nr15.style.background = "#638cb5";
+              }
+  
+  
+              if (16 == nr) {
+                  document.frm.nr16.style.background = "#638cb5";
+              }
+              if (17 == nr) {
+                  document.frm.nr17.style.background = "#638cb5";
+              }
+              if (18 == nr) {
+                  document.frm.nr18.style.background = "#638cb5";
+              }
+              if (19 == nr) {
+                  document.frm.nr19.style.background = "#638cb5";
+              }
+              if (20 == nr) {
+                  document.frm.nr20.style.background = "#638cb5";
+              }
+  
+  
+              if (21 == nr) {
+                  document.frm.nr21.style.background = "#638cb5";
+              }
+              if (22 == nr) {
+                  document.frm.nr22.style.background = "#638cb5";
+              }
+              if (23 == nr) {
+                  document.frm.nr23.style.background = "#638cb5";
+              }
+              if (24 == nr) {
+                  document.frm.nr24.style.background = "#638cb5";
+              }
+              if (25 == nr) {
+                  document.frm.nr25.style.background = "#638cb5";
+              }	
+        
+              if (26 == nr) {
+                  document.frm.nr26.style.background = "#638cb5";
+              }
+              if (27 == nr) {
+                  document.frm.nr27.style.background = "#638cb5";
+              }
+              if (28 == nr) {
+                  document.frm.nr28.style.background = "#638cb5";
+              }
+              if (29 == nr) {
+                  document.frm.nr29.style.background = "#638cb5";
+              }
+              if (30 == nr) {
+                  document.frm.nr30.style.background = "#638cb5";
+              }
+  
+        /*   	MARCA AS DEZENAS ESCOLHIDAS DE 31 A 40  	*/			
+              if (31 == nr) {
+                  document.frm.nr31.style.background = "#638cb5";
+              }			
+              if (32 == nr) {
+                  document.frm.nr32.style.background = "#638cb5";
+              }
+              if (33 == nr) {
+                  document.frm.nr33.style.background = "#638cb5";
+              }
+              if (34 == nr) {
+                  document.frm.nr34.style.background = "#638cb5";
+              }
+              if (35 == nr) {
+                  document.frm.nr35.style.background = "#638cb5";
+              }	
+        
+              if (36 == nr) {
+                  document.frm.nr36.style.background = "#638cb5";
+              }
+              if (37 == nr) {
+                  document.frm.nr37.style.background = "#638cb5";
+              }
+              if (38 == nr) {
+                  document.frm.nr38.style.background = "#638cb5";
+              }
+              if (39 == nr) {
+                  document.frm.nr39.style.background = "#638cb5";
+              }
+              if (40 == nr) {
+                  document.frm.nr40.style.background = "#638cb5";
+              }                                         
+  
+        /*   	MARCA AS DEZENAS ESCOLHIDAS DE 41 A 50  	*/			
+              if (41 == nr) {
+                  document.frm.nr41.style.background = "#638cb5";
+              }			
+              if (42 == nr) {
+                  document.frm.nr42.style.background = "#638cb5";
+              }
+              if (43 == nr) {
+                  document.frm.nr43.style.background = "#638cb5";
+              }
+              if (44 == nr) {
+                  document.frm.nr44.style.background = "#638cb5";
+              }
+              if (45 == nr) {
+                  document.frm.nr45.style.background = "#638cb5";
+              }	
+        
+              if (46 == nr) {
+                  document.frm.nr46.style.background = "#638cb5";
+              }
+              if (47 == nr) {
+                  document.frm.nr47.style.background = "#638cb5";
+              }
+              if (48 == nr) {
+                  document.frm.nr48.style.background = "#638cb5";
+              }
+              if (49 == nr) {
+                  document.frm.nr49.style.background = "#638cb5";
+              }
+              if (50 == nr) {
+                  document.frm.nr50.style.background = "#638cb5";
+              }                                         
+  
+        /*   	MARCA AS DEZENAS ESCOLHIDAS DE 51 A 60  	*/			
+              if (51 == nr) {
+                  document.frm.nr51.style.background = "#638cb5";
+              }			
+              if (52 == nr) {
+                  document.frm.nr52.style.background = "#638cb5";
+              }
+              if (53 == nr) {
+                  document.frm.nr53.style.background = "#638cb5";
+              }
+              if (54 == nr) {
+                  document.frm.nr54.style.background = "#638cb5";
+              }
+              if (55 == nr) {
+                  document.frm.nr55.style.background = "#638cb5";
+              }	
+        
+              if (56 == nr) {
+                  document.frm.nr56.style.background = "#638cb5";
+              }
+              if (57 == nr) {
+                  document.frm.nr57.style.background = "#638cb5";
+              }
+              if (58 == nr) {
+                  document.frm.nr58.style.background = "#638cb5";
+              }
+              if (59 == nr) {
+                  document.frm.nr59.style.background = "#638cb5";
+              }
+              if (60 == nr) {
+                  document.frm.nr60.style.background = "#638cb5";
+              }                                         
+  
+        /*   	MARCA AS DEZENAS ESCOLHIDAS DE 61 A 70  	*/			
+              if (61 == nr) {
+                  document.frm.nr61.style.background = "#638cb5";
+              }			
+              if (62 == nr) {
+                  document.frm.nr62.style.background = "#638cb5";
+              }
+              if (63 == nr) {
+                  document.frm.nr63.style.background = "#638cb5";
+              }
+              if (64 == nr) {
+                  document.frm.nr64.style.background = "#638cb5";
+              }
+              if (65 == nr) {
+                  document.frm.nr65.style.background = "#638cb5";
+              }	
+        
+              if (66 == nr) {
+                  document.frm.nr66.style.background = "#638cb5";
+              }
+              if (67 == nr) {
+                  document.frm.nr67.style.background = "#638cb5";
+              }
+              if (68 == nr) {
+                  document.frm.nr68.style.background = "#638cb5";
+              }
+              if (69 == nr) {
+                  document.frm.nr69.style.background = "#638cb5";
+              }
+              if (70 == nr) {
+                  document.frm.nr70.style.background = "#638cb5";
+              }                                         
+  
+        /*   	MARCA AS DEZENAS ESCOLHIDAS DE 71 A 80  	*/			
+              if (71 == nr) {
+                  document.frm.nr71.style.background = "#638cb5";
+              }			
+              if (72 == nr) {
+                  document.frm.nr72.style.background = "#638cb5";
+              }
+              if (73 == nr) {
+                  document.frm.nr73.style.background = "#638cb5";
+              }
+              if (74 == nr) {
+                  document.frm.nr74.style.background = "#638cb5";
+              }
+              if (75 == nr) {
+                  document.frm.nr75.style.background = "#638cb5";
+              }	
+        
+              if (76 == nr) {
+                  document.frm.nr76.style.background = "#638cb5";
+              }
+              if (77 == nr) {
+                  document.frm.nr77.style.background = "#638cb5";
+              }
+              if (78 == nr) {
+                  document.frm.nr78.style.background = "#638cb5";
+              }
+              if (79 == nr) {
+                  document.frm.nr79.style.background = "#638cb5";
+              }
+              if (80 == nr) {
+                  document.frm.nr80.style.background = "#638cb5";
+              }    
+  
+      }                                         
+      </script> 
+  <style type="text/css">
+  .botao{
+     font-size:10px;
+     font-family:Verdana,Helvetica;
+     font-weight:bold;
+     color:red;
+     background:#638cb5;
+     border:0px;
+     width:80px;
+     height:19px;
+  }
+  </style>   
+  </head>
+  
+  <body background="100reais1000dolares.jpg">
+  
+  <center>
+  <form name="frm">
+      <br>
+   
+      <table border="2" bgcolor="#87CEEB"> 
+          <tr>
+            <td colspan="15" align="center">
+              <center>
+                    <b>10 JOGOS DA TIMEMANIA - OBJETIVANDO O ACERTO DO 3º E 2º PRÊMIOS <br> SE OS 7 NÚMEROS SORTEADOS ESTIVEREM ENTRE OS 15 COMBINADOS</b> 		
+              </center>
+            </td>		    		    
+          </tr>
+          <tr>
+            <td colspan="15">
+                    <hr size="3" color="black"/>
+            </td>
+          </tr>    
+          <tr>
+              <td align="center" colspan="5">
+                <b>TIPO DE JOGO :</b> <br>
+                <select name="TIPO">
+                  <option value="0"> TIMEMANIA </option>
+                </select>
+              </td>
+              <td align="center"  colspan="5">
+                  <b>CONCURSO N. : </b> <br>		
+                  <input type="text" size="20" maxlength="20" name="CONCNR">
+              </td>
+              <td align="center" colspan="5">
+                  <b>DATA DO CONC.: </b> <br>		
+                  <input type="text" size="20" maxlength="20" name="DTCONC">	
+              </td>
+          </tr>
+        <tr>
+          <td colspan="15">
+                  <hr size="3" color="black"/>
+          </td>
+        </tr>
+          <tr>				
+          <td align="center" colspan="15">
+            <b>DEZENAS DA 1ª A 20ª - REPETEM 5 VEZES CADA DEZENA</b>
+          </td>			
+        </tr>
+        <tr>				
+  
+          <td align="center">
+              <b>01º</b>
+          </td>
+          <td align="center">
+              <b>02º</b>
+          </td>	    
+          <td align="center">
+              <b>03º</b>
+          </td>
+          <td align="center">
+              <b>04º</b>
+          </td>
+          <td align="center">
+              <b>05º</b>
+          </td>
+          <td align="center">
+              <b>06º</b>
+          </td>		    
+          <td align="center">
+              <b>07º</b>
+          </td>
+          <td align="center">
+              <b>08º</b>
+          </td>		    
+          <td align="center">
+              <b>09º</b>
+          </td>
+          <td align="center">
+              <b>10º</b>
+          </td>
+          <td align="center">
+              <b>11º</b>
+          </td>
+          <td align="center">
+              <b>12º</b>
+          </td>	    
+          <td align="center">
+              <b>13º</b>
+          </td>
+          <td align="center">
+              <b>14º</b>
+          </td>
+          <td align="center">
+              <b>15º</b>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="15">
+            <hr size="3" color="black"/>
+          </td>
+        </tr>
+        <tr>				
+          <td >
+              <input type="text" size="1" maxlength="2" name="NE01" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE01();soma();numero_escolhido(this.value);">	
+          </td>
+          <td>
+              <input type="text" size="3" maxlength="2" name="NE02" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE02();soma();numero_escolhido(this.value);">	
+          </td>
+          <td>
+              <input type="text" size="3" maxlength="2" name="NE03" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE03();numero_escolhido(this.value);soma();">	
+          </td>
+          <td>
+              <input type="text" size="3" maxlength="2" name="NE04" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE04();numero_escolhido(this.value);soma();">	
+          </td>
+          <td>
+              <input type="text" size="3" maxlength="2" name="NE05" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE05();numero_escolhido(this.value);soma();">	
+          </td>
+          <td>
+              <input type="text" size="3" maxlength="2" name="NE06" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE06();numero_escolhido(this.value);soma();">	
+          </td>
+          <td>
+              <input type="text" size="3" maxlength="2" name="NE07" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE07();numero_escolhido(this.value);soma();">	
+          </td>
+          <td>
+              <input type="text" size="3" maxlength="2" name="NE08" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE08();numero_escolhido(this.value);soma();">	
+          </td>
+          <td>
+              <input type="text" size="3" maxlength="2" name="NE09" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE09();numero_escolhido(this.value);soma();">	
+          </td>
+          <td>
+              <input type="text" size="3" maxlength="2" name="NE10" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE10();numero_escolhido(this.value);soma();">	
+          </td>
+          <td>
+              <input type="text" size="3" maxlength="2" name="NE11" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE11();numero_escolhido(this.value);soma();">	
+          </td>
+          <td>
+              <input type="text" size="3" maxlength="2" name="NE12" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE12();numero_escolhido(this.value);soma();">	
+          </td>
+          <td>
+              <input type="text" size="1" maxlength="2" name="NE13" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE13();numero_escolhido(this.value);soma();">	
+          </td>
+          <td>
+              <input type="text" size="3" maxlength="2" name="NE14" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE14();numero_escolhido(this.value);soma();">	
+          </td>
+          <td>
+              <input type="text" size="3" maxlength="2" name="NE15" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE15();numero_escolhido(this.value);soma();">	
+          </td>
+
+      </tr>
+    </table>
+    <br>
+      <table>
+        <tr>
+          <td colspan="10">&nbsp;&nbsp;
+                  <input type="button" name="nr01"  value="01" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr02"  value="02" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr03"  value="03" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr04"  value="04" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr05"  value="05" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+  
+                  <input type="button" name="nr06"  value="06" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr07"  value="07" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr08"  value="08" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr09"  value="09" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr10"  value="10" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+              </td>
+        </tr>		
+        <tr>
+          <td colspan="10">&nbsp;&nbsp;
+                  <input type="button" name="nr11"  value="11" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr12"  value="12" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr13"  value="13" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr14"  value="14" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr15"  value="15" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+  
+                  <input type="button" name="nr16"  value="16" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr17"  value="17" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr18"  value="18" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr19"  value="19" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr20"  value="20" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
+              </td>
+        </tr>		
+         <tr>
+          <td colspan="10">&nbsp;&nbsp;
+                  <input type="button" name="nr21"  value="21" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr22"  value="22" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr23"  value="23" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr24"  value="24" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr25"  value="25" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;  
+          
+                  <input type="button" name="nr26"  value="26" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr27"  value="27" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr28"  value="28" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr29"  value="29" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr30"  value="30" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;  				
+              </td>
+        </tr>		
+  
+      <tr>
+          <td colspan="10">&nbsp;&nbsp;
+                  <input type="button" name="nr31"  value="31" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;	
+                  <input type="button" name="nr32"  value="32" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr33"  value="33" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr34"  value="34" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr35"  value="35" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;  
+          
+                  <input type="button" name="nr36"  value="36" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr37"  value="37" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr38"  value="38" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr39"  value="39" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+                  <input type="button" name="nr40"  value="40" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;  				
+              </td>
+        </tr>	
+      
+      
+  <!-- ******************************************************************  -->
+  
+      <tr>
+        <td colspan="10">&nbsp;&nbsp;
+          <input type="button" name="nr41"  value="41" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;	
+          <input type="button" name="nr42"  value="42" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr43"  value="43" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr44"  value="44" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr45"  value="45" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;  
+          
+          <input type="button" name="nr46"  value="46" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr47"  value="47" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr48"  value="48" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr49"  value="49" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr50"  value="50" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;  				
+        </td>
+      </tr>	
+  
+      <tr>
+        <td colspan="10">&nbsp;&nbsp;
+          <input type="button" name="nr51"  value="51" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;	
+          <input type="button" name="nr52"  value="52" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr53"  value="53" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr54"  value="54" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr55"  value="55" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;  
+          
+          <input type="button" name="nr56"  value="56" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr57"  value="57" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr58"  value="58" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr59"  value="59" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr60"  value="60" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;  				
+        </td>
+      </tr>	
+  
+      <tr>
+        <td colspan="10">&nbsp;&nbsp;
+          <input type="button" name="nr61"  value="61" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;	
+          <input type="button" name="nr62"  value="62" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr63"  value="63" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr64"  value="64" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr65"  value="65" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;  
+          
+          <input type="button" name="nr66"  value="66" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr67"  value="67" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr68"  value="68" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr69"  value="69" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr70"  value="70" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;  				
+        </td>
+      </tr>	
+  
+      <tr>
+        <td colspan="10">&nbsp;&nbsp;
+          <input type="button" name="nr71"  value="71" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;	
+          <input type="button" name="nr72"  value="72" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr73"  value="73" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr74"  value="74" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr75"  value="75" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;  
+          
+          <input type="button" name="nr76"  value="76" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr77"  value="77" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr78"  value="78" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr79"  value="79" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+          <input type="button" name="nr80"  value="80" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;  				
+        </td>
+      </tr>			
+  
+      </table>
+      
+      
+      <br> 
+      <table border="2" style="background-color: #87CEEB;"> 
+        <tr>
+          <td  rowspan="">
+              &nbsp;	
+          </td>	    				
+          <td align="center">
+              <b>01º nr </b> 		
+          </td>
+          <td align="center">
+              <b>02º nr </b> 		
+          </td>
+          <td align="center">
+              <b>03º nr </b> 		
+          </td>	    
+          <td align="center">
+              <b>04º nr </b> 		
+          </td>
+          <td align="center">
+              <b>05º nr </b> 		
+          </td>
+          <td align="center">
+              <b>06º nr </b> 		
+          </td>		        
+          <td align="center">
+              <b>07º nr </b> 		
+          </td>
+          <td align="center">
+              <b>08º nr </b> 		
+          </td>
+          <td align="center">
+              <b>09º nr </b> 		
+          </td>		        
+          <td align="center">
+              <b>10º nr </b> 		
+          </td>
+  
+          <td align="center" bgcolor="orange">
+              <b>SOMA</b> 		
+          </td>                    
+        </tr>
+  
+        <tr>	    			
+          <td align="center">
+              &nbsp; <b>Jogo 01 </b> &nbsp;		
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0101" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0102" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0103" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0104" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0105" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0106" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0107" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0108" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0109" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0110" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>			
+  
+          <td  bgcolor="orange">
+              <input type="text" size="1" maxlength="2" name="SOMA01" style="font-size:20px; font-weight:bold; width:50px;" value="0">	
+          </td>            	    		    
+      </tr>	
+        <tr>	    			
+          <td align="center">
+          &nbsp; <b>Jogo 02 </b>  &nbsp; 		
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0201" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0202" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0203" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0204" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0205" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0206" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0207" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0208" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0209" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0210" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+        
+          <td  bgcolor="orange">
+              <input type="text" size="1" maxlength="2" name="SOMA02" style="font-size:20px; font-weight:bold; width:50px;" value="0">	
+          </td>              	    		    
+      </tr>			
+        <tr>	    			
+          <td align="center">
+          &nbsp; <b>Jogo 03 </b>  &nbsp; 		
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0301" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0302" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0303" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0304" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0305" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0306" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0307" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0308" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0309" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0310" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+        
+          <td  bgcolor="orange">
+              <input type="text" size="1" maxlength="2" name="SOMA03" style="font-size:20px; font-weight:bold; width:50px;" value="0">	
+          </td>                  		    
+      </tr>			
+        <tr>	    			
+          <td align="center">
+          &nbsp; <b>Jogo 04 </b> &nbsp;  		
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0401" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0402" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0403" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0404" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0405" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0406" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0407" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0408" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0409" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0410" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+  
+          <td  bgcolor="orange">
+              <input type="text" size="1" maxlength="2" name="SOMA04" style="font-size:20px; font-weight:bold; width:50px;" value="0">	
+          </td>              	    		    
+      </tr>			
+        <tr>	    			
+          <td align="center">
+          &nbsp; <b>Jogo 05 </b>  &nbsp; 		
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0501" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0502" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0503" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0504" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0505" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0506" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0507" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0508" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0509" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+          <td >
+              <input type="text" size="1" maxlength="2" name="JG0510" style="font-size:20px; font-weight:bold; width:35px;">	
+          </td>
+        
+          <td  bgcolor="orange">
+              <input type="text" size="1" maxlength="2" name="SOMA05" style="font-size:20px; font-weight:bold; width:50px;" value="0">	
+          </td>              	    		    
+      </tr>			
+  
+      <tr>	    			
+        <td align="center">
+          &nbsp; <b>Jogo 06 </b> &nbsp;  		
+        </td>
+        <td >
+          <input type="text" size="1" maxlength="2" name="JG0601" style="font-size:20px; font-weight:bold; width:35px;">	
+        </td>
+        <td >
+          <input type="text" size="1" maxlength="2" name="JG0602" style="font-size:20px; font-weight:bold; width:35px;">	
+        </td>
+        <td >
+          <input type="text" size="1" maxlength="2" name="JG0603" style="font-size:20px; font-weight:bold; width:35px;">	
+        </td>
+        <td >
+          <input type="text" size="1" maxlength="2" name="JG0604" style="font-size:20px; font-weight:bold; width:35px;">	
+        </td>
+        <td >
+          <input type="text" size="1" maxlength="2" name="JG0605" style="font-size:20px; font-weight:bold; width:35px;">	
+        </td>
+        <td >
+          <input type="text" size="1" maxlength="2" name="JG0606" style="font-size:20px; font-weight:bold; width:35px;">	
+        </td>
+        <td >
+          <input type="text" size="1" maxlength="2" name="JG0607" style="font-size:20px; font-weight:bold; width:35px;">	
+        </td>
+        <td >
+          <input type="text" size="1" maxlength="2" name="JG0608" style="font-size:20px; font-weight:bold; width:35px;">	
+        </td>
+        <td >
+          <input type="text" size="1" maxlength="2" name="JG0609" style="font-size:20px; font-weight:bold; width:35px;">	
+        </td>
+        <td >
+          <input type="text" size="1" maxlength="2" name="JG0610" style="font-size:20px; font-weight:bold; width:35px;">	
+        </td>			
+  
+        <td  bgcolor="orange">
+          <input type="text" size="1" maxlength="2" name="SOMA06" style="font-size:20px; font-weight:bold; width:50px;" value="0">	
+        </td>              	    		    
+      </tr>			
+  
+  
+        <tr>
+          <td  rowspan="">
+              &nbsp;	
+          </td>	    				
+          <td align="center">
+              <b>01º nr </b> 		
+          </td>
+          <td align="center">
+              <b>02º nr </b> 		
+          </td>
+          <td align="center">
+              <b>03º nr </b> 		
+          </td>	    
+          <td align="center">
+              <b>04º nr </b> 		
+          </td>
+          <td align="center">
+              <b>05º nr </b> 		
+          </td>
+          <td align="center">
+              <b>06º nr </b> 		
+          </td>		        
+          <td align="center">
+              <b>07º nr </b> 		
+          </td>
+          <td align="center">
+              <b>08º nr </b> 		
+          </td>
+          <td align="center">
+              <b>09º nr </b> 		
+          </td>		        
+          <td align="center">
+              <b>10º nr </b> 		
+          </td>
+  
+          <td align="center" bgcolor="orange">
+              <b>SOMA</b> 		
+          </td>                   
+        </tr>
+              
+      </table>  
+  
+    <br><b> OBS.: ESTE JOGO FOI SISTEMATIZADO, PENSADO E ELABORADO POR JOSÉ CHARLES. </b> 
+    <br> 
+    <b>                        
+      <a href="index.html">
+             Retornar à Página Inicial
+          </a>
+    </b>		
+  </center> 
+  </form>   
+  </body>
+  </html>
+  
+  
