@@ -566,9 +566,9 @@
 		var jogosArray13 = [document.frm.JG1301.value, document.frm.JG1302.value, document.frm.JG1303.value, document.frm.JG1304.value, document.frm.JG1305.value];     // OK 		
 		var jogosArray14 = [document.frm.JG1401.value, document.frm.JG1402.value, document.frm.JG1403.value, document.frm.JG1404.value, document.frm.JG1405.value];     // OK 		
 			 
-		escreveJogos = "Jogo-01)  " + jogosArray01.sort() + "\n" + "Jogo-02)  " + jogosArray02.sort() + "\n" + "Jogo-03)  " +  jogosArray03.sort() + "\n" + "Jogo-04)  " + jogosArray04.sort() + "\n" + "Jogo-05)  " + jogosArray05.sort() + "\n"; 
-		escreveJogos = escreveJogos + "Jogo-06)  " + jogosArray06.sort() + "\n" + "Jogo-07)  " + jogosArray07.sort() + "\n" + "Jogo-08)  " + jogosArray08.sort() + "\n" + "Jogo-09)  " + jogosArray09.sort() + "\n" + "Jogo-10)  " + jogosArray10.sort() + "\n"; 
-		escreveJogos = escreveJogos + "Jogo-11)  " + jogosArray11.sort() + "\n" + "Jogo-12)  " + jogosArray12.sort() + "\n" + "Jogo-13)  " + jogosArray13.sort() + "\n" + "Jogo-14)  " + jogosArray14.sort() + "\n\n"; 
+		escreveJogos = "JOGOS EM ORDEM CRESCENTE" + "\n\n" + jogosArray01.sort() + "\n" + jogosArray02.sort() + "\n" + jogosArray03.sort() + "\n" + jogosArray04.sort() + "\n" + jogosArray05.sort() + "\n"; 
+		escreveJogos = escreveJogos + jogosArray06.sort() + "\n" + jogosArray07.sort() + "\n" + jogosArray08.sort() + "\n" + jogosArray09.sort() + "\n" + jogosArray10.sort() + "\n"; 
+		escreveJogos = escreveJogos + jogosArray11.sort() + "\n" + jogosArray12.sort() + "\n" + jogosArray13.sort() + "\n" + jogosArray14.sort() + "\n\n"; 
 
 		/* Chama a funººo de mostraJogos */ 		
 		mostraJogos(escreveJogos); 
@@ -1224,7 +1224,7 @@
 			</a>
 		</b> 
 		<br>
-
+		<br>
 		<table>
 			<tr>
 				<td align="center">
@@ -1236,7 +1236,7 @@
 		<!-- The Modal -->
 		<div id="myModal" class="modal">  
 			<!-- Modal content -->
-			<div class="modal-content" style="background-color: darkorange; font-size: 28px;width: 400px;">
+			<div class="modal-content" style="background-color: darkorange; font-size: 28px;width: 450px;">
 				<span class="close">&times; </span>
 				<p id="ordem"></p> 	
 			</div>

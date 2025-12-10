@@ -440,7 +440,7 @@
         var jogosArray04 = [document.frm.JG41.value, document.frm.JG42.value, document.frm.JG43.value, document.frm.JG44.value, document.frm.JG45.value, document.frm.JG46.value];     // OK 		
         var jogosArray05 = [document.frm.JG51.value, document.frm.JG52.value, document.frm.JG53.value, document.frm.JG54.value, document.frm.JG55.value, document.frm.JG56.value];     // OK 		
         var jogosArray06 = [document.frm.JG61.value, document.frm.JG62.value, document.frm.JG63.value, document.frm.JG64.value, document.frm.JG65.value, document.frm.JG66.value];     // OK             
-        escreveJogos = "\n" + jogosArray01.sort() + "\n" + jogosArray02.sort() + "\n" + jogosArray03.sort() + "\n" + jogosArray04.sort() + "\n" + jogosArray05.sort() + "\n" + jogosArray06.sort() + "\n\n"; 
+        escreveJogos = "JOGOS EM ORDEM CRESCENTE" + "\n\n" + jogosArray01.sort() + "\n" + jogosArray02.sort() + "\n" + jogosArray03.sort() + "\n" + jogosArray04.sort() + "\n" + jogosArray05.sort() + "\n" + jogosArray06.sort() + "\n\n"; 
 
         /* Chama a função de mostraJogos */ 		
         mostraJogos(escreveJogos); 
@@ -936,15 +936,7 @@
             </td>
         </tr>				           
     </table>
-
-	<br>
-    <table>
-		<tr>
-			<td align="center">
-				<input id="myBtn" type="button" name="ordenar"  value=" Ordenar Jogos " onclick="ordenarArray()"/>&nbsp;
-		    </td>	
-		</tr>	
-    </table>	
+	
 	<br>
 	<b>                        
 		<a href="index.html">
@@ -952,17 +944,23 @@
     </a>
 	</b>	
     <br>
-	<!-- The Modal -->
-	<div id="myModal" class="modal" style="background-color: darkorange;">  
-
-		<!-- Modal content -->
-		<div class="modal-content">
-			<span class="close">&times; </span>
-			<p id="ordem"></p>
-		</div>
-		<br><br>
-
-	</div>  
+    <br>
+    <table>
+        <tr>
+            <td align="center">
+                &nbsp;&nbsp; <input id="myBtn" type="button" name="ordenar" value=" Ordenar Jogos " style="background-color: aquamarine; font-size: 20px;" onclick="ordenarArray()"/> &nbsp;&nbsp;
+            </td>	
+        </tr>	
+    </table>	
+    <br>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">  
+        <!-- Modal content -->
+        <div class="modal-content" style="background-color: darkorange; font-size: 28px;width: 450px;">
+            <span class="close">&times; </span>
+            <p id="ordem"></p> 	
+        </div>
+    </div>  
         
     </center> 
     </form>   
