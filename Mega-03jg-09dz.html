@@ -378,11 +378,11 @@
     // *********************************************************   
     function ordenarArray() {
 		
-        var jogosArray01 = [document.frm.JG11.value, document.frm.JG12.value, document.frm.JG13.value, document.frm.JG14.value, document.frm.JG15.value, document.frm.JG16.value];     // OK 		
-        var jogosArray02 = [document.frm.JG21.value, document.frm.JG22.value, document.frm.JG23.value, document.frm.JG24.value, document.frm.JG25.value, document.frm.JG26.value];     // OK 		
-        var jogosArray03 = [document.frm.JG31.value, document.frm.JG32.value, document.frm.JG33.value, document.frm.JG34.value, document.frm.JG35.value, document.frm.JG36.value];     // OK 		
+        var jogosArray01 = [' ' + document.frm.JG11.value, ' ' + document.frm.JG12.value, ' ' + document.frm.JG13.value, ' ' + document.frm.JG14.value, ' ' + document.frm.JG15.value, ' ' + document.frm.JG16.value];     // OK 		
+        var jogosArray02 = [' ' + document.frm.JG21.value, ' ' + document.frm.JG22.value, ' ' + document.frm.JG23.value, ' ' + document.frm.JG24.value, ' ' + document.frm.JG25.value, ' ' + document.frm.JG26.value];     // OK 		
+        var jogosArray03 = [' ' + document.frm.JG31.value, ' ' + document.frm.JG32.value, ' ' + document.frm.JG33.value, ' ' + document.frm.JG34.value, ' ' + document.frm.JG35.value, ' ' + document.frm.JG36.value];     // OK 		
             
-        escreveJogos = "\n" + jogosArray01.sort() + "\n" + jogosArray02.sort() + "\n" + jogosArray03.sort() + "\n\n"; 
+        escreveJogos = "JOGOS EM ORDEM CRESCENTE" + "\n\n" + jogosArray01.sort() + "\n" + jogosArray02.sort() + "\n" + jogosArray03.sort() + "\n\n"; 
 
         /* Chama a função de mostraJogos */ 		
         mostraJogos(escreveJogos); 
@@ -778,16 +778,15 @@
     </table>    
 
     <br>
-	<!-- The Modal -->
-	<div id="myModal" class="modal" style="background-color: bisque;">  
 
-		<!-- Modal content -->
-		<div class="modal-content" style="background-color: darkorange; font-size: 28px;width: 400px;">
-			<span class="close">&times; </span>
-			<p id="ordem"></p>
-		</div>
-
-	</div> 
+    <!-- The Modal -->
+    <div id="myModal" class="modal">  
+        <!-- Modal content -->
+        <div class="modal-content" style="background-color: darkorange; font-size: 28px;width: 450px;">
+            <span class="close">&times; </span>
+            <p id="ordem"></p> 	
+        </div>
+    </div>
 
 </center> 
 
