@@ -243,6 +243,39 @@
 				document.frm.JG0615.value = document.frm.NE18.value;                      
 			}		
 
+
+			// *********************************************************
+			// Carrega os campos de soma de cada cartela
+			// *********************************************************
+			function soma() {
+					var total01;
+					var total02;
+					var total03;
+					var total04;
+					var total05;
+					var total06;		
+
+					total01 = parseFloat(0 + document.frm.JG0101.value) + parseFloat(0 + document.frm.JG0102.value) + parseFloat(0 + document.frm.JG0103.value) + parseFloat(0 + document.frm.JG0104.value) + parseFloat(0 + document.frm.JG0105.value) + parseFloat(0 + document.frm.JG0106.value) + parseFloat(0 + document.frm.JG0107.value) + parseFloat(0 + document.frm.JG0108.value) + parseFloat(0 + document.frm.JG0109.value) + parseFloat(0 + document.frm.JG0110.value) + parseFloat(0 + document.frm.JG0111.value) + parseFloat(0 + document.frm.JG0112.value) + parseFloat(0 + document.frm.JG0113.value) + parseFloat(0 + document.frm.JG0114.value) + parseFloat(0 + document.frm.JG0115.value);
+					
+					total02 = parseFloat(0 + document.frm.JG0201.value) + parseFloat(0 + document.frm.JG0202.value) + parseFloat(0 + document.frm.JG0203.value) + parseFloat(0 + document.frm.JG0204.value) + parseFloat(0 + document.frm.JG0205.value) + parseFloat(0 + document.frm.JG0206.value) + parseFloat(0 + document.frm.JG0207.value) + parseFloat(0 + document.frm.JG0208.value) + parseFloat(0 + document.frm.JG0209.value) + parseFloat(0 + document.frm.JG0210.value) + parseFloat(0 + document.frm.JG0211.value) + parseFloat(0 + document.frm.JG0212.value) + parseFloat(0 + document.frm.JG0213.value) + parseFloat(0 + document.frm.JG0214.value) + parseFloat(0 + document.frm.JG0215.value);                
+					
+					total03 = parseFloat(0 + document.frm.JG0301.value) + parseFloat(0 + document.frm.JG0302.value) + parseFloat(0 + document.frm.JG0303.value) + parseFloat(0 + document.frm.JG0304.value) + parseFloat(0 + document.frm.JG0305.value) + parseFloat(0 + document.frm.JG0306.value) + parseFloat(0 + document.frm.JG0307.value) + parseFloat(0 + document.frm.JG0308.value) + parseFloat(0 + document.frm.JG0309.value) + parseFloat(0 + document.frm.JG0310.value) + parseFloat(0 + document.frm.JG0311.value) + parseFloat(0 + document.frm.JG0312.value) + parseFloat(0 + document.frm.JG0313.value) + parseFloat(0 + document.frm.JG0314.value) + parseFloat(0 + document.frm.JG0315.value);
+					
+					total04 = parseFloat(0 + document.frm.JG0401.value) + parseFloat(0 + document.frm.JG0402.value) + parseFloat(0 + document.frm.JG0403.value) + parseFloat(0 + document.frm.JG0404.value) + parseFloat(0 + document.frm.JG0405.value) + parseFloat(0 + document.frm.JG0406.value) + parseFloat(0 + document.frm.JG0407.value) + parseFloat(0 + document.frm.JG0408.value) + parseFloat(0 + document.frm.JG0409.value) + parseFloat(0 + document.frm.JG0410.value) + parseFloat(0 + document.frm.JG0411.value) + parseFloat(0 + document.frm.JG0412.value) + parseFloat(0 + document.frm.JG0413.value) + parseFloat(0 + document.frm.JG0414.value) + parseFloat(0 + document.frm.JG0415.value);
+					
+					total05 = parseFloat(0 + document.frm.JG0501.value) + parseFloat(0 + document.frm.JG0502.value) + parseFloat(0 + document.frm.JG0503.value) + parseFloat(0 + document.frm.JG0504.value) + parseFloat(0 + document.frm.JG0505.value) + parseFloat(0 + document.frm.JG0506.value) + parseFloat(0 + document.frm.JG0507.value) + parseFloat(0 + document.frm.JG0508.value) + parseFloat(0 + document.frm.JG0509.value) + parseFloat(0 + document.frm.JG0510.value) + parseFloat(0 + document.frm.JG0511.value) + parseFloat(0 + document.frm.JG0512.value) + parseFloat(0 + document.frm.JG0513.value) + parseFloat(0 + document.frm.JG0514.value) + parseFloat(0 + document.frm.JG0515.value);
+					
+					total06 = parseFloat(0 + document.frm.JG0601.value) + parseFloat(0 + document.frm.JG0602.value) + parseFloat(0 + document.frm.JG0603.value) + parseFloat(0 + document.frm.JG0604.value) + parseFloat(0 + document.frm.JG0605.value) + parseFloat(0 + document.frm.JG0606.value) + parseFloat(0 + document.frm.JG0607.value) + parseFloat(0 + document.frm.JG0608.value) + parseFloat(0 + document.frm.JG0609.value) + parseFloat(0 + document.frm.JG0610.value) + parseFloat(0 + document.frm.JG0611.value) + parseFloat(0 + document.frm.JG0612.value) + parseFloat(0 + document.frm.JG0613.value) + parseFloat(0 + document.frm.JG0614.value) + parseFloat(0 + document.frm.JG0615.value);
+					
+					document.frm.SOMA01.value = total01;
+					document.frm.SOMA02.value = total02;
+					document.frm.SOMA03.value = total03;
+					document.frm.SOMA04.value = total04;
+					document.frm.SOMA05.value = total05;
+					document.frm.SOMA06.value = total06;
+					
+			}
+
 					
 			// *********************************************************   
 			// Ordena os numeros distribuidos nos jogos
@@ -330,34 +363,6 @@
 						}
           }
 				}
-
-
-        // *********************************************************
-        // Carrega os campos de soma de cada cartela
-        // *********************************************************
-        function soma() {
-            var total01;
-            var total02;
-            var total03;
-            var total04;
-						var total05;
-            var total06;		
-
-            total01 = parseFloat(0 + document.frm.JG0101.value) + parseFloat(0 + document.frm.JG0102.value) + parseFloat(0 + document.frm.JG0103.value) + parseFloat(0 + document.frm.JG0104.value) + parseFloat(0 + document.frm.JG0105.value) + parseFloat(0 + document.frm.JG0106.value) + parseFloat(0 + document.frm.JG0107.value) + parseFloat(0 + document.frm.JG0108.value) + parseFloat(0 + document.frm.JG0109.value) + parseFloat(0 + document.frm.JG0110.value) + parseFloat(0 + document.frm.JG0111.value) + parseFloat(0 + document.frm.JG0112.value) + parseFloat(0 + document.frm.JG0113.value) + parseFloat(0 + document.frm.JG0114.value) + parseFloat(0 + document.frm.JG0115.value);
-            total02 = parseFloat(0 + document.frm.JG0201.value) + parseFloat(0 + document.frm.JG0202.value) + parseFloat(0 + document.frm.JG0203.value) + parseFloat(0 + document.frm.JG0204.value) + parseFloat(0 + document.frm.JG0205.value) + parseFloat(0 + document.frm.JG0206.value) + parseFloat(0 + document.frm.JG0207.value) + parseFloat(0 + document.frm.JG0208.value) + parseFloat(0 + document.frm.JG0209.value) + parseFloat(0 + document.frm.JG0210.value) + parseFloat(0 + document.frm.JG0211.value) + parseFloat(0 + document.frm.JG0212.value) + parseFloat(0 + document.frm.JG0213.value) + parseFloat(0 + document.frm.JG0214.value) + parseFloat(0 + document.frm.JG0215.value);                
-            total03 = parseFloat(0 + document.frm.JG0301.value) + parseFloat(0 + document.frm.JG0302.value) + parseFloat(0 + document.frm.JG0303.value) + parseFloat(0 + document.frm.JG0304.value) + parseFloat(0 + document.frm.JG0305.value) + parseFloat(0 + document.frm.JG0306.value) + parseFloat(0 + document.frm.JG0307.value) + parseFloat(0 + document.frm.JG0308.value) + parseFloat(0 + document.frm.JG0309.value) + parseFloat(0 + document.frm.JG0310.value) + parseFloat(0 + document.frm.JG0311.value) + parseFloat(0 + document.frm.JG0312.value) + parseFloat(0 + document.frm.JG0313.value) + parseFloat(0 + document.frm.JG0314.value) + parseFloat(0 + document.frm.JG0315.value);
-            total04 = parseFloat(0 + document.frm.JG0401.value) + parseFloat(0 + document.frm.JG0402.value) + parseFloat(0 + document.frm.JG0403.value) + parseFloat(0 + document.frm.JG0404.value) + parseFloat(0 + document.frm.JG0405.value) + parseFloat(0 + document.frm.JG0406.value) + parseFloat(0 + document.frm.JG0407.value) + parseFloat(0 + document.frm.JG0408.value) + parseFloat(0 + document.frm.JG0409.value) + parseFloat(0 + document.frm.JG0410.value) + parseFloat(0 + document.frm.JG0411.value) + parseFloat(0 + document.frm.JG0412.value) + parseFloat(0 + document.frm.JG0413.value) + parseFloat(0 + document.frm.JG0414.value) + parseFloat(0 + document.frm.JG0415.value);
-            total05 = parseFloat(0 + document.frm.JG0501.value) + parseFloat(0 + document.frm.JG0502.value) + parseFloat(0 + document.frm.JG0503.value) + parseFloat(0 + document.frm.JG0504.value) + parseFloat(0 + document.frm.JG0505.value) + parseFloat(0 + document.frm.JG0506.value) + parseFloat(0 + document.frm.JG0507.value) + parseFloat(0 + document.frm.JG0508.value) + parseFloat(0 + document.frm.JG0509.value) + parseFloat(0 + document.frm.JG0510.value) + parseFloat(0 + document.frm.JG0511.value) + parseFloat(0 + document.frm.JG0512.value) + parseFloat(0 + document.frm.JG0513.value) + parseFloat(0 + document.frm.JG0514.value) + parseFloat(0 + document.frm.JG0515.value);
-            total06 = parseFloat(0 + document.frm.JG0601.value) + parseFloat(0 + document.frm.JG0602.value) + parseFloat(0 + document.frm.JG0603.value) + parseFloat(0 + document.frm.JG0604.value) + parseFloat(0 + document.frm.JG0605.value) + parseFloat(0 + document.frm.JG0606.value) + parseFloat(0 + document.frm.JG0607.value) + parseFloat(0 + document.frm.JG0608.value) + parseFloat(0 + document.frm.JG0609.value) + parseFloat(0 + document.frm.JG0610.value) + parseFloat(0 + document.frm.JG0611.value) + parseFloat(0 + document.frm.JG0612.value) + parseFloat(0 + document.frm.JG0613.value) + parseFloat(0 + document.frm.JG0614.value) + parseFloat(0 + document.frm.JG0615.value);
-            
-						document.frm.SOMA01.value = total01;
-            document.frm.SOMA02.value = total02;
-            document.frm.SOMA03.value = total03;
-            document.frm.SOMA04.value = total04;
-            document.frm.SOMA05.value = total05;
-            document.frm.SOMA06.value = total06;
- 						
-        }
 
 
         // *********************************************************
@@ -1236,11 +1241,11 @@
 	<br>
 	
     <table>
-		<tr>
-			<td align="center">
-				<input id="myBtn" type="button" name="ordenar"  value=" Ordenar Jogos " onclick="ordenarArray()"/>&nbsp;
-		    </td>	
-		</tr>	
+			<tr>
+				<td align="center">
+					<input id="myBtn" type="button" name="ordenar"  value=" Ordenar Jogos " onclick="ordenarArray()"/>&nbsp;
+					</td>	
+			</tr>	
     </table>
 	<br>
 	<b>                        
