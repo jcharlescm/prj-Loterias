@@ -3,6 +3,46 @@
     <meta charset="UTF-8">
     <title>SISTEMA 43 DE LOTERIA</title>
     <script language="javascript">
+
+			var escreveJogos;
+			function mostraJogos(x) {
+													
+				// Get the modal
+				var modal = document.getElementById('myModal');
+				var ordem = document.getElementById('ordem');
+				console.log(ordem);
+				ordem.innerText = x;
+
+				modal.style.display = "block";
+				// Get the button that opens the modal
+				
+				//var btn = document.getElementById("myBtn");
+
+				// Get the <span> element that closes the modal
+				var span = document.getElementsByClassName("close")[0];
+
+				// When the user clicks the button, open the modal 
+				//btn.onclick = function() {
+						//modal.style.display = "block";
+				//}
+
+				// When the user clicks on <span> (x), close the modal
+				span.onclick = function() {
+						modal.style.display = "none";
+				}
+
+				// When the user clicks anywhere outside of the modal, close it  
+				window.onclick = function(event) {
+						if (event.target == modal) {
+								modal.style.display = "none";
+						}
+				}
+								
+				console.log(escreveJogos);
+
+			}
+
+
         // *********************************************************
         // Carrega o Primeiro Número NE01 nos campos
         // *********************************************************
@@ -827,640 +867,6 @@
             var total81, total82, total83, total84, total85, total86, total87, total88, total89, total90;
             var total91, total92, total93, total94, total95, total96, total97, total98, total99, total100;
 
-            // Campos de 1 a 20 da primeiro jogo
-            document.frm.JG0101.value = parseFloat(0 + document.frm.JG0101.value);
-            document.frm.JG0102.value = parseFloat(0 + document.frm.JG0102.value);
-            document.frm.JG0103.value = parseFloat(0 + document.frm.JG0103.value);
-            document.frm.JG0104.value = parseFloat(0 + document.frm.JG0104.value);
-            document.frm.JG0105.value = parseFloat(0 + document.frm.JG0105.value);
-            document.frm.JG0106.value = parseFloat(0 + document.frm.JG0106.value);
-            document.frm.JG0107.value = parseFloat(0 + document.frm.JG0107.value);
-            document.frm.JG0108.value = parseFloat(0 + document.frm.JG0108.value);
-            document.frm.JG0109.value = parseFloat(0 + document.frm.JG0109.value);
-            document.frm.JG0110.value = parseFloat(0 + document.frm.JG0110.value);
-            document.frm.JG0111.value = parseFloat(0 + document.frm.JG0111.value);
-            document.frm.JG0112.value = parseFloat(0 + document.frm.JG0112.value);
-            document.frm.JG0113.value = parseFloat(0 + document.frm.JG0113.value);
-            document.frm.JG0114.value = parseFloat(0 + document.frm.JG0114.value);
-            document.frm.JG0115.value = parseFloat(0 + document.frm.JG0115.value);
-            document.frm.JG0116.value = parseFloat(0 + document.frm.JG0116.value);
-            document.frm.JG0117.value = parseFloat(0 + document.frm.JG0117.value);
-            document.frm.JG0118.value = parseFloat(0 + document.frm.JG0118.value);
-            document.frm.JG0119.value = parseFloat(0 + document.frm.JG0119.value);
-            document.frm.JG0120.value = parseFloat(0 + document.frm.JG0120.value);
-
-            document.frm.JG0201.value = parseFloat(0 + document.frm.JG0201.value);
-            document.frm.JG0202.value = parseFloat(0 + document.frm.JG0202.value);
-            document.frm.JG0203.value = parseFloat(0 + document.frm.JG0203.value);
-            document.frm.JG0204.value = parseFloat(0 + document.frm.JG0204.value);
-            document.frm.JG0205.value = parseFloat(0 + document.frm.JG0205.value);
-            document.frm.JG0206.value = parseFloat(0 + document.frm.JG0206.value);
-            document.frm.JG0207.value = parseFloat(0 + document.frm.JG0207.value);
-            document.frm.JG0208.value = parseFloat(0 + document.frm.JG0208.value);
-            document.frm.JG0209.value = parseFloat(0 + document.frm.JG0209.value);
-            document.frm.JG0210.value = parseFloat(0 + document.frm.JG0210.value);
-            document.frm.JG0211.value = parseFloat(0 + document.frm.JG0211.value);
-            document.frm.JG0212.value = parseFloat(0 + document.frm.JG0212.value);
-            document.frm.JG0213.value = parseFloat(0 + document.frm.JG0213.value);
-            document.frm.JG0214.value = parseFloat(0 + document.frm.JG0214.value);
-            document.frm.JG0215.value = parseFloat(0 + document.frm.JG0215.value);
-            document.frm.JG0216.value = parseFloat(0 + document.frm.JG0216.value);
-            document.frm.JG0217.value = parseFloat(0 + document.frm.JG0217.value);
-            document.frm.JG0218.value = parseFloat(0 + document.frm.JG0218.value);
-            document.frm.JG0219.value = parseFloat(0 + document.frm.JG0219.value);
-            document.frm.JG0220.value = parseFloat(0 + document.frm.JG0220.value);
-
-            document.frm.JG0301.value = parseFloat(0 + document.frm.JG0301.value);
-            document.frm.JG0302.value = parseFloat(0 + document.frm.JG0302.value);
-            document.frm.JG0303.value = parseFloat(0 + document.frm.JG0303.value);
-            document.frm.JG0304.value = parseFloat(0 + document.frm.JG0304.value);
-            document.frm.JG0305.value = parseFloat(0 + document.frm.JG0305.value);
-            document.frm.JG0306.value = parseFloat(0 + document.frm.JG0306.value);
-            document.frm.JG0307.value = parseFloat(0 + document.frm.JG0307.value);
-            document.frm.JG0308.value = parseFloat(0 + document.frm.JG0308.value);
-            document.frm.JG0309.value = parseFloat(0 + document.frm.JG0309.value);
-            document.frm.JG0310.value = parseFloat(0 + document.frm.JG0310.value);
-            document.frm.JG0311.value = parseFloat(0 + document.frm.JG0311.value);
-            document.frm.JG0312.value = parseFloat(0 + document.frm.JG0312.value);
-            document.frm.JG0313.value = parseFloat(0 + document.frm.JG0313.value);
-            document.frm.JG0314.value = parseFloat(0 + document.frm.JG0314.value);
-            document.frm.JG0315.value = parseFloat(0 + document.frm.JG0315.value);
-            document.frm.JG0316.value = parseFloat(0 + document.frm.JG0316.value);
-            document.frm.JG0317.value = parseFloat(0 + document.frm.JG0317.value);
-            document.frm.JG0318.value = parseFloat(0 + document.frm.JG0318.value);
-            document.frm.JG0319.value = parseFloat(0 + document.frm.JG0319.value);
-            document.frm.JG0320.value = parseFloat(0 + document.frm.JG0320.value);
-
-            document.frm.JG0401.value = parseFloat(0 + document.frm.JG0401.value);
-            document.frm.JG0402.value = parseFloat(0 + document.frm.JG0402.value);
-            document.frm.JG0403.value = parseFloat(0 + document.frm.JG0403.value);
-            document.frm.JG0404.value = parseFloat(0 + document.frm.JG0404.value);
-            document.frm.JG0405.value = parseFloat(0 + document.frm.JG0405.value);
-            document.frm.JG0406.value = parseFloat(0 + document.frm.JG0406.value);
-            document.frm.JG0407.value = parseFloat(0 + document.frm.JG0407.value);
-            document.frm.JG0408.value = parseFloat(0 + document.frm.JG0408.value);
-            document.frm.JG0409.value = parseFloat(0 + document.frm.JG0409.value);
-            document.frm.JG0410.value = parseFloat(0 + document.frm.JG0410.value);
-            document.frm.JG0411.value = parseFloat(0 + document.frm.JG0411.value);
-            document.frm.JG0412.value = parseFloat(0 + document.frm.JG0412.value);
-            document.frm.JG0413.value = parseFloat(0 + document.frm.JG0413.value);
-            document.frm.JG0414.value = parseFloat(0 + document.frm.JG0414.value);
-            document.frm.JG0415.value = parseFloat(0 + document.frm.JG0415.value);
-            document.frm.JG0416.value = parseFloat(0 + document.frm.JG0416.value);
-            document.frm.JG0417.value = parseFloat(0 + document.frm.JG0417.value);
-            document.frm.JG0418.value = parseFloat(0 + document.frm.JG0418.value);
-            document.frm.JG0419.value = parseFloat(0 + document.frm.JG0419.value);
-            document.frm.JG0420.value = parseFloat(0 + document.frm.JG0420.value);
-
-            document.frm.JG0501.value = parseFloat(0 + document.frm.JG0501.value);
-            document.frm.JG0502.value = parseFloat(0 + document.frm.JG0502.value);
-            document.frm.JG0503.value = parseFloat(0 + document.frm.JG0503.value);
-            document.frm.JG0504.value = parseFloat(0 + document.frm.JG0504.value);
-            document.frm.JG0505.value = parseFloat(0 + document.frm.JG0505.value);
-            document.frm.JG0506.value = parseFloat(0 + document.frm.JG0506.value);
-            document.frm.JG0507.value = parseFloat(0 + document.frm.JG0507.value);
-            document.frm.JG0508.value = parseFloat(0 + document.frm.JG0508.value);
-            document.frm.JG0509.value = parseFloat(0 + document.frm.JG0509.value);
-            document.frm.JG0510.value = parseFloat(0 + document.frm.JG0510.value);
-            document.frm.JG0511.value = parseFloat(0 + document.frm.JG0511.value);
-            document.frm.JG0512.value = parseFloat(0 + document.frm.JG0512.value);
-            document.frm.JG0513.value = parseFloat(0 + document.frm.JG0513.value);
-            document.frm.JG0514.value = parseFloat(0 + document.frm.JG0514.value);
-            document.frm.JG0515.value = parseFloat(0 + document.frm.JG0515.value);
-            document.frm.JG0516.value = parseFloat(0 + document.frm.JG0516.value);
-            document.frm.JG0517.value = parseFloat(0 + document.frm.JG0517.value);
-            document.frm.JG0518.value = parseFloat(0 + document.frm.JG0518.value);
-            document.frm.JG0519.value = parseFloat(0 + document.frm.JG0519.value);
-            document.frm.JG0520.value = parseFloat(0 + document.frm.JG0520.value);
-
-            document.frm.JG0601.value = parseFloat(0 + document.frm.JG0601.value);
-            document.frm.JG0602.value = parseFloat(0 + document.frm.JG0602.value);
-            document.frm.JG0603.value = parseFloat(0 + document.frm.JG0603.value);
-            document.frm.JG0604.value = parseFloat(0 + document.frm.JG0604.value);
-            document.frm.JG0605.value = parseFloat(0 + document.frm.JG0605.value);
-            document.frm.JG0606.value = parseFloat(0 + document.frm.JG0606.value);
-            document.frm.JG0607.value = parseFloat(0 + document.frm.JG0607.value);
-            document.frm.JG0608.value = parseFloat(0 + document.frm.JG0608.value);
-            document.frm.JG0609.value = parseFloat(0 + document.frm.JG0609.value);
-            document.frm.JG0610.value = parseFloat(0 + document.frm.JG0610.value);
-            document.frm.JG0611.value = parseFloat(0 + document.frm.JG0611.value);
-            document.frm.JG0612.value = parseFloat(0 + document.frm.JG0612.value);
-            document.frm.JG0613.value = parseFloat(0 + document.frm.JG0613.value);
-            document.frm.JG0614.value = parseFloat(0 + document.frm.JG0614.value);
-            document.frm.JG0615.value = parseFloat(0 + document.frm.JG0615.value);
-            document.frm.JG0616.value = parseFloat(0 + document.frm.JG0616.value);
-            document.frm.JG0617.value = parseFloat(0 + document.frm.JG0617.value);
-            document.frm.JG0618.value = parseFloat(0 + document.frm.JG0618.value);
-            document.frm.JG0619.value = parseFloat(0 + document.frm.JG0619.value);
-            document.frm.JG0620.value = parseFloat(0 + document.frm.JG0620.value);
-
-            // Campos de 21 a 40 
-            document.frm.JG0121.value = parseFloat(0 + document.frm.JG0121.value);
-            document.frm.JG0122.value = parseFloat(0 + document.frm.JG0122.value);
-            document.frm.JG0123.value = parseFloat(0 + document.frm.JG0123.value);
-            document.frm.JG0124.value = parseFloat(0 + document.frm.JG0124.value);
-            document.frm.JG0125.value = parseFloat(0 + document.frm.JG0125.value);
-            document.frm.JG0126.value = parseFloat(0 + document.frm.JG0126.value);
-            document.frm.JG0127.value = parseFloat(0 + document.frm.JG0127.value);
-            document.frm.JG0128.value = parseFloat(0 + document.frm.JG0128.value);
-            document.frm.JG0129.value = parseFloat(0 + document.frm.JG0129.value);
-            document.frm.JG0130.value = parseFloat(0 + document.frm.JG0130.value);
-            document.frm.JG0131.value = parseFloat(0 + document.frm.JG0131.value);
-            document.frm.JG0132.value = parseFloat(0 + document.frm.JG0132.value);
-            document.frm.JG0133.value = parseFloat(0 + document.frm.JG0133.value);
-            document.frm.JG0134.value = parseFloat(0 + document.frm.JG0134.value);
-            document.frm.JG0135.value = parseFloat(0 + document.frm.JG0135.value);
-            document.frm.JG0136.value = parseFloat(0 + document.frm.JG0136.value);
-            document.frm.JG0137.value = parseFloat(0 + document.frm.JG0137.value);
-            document.frm.JG0138.value = parseFloat(0 + document.frm.JG0138.value);
-            document.frm.JG0139.value = parseFloat(0 + document.frm.JG0139.value);
-            document.frm.JG0140.value = parseFloat(0 + document.frm.JG0140.value);
-
-            document.frm.JG0221.value = parseFloat(0 + document.frm.JG0221.value);
-            document.frm.JG0222.value = parseFloat(0 + document.frm.JG0222.value);
-            document.frm.JG0223.value = parseFloat(0 + document.frm.JG0223.value);
-            document.frm.JG0224.value = parseFloat(0 + document.frm.JG0224.value);
-            document.frm.JG0225.value = parseFloat(0 + document.frm.JG0225.value);
-            document.frm.JG0226.value = parseFloat(0 + document.frm.JG0226.value);
-            document.frm.JG0227.value = parseFloat(0 + document.frm.JG0227.value);
-            document.frm.JG0228.value = parseFloat(0 + document.frm.JG0228.value);
-            document.frm.JG0229.value = parseFloat(0 + document.frm.JG0229.value);
-            document.frm.JG0230.value = parseFloat(0 + document.frm.JG0230.value);
-            document.frm.JG0231.value = parseFloat(0 + document.frm.JG0231.value);
-            document.frm.JG0232.value = parseFloat(0 + document.frm.JG0232.value);
-            document.frm.JG0233.value = parseFloat(0 + document.frm.JG0233.value);
-            document.frm.JG0234.value = parseFloat(0 + document.frm.JG0234.value);
-            document.frm.JG0235.value = parseFloat(0 + document.frm.JG0235.value);
-            document.frm.JG0236.value = parseFloat(0 + document.frm.JG0236.value);
-            document.frm.JG0237.value = parseFloat(0 + document.frm.JG0237.value);
-            document.frm.JG0238.value = parseFloat(0 + document.frm.JG0238.value);
-            document.frm.JG0239.value = parseFloat(0 + document.frm.JG0239.value);
-            document.frm.JG0240.value = parseFloat(0 + document.frm.JG0240.value);
-
-            document.frm.JG0321.value = parseFloat(0 + document.frm.JG0321.value);
-            document.frm.JG0322.value = parseFloat(0 + document.frm.JG0322.value);
-            document.frm.JG0323.value = parseFloat(0 + document.frm.JG0323.value);
-            document.frm.JG0324.value = parseFloat(0 + document.frm.JG0324.value);
-            document.frm.JG0325.value = parseFloat(0 + document.frm.JG0325.value);
-            document.frm.JG0326.value = parseFloat(0 + document.frm.JG0326.value);
-            document.frm.JG0327.value = parseFloat(0 + document.frm.JG0327.value);
-            document.frm.JG0328.value = parseFloat(0 + document.frm.JG0328.value);
-            document.frm.JG0329.value = parseFloat(0 + document.frm.JG0329.value);
-            document.frm.JG0330.value = parseFloat(0 + document.frm.JG0330.value);
-            document.frm.JG0331.value = parseFloat(0 + document.frm.JG0331.value);
-            document.frm.JG0332.value = parseFloat(0 + document.frm.JG0332.value);
-            document.frm.JG0333.value = parseFloat(0 + document.frm.JG0333.value);
-            document.frm.JG0334.value = parseFloat(0 + document.frm.JG0334.value);
-            document.frm.JG0335.value = parseFloat(0 + document.frm.JG0335.value);
-            document.frm.JG0336.value = parseFloat(0 + document.frm.JG0336.value);
-            document.frm.JG0337.value = parseFloat(0 + document.frm.JG0337.value);
-            document.frm.JG0338.value = parseFloat(0 + document.frm.JG0338.value);
-            document.frm.JG0339.value = parseFloat(0 + document.frm.JG0339.value);
-            document.frm.JG0340.value = parseFloat(0 + document.frm.JG0340.value);
-
-            document.frm.JG0421.value = parseFloat(0 + document.frm.JG0421.value);
-            document.frm.JG0422.value = parseFloat(0 + document.frm.JG0422.value);
-            document.frm.JG0423.value = parseFloat(0 + document.frm.JG0423.value);
-            document.frm.JG0424.value = parseFloat(0 + document.frm.JG0424.value);
-            document.frm.JG0425.value = parseFloat(0 + document.frm.JG0425.value);
-            document.frm.JG0426.value = parseFloat(0 + document.frm.JG0426.value);
-            document.frm.JG0427.value = parseFloat(0 + document.frm.JG0427.value);
-            document.frm.JG0428.value = parseFloat(0 + document.frm.JG0428.value);
-            document.frm.JG0429.value = parseFloat(0 + document.frm.JG0429.value);
-            document.frm.JG0430.value = parseFloat(0 + document.frm.JG0430.value);
-            document.frm.JG0431.value = parseFloat(0 + document.frm.JG0431.value);
-            document.frm.JG0432.value = parseFloat(0 + document.frm.JG0432.value);
-            document.frm.JG0433.value = parseFloat(0 + document.frm.JG0433.value);
-            document.frm.JG0434.value = parseFloat(0 + document.frm.JG0434.value);
-            document.frm.JG0435.value = parseFloat(0 + document.frm.JG0435.value);
-            document.frm.JG0436.value = parseFloat(0 + document.frm.JG0436.value);
-            document.frm.JG0437.value = parseFloat(0 + document.frm.JG0437.value);
-            document.frm.JG0438.value = parseFloat(0 + document.frm.JG0438.value);
-            document.frm.JG0439.value = parseFloat(0 + document.frm.JG0439.value);
-            document.frm.JG0440.value = parseFloat(0 + document.frm.JG0440.value);
-
-            document.frm.JG0521.value = parseFloat(0 + document.frm.JG0521.value);
-            document.frm.JG0522.value = parseFloat(0 + document.frm.JG0522.value);
-            document.frm.JG0523.value = parseFloat(0 + document.frm.JG0523.value);
-            document.frm.JG0524.value = parseFloat(0 + document.frm.JG0524.value);
-            document.frm.JG0525.value = parseFloat(0 + document.frm.JG0525.value);
-            document.frm.JG0526.value = parseFloat(0 + document.frm.JG0526.value);
-            document.frm.JG0527.value = parseFloat(0 + document.frm.JG0527.value);
-            document.frm.JG0528.value = parseFloat(0 + document.frm.JG0528.value);
-            document.frm.JG0529.value = parseFloat(0 + document.frm.JG0529.value);
-            document.frm.JG0530.value = parseFloat(0 + document.frm.JG0530.value);
-            document.frm.JG0531.value = parseFloat(0 + document.frm.JG0531.value);
-            document.frm.JG0532.value = parseFloat(0 + document.frm.JG0532.value);
-            document.frm.JG0533.value = parseFloat(0 + document.frm.JG0533.value);
-            document.frm.JG0534.value = parseFloat(0 + document.frm.JG0534.value);
-            document.frm.JG0535.value = parseFloat(0 + document.frm.JG0535.value);
-            document.frm.JG0536.value = parseFloat(0 + document.frm.JG0536.value);
-            document.frm.JG0537.value = parseFloat(0 + document.frm.JG0537.value);
-            document.frm.JG0538.value = parseFloat(0 + document.frm.JG0538.value);
-            document.frm.JG0539.value = parseFloat(0 + document.frm.JG0539.value);
-            document.frm.JG0540.value = parseFloat(0 + document.frm.JG0540.value);
-
-            document.frm.JG0621.value = parseFloat(0 + document.frm.JG0621.value);
-            document.frm.JG0622.value = parseFloat(0 + document.frm.JG0622.value);
-            document.frm.JG0623.value = parseFloat(0 + document.frm.JG0623.value);
-            document.frm.JG0624.value = parseFloat(0 + document.frm.JG0624.value);
-            document.frm.JG0625.value = parseFloat(0 + document.frm.JG0625.value);
-            document.frm.JG0626.value = parseFloat(0 + document.frm.JG0626.value);
-            document.frm.JG0627.value = parseFloat(0 + document.frm.JG0627.value);
-            document.frm.JG0628.value = parseFloat(0 + document.frm.JG0628.value);
-            document.frm.JG0629.value = parseFloat(0 + document.frm.JG0629.value);
-            document.frm.JG0630.value = parseFloat(0 + document.frm.JG0630.value);
-            document.frm.JG0631.value = parseFloat(0 + document.frm.JG0631.value);
-            document.frm.JG0632.value = parseFloat(0 + document.frm.JG0632.value);
-            document.frm.JG0633.value = parseFloat(0 + document.frm.JG0633.value);
-            document.frm.JG0634.value = parseFloat(0 + document.frm.JG0634.value);
-            document.frm.JG0635.value = parseFloat(0 + document.frm.JG0635.value);
-            document.frm.JG0636.value = parseFloat(0 + document.frm.JG0636.value);
-            document.frm.JG0637.value = parseFloat(0 + document.frm.JG0637.value);
-            document.frm.JG0638.value = parseFloat(0 + document.frm.JG0638.value);
-            document.frm.JG0639.value = parseFloat(0 + document.frm.JG0639.value);
-            document.frm.JG0640.value = parseFloat(0 + document.frm.JG0640.value);
-
-            // Campos de 41 a 60 
-            document.frm.JG0141.value = parseFloat(0 + document.frm.JG0141.value);
-            document.frm.JG0142.value = parseFloat(0 + document.frm.JG0142.value);
-            document.frm.JG0143.value = parseFloat(0 + document.frm.JG0143.value);
-            document.frm.JG0144.value = parseFloat(0 + document.frm.JG0144.value);
-            document.frm.JG0145.value = parseFloat(0 + document.frm.JG0145.value);
-            document.frm.JG0146.value = parseFloat(0 + document.frm.JG0146.value);
-            document.frm.JG0147.value = parseFloat(0 + document.frm.JG0147.value);
-            document.frm.JG0148.value = parseFloat(0 + document.frm.JG0148.value);
-            document.frm.JG0149.value = parseFloat(0 + document.frm.JG0149.value);
-            document.frm.JG0150.value = parseFloat(0 + document.frm.JG0150.value);
-            document.frm.JG0151.value = parseFloat(0 + document.frm.JG0151.value);
-            document.frm.JG0152.value = parseFloat(0 + document.frm.JG0152.value);
-            document.frm.JG0153.value = parseFloat(0 + document.frm.JG0153.value);
-            document.frm.JG0154.value = parseFloat(0 + document.frm.JG0154.value);
-            document.frm.JG0155.value = parseFloat(0 + document.frm.JG0155.value);
-            document.frm.JG0156.value = parseFloat(0 + document.frm.JG0156.value);
-            document.frm.JG0157.value = parseFloat(0 + document.frm.JG0157.value);
-            document.frm.JG0158.value = parseFloat(0 + document.frm.JG0158.value);
-            document.frm.JG0159.value = parseFloat(0 + document.frm.JG0159.value);
-            document.frm.JG0160.value = parseFloat(0 + document.frm.JG0160.value);
-
-            document.frm.JG0241.value = parseFloat(0 + document.frm.JG0241.value);
-            document.frm.JG0242.value = parseFloat(0 + document.frm.JG0242.value);
-            document.frm.JG0243.value = parseFloat(0 + document.frm.JG0243.value);
-            document.frm.JG0244.value = parseFloat(0 + document.frm.JG0244.value);
-            document.frm.JG0245.value = parseFloat(0 + document.frm.JG0245.value);
-            document.frm.JG0246.value = parseFloat(0 + document.frm.JG0246.value);
-            document.frm.JG0247.value = parseFloat(0 + document.frm.JG0247.value);
-            document.frm.JG0248.value = parseFloat(0 + document.frm.JG0248.value);
-            document.frm.JG0249.value = parseFloat(0 + document.frm.JG0249.value);
-            document.frm.JG0250.value = parseFloat(0 + document.frm.JG0250.value);
-            document.frm.JG0251.value = parseFloat(0 + document.frm.JG0251.value);
-            document.frm.JG0252.value = parseFloat(0 + document.frm.JG0252.value);
-            document.frm.JG0253.value = parseFloat(0 + document.frm.JG0253.value);
-            document.frm.JG0254.value = parseFloat(0 + document.frm.JG0254.value);
-            document.frm.JG0255.value = parseFloat(0 + document.frm.JG0255.value);
-            document.frm.JG0256.value = parseFloat(0 + document.frm.JG0256.value);
-            document.frm.JG0257.value = parseFloat(0 + document.frm.JG0257.value);
-            document.frm.JG0258.value = parseFloat(0 + document.frm.JG0258.value);
-            document.frm.JG0259.value = parseFloat(0 + document.frm.JG0259.value);
-            document.frm.JG0260.value = parseFloat(0 + document.frm.JG0260.value);
-
-            document.frm.JG0341.value = parseFloat(0 + document.frm.JG0341.value);
-            document.frm.JG0342.value = parseFloat(0 + document.frm.JG0342.value);
-            document.frm.JG0343.value = parseFloat(0 + document.frm.JG0343.value);
-            document.frm.JG0344.value = parseFloat(0 + document.frm.JG0344.value);
-            document.frm.JG0345.value = parseFloat(0 + document.frm.JG0345.value);
-            document.frm.JG0346.value = parseFloat(0 + document.frm.JG0346.value);
-            document.frm.JG0347.value = parseFloat(0 + document.frm.JG0347.value);
-            document.frm.JG0348.value = parseFloat(0 + document.frm.JG0348.value);
-            document.frm.JG0349.value = parseFloat(0 + document.frm.JG0349.value);
-            document.frm.JG0350.value = parseFloat(0 + document.frm.JG0350.value);
-            document.frm.JG0351.value = parseFloat(0 + document.frm.JG0351.value);
-            document.frm.JG0352.value = parseFloat(0 + document.frm.JG0352.value);
-            document.frm.JG0353.value = parseFloat(0 + document.frm.JG0353.value);
-            document.frm.JG0354.value = parseFloat(0 + document.frm.JG0354.value);
-            document.frm.JG0355.value = parseFloat(0 + document.frm.JG0355.value);
-            document.frm.JG0356.value = parseFloat(0 + document.frm.JG0356.value);
-            document.frm.JG0357.value = parseFloat(0 + document.frm.JG0357.value);
-            document.frm.JG0358.value = parseFloat(0 + document.frm.JG0358.value);
-            document.frm.JG0359.value = parseFloat(0 + document.frm.JG0359.value);
-            document.frm.JG0360.value = parseFloat(0 + document.frm.JG0360.value);
-
-            document.frm.JG0441.value = parseFloat(0 + document.frm.JG0441.value);
-            document.frm.JG0442.value = parseFloat(0 + document.frm.JG0442.value);
-            document.frm.JG0443.value = parseFloat(0 + document.frm.JG0443.value);
-            document.frm.JG0444.value = parseFloat(0 + document.frm.JG0444.value);
-            document.frm.JG0445.value = parseFloat(0 + document.frm.JG0445.value);
-            document.frm.JG0446.value = parseFloat(0 + document.frm.JG0446.value);
-            document.frm.JG0447.value = parseFloat(0 + document.frm.JG0447.value);
-            document.frm.JG0448.value = parseFloat(0 + document.frm.JG0448.value);
-            document.frm.JG0449.value = parseFloat(0 + document.frm.JG0449.value);
-            document.frm.JG0450.value = parseFloat(0 + document.frm.JG0450.value);
-            document.frm.JG0451.value = parseFloat(0 + document.frm.JG0451.value);
-            document.frm.JG0452.value = parseFloat(0 + document.frm.JG0452.value);
-            document.frm.JG0453.value = parseFloat(0 + document.frm.JG0453.value);
-            document.frm.JG0454.value = parseFloat(0 + document.frm.JG0454.value);
-            document.frm.JG0455.value = parseFloat(0 + document.frm.JG0455.value);
-            document.frm.JG0456.value = parseFloat(0 + document.frm.JG0456.value);
-            document.frm.JG0457.value = parseFloat(0 + document.frm.JG0457.value);
-            document.frm.JG0458.value = parseFloat(0 + document.frm.JG0458.value);
-            document.frm.JG0459.value = parseFloat(0 + document.frm.JG0459.value);
-            document.frm.JG0460.value = parseFloat(0 + document.frm.JG0460.value);
-
-            document.frm.JG0541.value = parseFloat(0 + document.frm.JG0541.value);
-            document.frm.JG0542.value = parseFloat(0 + document.frm.JG0542.value);
-            document.frm.JG0543.value = parseFloat(0 + document.frm.JG0543.value);
-            document.frm.JG0544.value = parseFloat(0 + document.frm.JG0544.value);
-            document.frm.JG0545.value = parseFloat(0 + document.frm.JG0545.value);
-            document.frm.JG0546.value = parseFloat(0 + document.frm.JG0546.value);
-            document.frm.JG0547.value = parseFloat(0 + document.frm.JG0547.value);
-            document.frm.JG0548.value = parseFloat(0 + document.frm.JG0548.value);
-            document.frm.JG0549.value = parseFloat(0 + document.frm.JG0549.value);
-            document.frm.JG0550.value = parseFloat(0 + document.frm.JG0550.value);
-            document.frm.JG0551.value = parseFloat(0 + document.frm.JG0551.value);
-            document.frm.JG0552.value = parseFloat(0 + document.frm.JG0552.value);
-            document.frm.JG0553.value = parseFloat(0 + document.frm.JG0553.value);
-            document.frm.JG0554.value = parseFloat(0 + document.frm.JG0554.value);
-            document.frm.JG0555.value = parseFloat(0 + document.frm.JG0555.value);
-            document.frm.JG0556.value = parseFloat(0 + document.frm.JG0556.value);
-            document.frm.JG0557.value = parseFloat(0 + document.frm.JG0557.value);
-            document.frm.JG0558.value = parseFloat(0 + document.frm.JG0558.value);
-            document.frm.JG0559.value = parseFloat(0 + document.frm.JG0559.value);
-            document.frm.JG0560.value = parseFloat(0 + document.frm.JG0560.value);
-
-            document.frm.JG0641.value = parseFloat(0 + document.frm.JG0641.value);
-            document.frm.JG0642.value = parseFloat(0 + document.frm.JG0642.value);
-            document.frm.JG0643.value = parseFloat(0 + document.frm.JG0643.value);
-            document.frm.JG0644.value = parseFloat(0 + document.frm.JG0644.value);
-            document.frm.JG0645.value = parseFloat(0 + document.frm.JG0645.value);
-            document.frm.JG0646.value = parseFloat(0 + document.frm.JG0646.value);
-            document.frm.JG0647.value = parseFloat(0 + document.frm.JG0647.value);
-            document.frm.JG0648.value = parseFloat(0 + document.frm.JG0648.value);
-            document.frm.JG0649.value = parseFloat(0 + document.frm.JG0649.value);
-            document.frm.JG0650.value = parseFloat(0 + document.frm.JG0650.value);
-            document.frm.JG0651.value = parseFloat(0 + document.frm.JG0651.value);
-            document.frm.JG0652.value = parseFloat(0 + document.frm.JG0652.value);
-            document.frm.JG0653.value = parseFloat(0 + document.frm.JG0653.value);
-            document.frm.JG0654.value = parseFloat(0 + document.frm.JG0654.value);
-            document.frm.JG0655.value = parseFloat(0 + document.frm.JG0655.value);
-            document.frm.JG0656.value = parseFloat(0 + document.frm.JG0656.value);
-            document.frm.JG0657.value = parseFloat(0 + document.frm.JG0657.value);
-            document.frm.JG0658.value = parseFloat(0 + document.frm.JG0658.value);
-            document.frm.JG0659.value = parseFloat(0 + document.frm.JG0659.value);
-            document.frm.JG0660.value = parseFloat(0 + document.frm.JG0660.value);
-
-            // Campos de 61 a 80
-            document.frm.JG0161.value = parseFloat(0 + document.frm.JG0161.value);
-            document.frm.JG0162.value = parseFloat(0 + document.frm.JG0162.value);
-            document.frm.JG0163.value = parseFloat(0 + document.frm.JG0163.value);
-            document.frm.JG0164.value = parseFloat(0 + document.frm.JG0164.value);
-            document.frm.JG0165.value = parseFloat(0 + document.frm.JG0165.value);
-            document.frm.JG0166.value = parseFloat(0 + document.frm.JG0166.value);
-            document.frm.JG0167.value = parseFloat(0 + document.frm.JG0167.value);
-            document.frm.JG0168.value = parseFloat(0 + document.frm.JG0168.value);
-            document.frm.JG0169.value = parseFloat(0 + document.frm.JG0169.value);
-            document.frm.JG0170.value = parseFloat(0 + document.frm.JG0170.value);
-            document.frm.JG0171.value = parseFloat(0 + document.frm.JG0171.value);
-            document.frm.JG0172.value = parseFloat(0 + document.frm.JG0172.value);
-            document.frm.JG0173.value = parseFloat(0 + document.frm.JG0173.value);
-            document.frm.JG0174.value = parseFloat(0 + document.frm.JG0174.value);
-            document.frm.JG0175.value = parseFloat(0 + document.frm.JG0175.value);
-            document.frm.JG0176.value = parseFloat(0 + document.frm.JG0176.value);
-            document.frm.JG0177.value = parseFloat(0 + document.frm.JG0177.value);
-            document.frm.JG0178.value = parseFloat(0 + document.frm.JG0178.value);
-            document.frm.JG0179.value = parseFloat(0 + document.frm.JG0179.value);
-            document.frm.JG0180.value = parseFloat(0 + document.frm.JG0180.value);
-
-            document.frm.JG0261.value = parseFloat(0 + document.frm.JG0261.value);
-            document.frm.JG0262.value = parseFloat(0 + document.frm.JG0262.value);
-            document.frm.JG0263.value = parseFloat(0 + document.frm.JG0263.value);
-            document.frm.JG0264.value = parseFloat(0 + document.frm.JG0264.value);
-            document.frm.JG0265.value = parseFloat(0 + document.frm.JG0265.value);
-            document.frm.JG0266.value = parseFloat(0 + document.frm.JG0266.value);
-            document.frm.JG0267.value = parseFloat(0 + document.frm.JG0267.value);
-            document.frm.JG0268.value = parseFloat(0 + document.frm.JG0268.value);
-            document.frm.JG0269.value = parseFloat(0 + document.frm.JG0269.value);
-            document.frm.JG0270.value = parseFloat(0 + document.frm.JG0270.value);
-            document.frm.JG0271.value = parseFloat(0 + document.frm.JG0271.value);
-            document.frm.JG0272.value = parseFloat(0 + document.frm.JG0272.value);
-            document.frm.JG0273.value = parseFloat(0 + document.frm.JG0273.value);
-            document.frm.JG0274.value = parseFloat(0 + document.frm.JG0274.value);
-            document.frm.JG0275.value = parseFloat(0 + document.frm.JG0275.value);
-            document.frm.JG0276.value = parseFloat(0 + document.frm.JG0276.value);
-            document.frm.JG0277.value = parseFloat(0 + document.frm.JG0277.value);
-            document.frm.JG0278.value = parseFloat(0 + document.frm.JG0278.value);
-            document.frm.JG0279.value = parseFloat(0 + document.frm.JG0279.value);
-            document.frm.JG0280.value = parseFloat(0 + document.frm.JG0280.value);
-
-            document.frm.JG0361.value = parseFloat(0 + document.frm.JG0361.value);
-            document.frm.JG0362.value = parseFloat(0 + document.frm.JG0362.value);
-            document.frm.JG0363.value = parseFloat(0 + document.frm.JG0363.value);
-            document.frm.JG0364.value = parseFloat(0 + document.frm.JG0364.value);
-            document.frm.JG0365.value = parseFloat(0 + document.frm.JG0365.value);
-            document.frm.JG0366.value = parseFloat(0 + document.frm.JG0366.value);
-            document.frm.JG0367.value = parseFloat(0 + document.frm.JG0367.value);
-            document.frm.JG0368.value = parseFloat(0 + document.frm.JG0368.value);
-            document.frm.JG0369.value = parseFloat(0 + document.frm.JG0369.value);
-            document.frm.JG0370.value = parseFloat(0 + document.frm.JG0370.value);
-            document.frm.JG0371.value = parseFloat(0 + document.frm.JG0371.value);
-            document.frm.JG0372.value = parseFloat(0 + document.frm.JG0372.value);
-            document.frm.JG0373.value = parseFloat(0 + document.frm.JG0373.value);
-            document.frm.JG0374.value = parseFloat(0 + document.frm.JG0374.value);
-            document.frm.JG0375.value = parseFloat(0 + document.frm.JG0375.value);
-            document.frm.JG0376.value = parseFloat(0 + document.frm.JG0376.value);
-            document.frm.JG0377.value = parseFloat(0 + document.frm.JG0377.value);
-            document.frm.JG0378.value = parseFloat(0 + document.frm.JG0378.value);
-            document.frm.JG0379.value = parseFloat(0 + document.frm.JG0379.value);
-            document.frm.JG0380.value = parseFloat(0 + document.frm.JG0380.value);
-
-            document.frm.JG0461.value = parseFloat(0 + document.frm.JG0461.value);
-            document.frm.JG0462.value = parseFloat(0 + document.frm.JG0462.value);
-            document.frm.JG0463.value = parseFloat(0 + document.frm.JG0463.value);
-            document.frm.JG0464.value = parseFloat(0 + document.frm.JG0464.value);
-            document.frm.JG0465.value = parseFloat(0 + document.frm.JG0465.value);
-            document.frm.JG0466.value = parseFloat(0 + document.frm.JG0466.value);
-            document.frm.JG0467.value = parseFloat(0 + document.frm.JG0467.value);
-            document.frm.JG0468.value = parseFloat(0 + document.frm.JG0468.value);
-            document.frm.JG0469.value = parseFloat(0 + document.frm.JG0469.value);
-            document.frm.JG0470.value = parseFloat(0 + document.frm.JG0470.value);
-            document.frm.JG0471.value = parseFloat(0 + document.frm.JG0471.value);
-            document.frm.JG0472.value = parseFloat(0 + document.frm.JG0472.value);
-            document.frm.JG0473.value = parseFloat(0 + document.frm.JG0473.value);
-            document.frm.JG0474.value = parseFloat(0 + document.frm.JG0474.value);
-            document.frm.JG0475.value = parseFloat(0 + document.frm.JG0475.value);
-            document.frm.JG0476.value = parseFloat(0 + document.frm.JG0476.value);
-            document.frm.JG0477.value = parseFloat(0 + document.frm.JG0477.value);
-            document.frm.JG0478.value = parseFloat(0 + document.frm.JG0478.value);
-            document.frm.JG0479.value = parseFloat(0 + document.frm.JG0479.value);
-            document.frm.JG0480.value = parseFloat(0 + document.frm.JG0480.value);
-
-            document.frm.JG0561.value = parseFloat(0 + document.frm.JG0561.value);
-            document.frm.JG0562.value = parseFloat(0 + document.frm.JG0562.value);
-            document.frm.JG0563.value = parseFloat(0 + document.frm.JG0563.value);
-            document.frm.JG0564.value = parseFloat(0 + document.frm.JG0564.value);
-            document.frm.JG0565.value = parseFloat(0 + document.frm.JG0565.value);
-            document.frm.JG0566.value = parseFloat(0 + document.frm.JG0566.value);
-            document.frm.JG0567.value = parseFloat(0 + document.frm.JG0567.value);
-            document.frm.JG0568.value = parseFloat(0 + document.frm.JG0568.value);
-            document.frm.JG0569.value = parseFloat(0 + document.frm.JG0569.value);
-            document.frm.JG0570.value = parseFloat(0 + document.frm.JG0570.value);
-            document.frm.JG0571.value = parseFloat(0 + document.frm.JG0571.value);
-            document.frm.JG0572.value = parseFloat(0 + document.frm.JG0572.value);
-            document.frm.JG0573.value = parseFloat(0 + document.frm.JG0573.value);
-            document.frm.JG0574.value = parseFloat(0 + document.frm.JG0574.value);
-            document.frm.JG0575.value = parseFloat(0 + document.frm.JG0575.value);
-            document.frm.JG0576.value = parseFloat(0 + document.frm.JG0576.value);
-            document.frm.JG0577.value = parseFloat(0 + document.frm.JG0577.value);
-            document.frm.JG0578.value = parseFloat(0 + document.frm.JG0578.value);
-            document.frm.JG0579.value = parseFloat(0 + document.frm.JG0579.value);
-            document.frm.JG0580.value = parseFloat(0 + document.frm.JG0580.value);
-
-            document.frm.JG0661.value = parseFloat(0 + document.frm.JG0661.value);
-            document.frm.JG0662.value = parseFloat(0 + document.frm.JG0662.value);
-            document.frm.JG0663.value = parseFloat(0 + document.frm.JG0663.value);
-            document.frm.JG0664.value = parseFloat(0 + document.frm.JG0664.value);
-            document.frm.JG0665.value = parseFloat(0 + document.frm.JG0665.value);
-            document.frm.JG0666.value = parseFloat(0 + document.frm.JG0666.value);
-            document.frm.JG0667.value = parseFloat(0 + document.frm.JG0667.value);
-            document.frm.JG0668.value = parseFloat(0 + document.frm.JG0668.value);
-            document.frm.JG0669.value = parseFloat(0 + document.frm.JG0669.value);
-            document.frm.JG0670.value = parseFloat(0 + document.frm.JG0670.value);
-            document.frm.JG0671.value = parseFloat(0 + document.frm.JG0671.value);
-            document.frm.JG0672.value = parseFloat(0 + document.frm.JG0672.value);
-            document.frm.JG0673.value = parseFloat(0 + document.frm.JG0673.value);
-            document.frm.JG0674.value = parseFloat(0 + document.frm.JG0674.value);
-            document.frm.JG0675.value = parseFloat(0 + document.frm.JG0675.value);
-            document.frm.JG0676.value = parseFloat(0 + document.frm.JG0676.value);
-            document.frm.JG0677.value = parseFloat(0 + document.frm.JG0677.value);
-            document.frm.JG0678.value = parseFloat(0 + document.frm.JG0678.value);
-            document.frm.JG0679.value = parseFloat(0 + document.frm.JG0679.value);
-            document.frm.JG0680.value = parseFloat(0 + document.frm.JG0680.value);
-
-            // Campos de 81 a 100
-            document.frm.JG0181.value = parseFloat(0 + document.frm.JG0181.value);
-            document.frm.JG0182.value = parseFloat(0 + document.frm.JG0182.value);
-            document.frm.JG0183.value = parseFloat(0 + document.frm.JG0183.value);
-            document.frm.JG0184.value = parseFloat(0 + document.frm.JG0184.value);
-            document.frm.JG0185.value = parseFloat(0 + document.frm.JG0185.value);
-            document.frm.JG0186.value = parseFloat(0 + document.frm.JG0186.value);
-            document.frm.JG0187.value = parseFloat(0 + document.frm.JG0187.value);
-            document.frm.JG0188.value = parseFloat(0 + document.frm.JG0188.value);
-            document.frm.JG0189.value = parseFloat(0 + document.frm.JG0189.value);
-            document.frm.JG0190.value = parseFloat(0 + document.frm.JG0190.value);
-            document.frm.JG0191.value = parseFloat(0 + document.frm.JG0191.value);
-            document.frm.JG0192.value = parseFloat(0 + document.frm.JG0192.value);
-            document.frm.JG0193.value = parseFloat(0 + document.frm.JG0193.value);
-            document.frm.JG0194.value = parseFloat(0 + document.frm.JG0194.value);
-            document.frm.JG0195.value = parseFloat(0 + document.frm.JG0195.value);
-            document.frm.JG0196.value = parseFloat(0 + document.frm.JG0196.value);
-            document.frm.JG0197.value = parseFloat(0 + document.frm.JG0197.value);
-            document.frm.JG0198.value = parseFloat(0 + document.frm.JG0198.value);
-            document.frm.JG0199.value = parseFloat(0 + document.frm.JG0199.value);
-            document.frm.JG01100.value = parseFloat(0 + document.frm.JG01100.value);
-
-            document.frm.JG0281.value = parseFloat(0 + document.frm.JG0281.value);
-            document.frm.JG0282.value = parseFloat(0 + document.frm.JG0282.value);
-            document.frm.JG0283.value = parseFloat(0 + document.frm.JG0283.value);
-            document.frm.JG0284.value = parseFloat(0 + document.frm.JG0284.value);
-            document.frm.JG0285.value = parseFloat(0 + document.frm.JG0285.value);
-            document.frm.JG0286.value = parseFloat(0 + document.frm.JG0286.value);
-            document.frm.JG0287.value = parseFloat(0 + document.frm.JG0287.value);
-            document.frm.JG0288.value = parseFloat(0 + document.frm.JG0288.value);
-            document.frm.JG0289.value = parseFloat(0 + document.frm.JG0289.value);
-            document.frm.JG0290.value = parseFloat(0 + document.frm.JG0290.value);
-            document.frm.JG0291.value = parseFloat(0 + document.frm.JG0291.value);
-            document.frm.JG0292.value = parseFloat(0 + document.frm.JG0292.value);
-            document.frm.JG0293.value = parseFloat(0 + document.frm.JG0293.value);
-            document.frm.JG0294.value = parseFloat(0 + document.frm.JG0294.value);
-            document.frm.JG0295.value = parseFloat(0 + document.frm.JG0295.value);
-            document.frm.JG0296.value = parseFloat(0 + document.frm.JG0296.value);
-            document.frm.JG0297.value = parseFloat(0 + document.frm.JG0297.value);
-            document.frm.JG0298.value = parseFloat(0 + document.frm.JG0298.value);
-            document.frm.JG0299.value = parseFloat(0 + document.frm.JG0299.value);
-            document.frm.JG02100.value = parseFloat(0 + document.frm.JG02100.value);
-
-            document.frm.JG0381.value = parseFloat(0 + document.frm.JG0381.value);
-            document.frm.JG0382.value = parseFloat(0 + document.frm.JG0382.value);
-            document.frm.JG0383.value = parseFloat(0 + document.frm.JG0383.value);
-            document.frm.JG0384.value = parseFloat(0 + document.frm.JG0384.value);
-            document.frm.JG0385.value = parseFloat(0 + document.frm.JG0385.value);
-            document.frm.JG0386.value = parseFloat(0 + document.frm.JG0386.value);
-            document.frm.JG0387.value = parseFloat(0 + document.frm.JG0387.value);
-            document.frm.JG0388.value = parseFloat(0 + document.frm.JG0388.value);
-            document.frm.JG0389.value = parseFloat(0 + document.frm.JG0389.value);
-            document.frm.JG0390.value = parseFloat(0 + document.frm.JG0390.value);
-            document.frm.JG0391.value = parseFloat(0 + document.frm.JG0391.value);
-            document.frm.JG0392.value = parseFloat(0 + document.frm.JG0392.value);
-            document.frm.JG0393.value = parseFloat(0 + document.frm.JG0393.value);
-            document.frm.JG0394.value = parseFloat(0 + document.frm.JG0394.value);
-            document.frm.JG0395.value = parseFloat(0 + document.frm.JG0395.value);
-            document.frm.JG0396.value = parseFloat(0 + document.frm.JG0396.value);
-            document.frm.JG0397.value = parseFloat(0 + document.frm.JG0397.value);
-            document.frm.JG0398.value = parseFloat(0 + document.frm.JG0398.value);
-            document.frm.JG0399.value = parseFloat(0 + document.frm.JG0399.value);
-            document.frm.JG03100.value = parseFloat(0 + document.frm.JG03100.value);
-
-            document.frm.JG0481.value = parseFloat(0 + document.frm.JG0481.value);
-            document.frm.JG0482.value = parseFloat(0 + document.frm.JG0482.value);
-            document.frm.JG0483.value = parseFloat(0 + document.frm.JG0483.value);
-            document.frm.JG0484.value = parseFloat(0 + document.frm.JG0484.value);
-            document.frm.JG0485.value = parseFloat(0 + document.frm.JG0485.value);
-            document.frm.JG0486.value = parseFloat(0 + document.frm.JG0486.value);
-            document.frm.JG0487.value = parseFloat(0 + document.frm.JG0487.value);
-            document.frm.JG0488.value = parseFloat(0 + document.frm.JG0488.value);
-            document.frm.JG0489.value = parseFloat(0 + document.frm.JG0489.value);
-            document.frm.JG0490.value = parseFloat(0 + document.frm.JG0490.value);
-            document.frm.JG0491.value = parseFloat(0 + document.frm.JG0491.value);
-            document.frm.JG0492.value = parseFloat(0 + document.frm.JG0492.value);
-            document.frm.JG0493.value = parseFloat(0 + document.frm.JG0493.value);
-            document.frm.JG0494.value = parseFloat(0 + document.frm.JG0494.value);
-            document.frm.JG0495.value = parseFloat(0 + document.frm.JG0495.value);
-            document.frm.JG0496.value = parseFloat(0 + document.frm.JG0496.value);
-            document.frm.JG0497.value = parseFloat(0 + document.frm.JG0497.value);
-            document.frm.JG0498.value = parseFloat(0 + document.frm.JG0498.value);
-            document.frm.JG0499.value = parseFloat(0 + document.frm.JG0499.value);
-            document.frm.JG04100.value = parseFloat(0 + document.frm.JG04100.value);
-
-            document.frm.JG0581.value = parseFloat(0 + document.frm.JG0581.value);
-            document.frm.JG0582.value = parseFloat(0 + document.frm.JG0582.value);
-            document.frm.JG0583.value = parseFloat(0 + document.frm.JG0583.value);
-            document.frm.JG0584.value = parseFloat(0 + document.frm.JG0584.value);
-            document.frm.JG0585.value = parseFloat(0 + document.frm.JG0585.value);
-            document.frm.JG0586.value = parseFloat(0 + document.frm.JG0586.value);
-            document.frm.JG0587.value = parseFloat(0 + document.frm.JG0587.value);
-            document.frm.JG0588.value = parseFloat(0 + document.frm.JG0588.value);
-            document.frm.JG0589.value = parseFloat(0 + document.frm.JG0589.value);
-            document.frm.JG0590.value = parseFloat(0 + document.frm.JG0590.value);
-            document.frm.JG0591.value = parseFloat(0 + document.frm.JG0591.value);
-            document.frm.JG0592.value = parseFloat(0 + document.frm.JG0592.value);
-            document.frm.JG0593.value = parseFloat(0 + document.frm.JG0593.value);
-            document.frm.JG0594.value = parseFloat(0 + document.frm.JG0594.value);
-            document.frm.JG0595.value = parseFloat(0 + document.frm.JG0595.value);
-            document.frm.JG0596.value = parseFloat(0 + document.frm.JG0596.value);
-            document.frm.JG0597.value = parseFloat(0 + document.frm.JG0597.value);
-            document.frm.JG0598.value = parseFloat(0 + document.frm.JG0598.value);
-            document.frm.JG0599.value = parseFloat(0 + document.frm.JG0599.value);
-            document.frm.JG05100.value = parseFloat(0 + document.frm.JG05100.value);
-
-            document.frm.JG0681.value = parseFloat(0 + document.frm.JG0681.value);
-            document.frm.JG0682.value = parseFloat(0 + document.frm.JG0682.value);
-            document.frm.JG0683.value = parseFloat(0 + document.frm.JG0683.value);
-            document.frm.JG0684.value = parseFloat(0 + document.frm.JG0684.value);
-            document.frm.JG0685.value = parseFloat(0 + document.frm.JG0685.value);
-            document.frm.JG0686.value = parseFloat(0 + document.frm.JG0686.value);
-            document.frm.JG0687.value = parseFloat(0 + document.frm.JG0687.value);
-            document.frm.JG0688.value = parseFloat(0 + document.frm.JG0688.value);
-            document.frm.JG0689.value = parseFloat(0 + document.frm.JG0689.value);
-            document.frm.JG0690.value = parseFloat(0 + document.frm.JG0690.value);
-            document.frm.JG0691.value = parseFloat(0 + document.frm.JG0691.value);
-            document.frm.JG0692.value = parseFloat(0 + document.frm.JG0692.value);
-            document.frm.JG0693.value = parseFloat(0 + document.frm.JG0693.value);
-            document.frm.JG0694.value = parseFloat(0 + document.frm.JG0694.value);
-            document.frm.JG0695.value = parseFloat(0 + document.frm.JG0695.value);
-            document.frm.JG0696.value = parseFloat(0 + document.frm.JG0696.value);
-            document.frm.JG0697.value = parseFloat(0 + document.frm.JG0697.value);
-            document.frm.JG0698.value = parseFloat(0 + document.frm.JG0698.value);
-            document.frm.JG0699.value = parseFloat(0 + document.frm.JG0699.value);
-            document.frm.JG06100.value = parseFloat(0 + document.frm.JG06100.value);
               
             // Soma os campos de 01 a 10                       
             total01 = parseFloat(document.frm.JG0101.value) + parseFloat(document.frm.JG0201.value) + parseFloat(document.frm.JG0301.value) + parseFloat(document.frm.JG0401.value) + parseFloat(document.frm.JG0501.value) + parseFloat(document.frm.JG0601.value);
@@ -1891,11 +1297,280 @@
                                                    
         }          
         
-        
-        
-        
-                                             
-    </script>    
+
+    // *********************************************************
+    // Se o texto tiver 1 carater concatena com 0 antes 
+    // *********************************************************
+    function tamanhoTexto(textoNum, nomeComp) {
+      if (textoNum.length == 1) {
+				if (nomeComp == "NE01") {
+						document.frm.NE01.value = "0" + document.frm.NE01.value;
+				}
+				if (nomeComp == "NE02") {
+						document.frm.NE02.value = "0" + document.frm.NE02.value;
+				}				
+				if (nomeComp == "NE03") {
+						document.frm.NE03.value = "0" + document.frm.NE03.value;
+				}
+				if (nomeComp == "NE04") {
+						document.frm.NE04.value = "0" + document.frm.NE04.value;
+				}
+				if (nomeComp == "NE05") {
+						document.frm.NE05.value = "0" + document.frm.NE05.value;
+				}
+				if (nomeComp == "NE06") {
+						document.frm.NE06.value = "0" + document.frm.NE06.value;
+				}
+				if (nomeComp == "NE07") {
+						document.frm.NE07.value = "0" + document.frm.NE07.value;
+				}
+				if (nomeComp == "NE08") {
+						document.frm.NE08.value = "0" + document.frm.NE08.value;
+				}
+				if (nomeComp == "NE09") {
+						document.frm.NE09.value = "0" + document.frm.NE09.value;
+				}
+				if (nomeComp == "NE10") {
+						document.frm.NE10.value = "0" + document.frm.NE10.value;
+				}
+				if (nomeComp == "NE11") {
+						document.frm.NE11.value = "0" + document.frm.NE11.value;
+				}
+				if (nomeComp == "NE12") {
+						document.frm.NE12.value = "0" + document.frm.NE12.value;
+				}        
+				
+				if (nomeComp == "NE13") {
+						document.frm.NE13.value = "0" + document.frm.NE13.value;
+				}
+				if (nomeComp == "NE14") {
+						document.frm.NE14.value = "0" + document.frm.NE14.value;
+				}				
+				if (nomeComp == "NE15") {
+						document.frm.NE15.value = "0" + document.frm.NE15.value;
+				}
+				if (nomeComp == "NE16") {
+						document.frm.NE16.value = "0" + document.frm.NE16.value;
+				}
+				if (nomeComp == "NE17") {
+						document.frm.NE17.value = "0" + document.frm.NE17.value;
+				}
+				if (nomeComp == "NE18") {
+						document.frm.NE18.value = "0" + document.frm.NE18.value;
+				}
+				if (nomeComp == "NE19") {
+						document.frm.NE19.value = "0" + document.frm.NE19.value;
+				}		
+				if (nomeComp == "NE20") {
+						document.frm.NE20.value = "0" + document.frm.NE20.value;
+				}				
+			}
+    }				
+    
+    // *********************************************************   
+    // Ordena os numeros distribuidos nos jogos
+    // *********************************************************   
+    function ordenarArray() {
+			
+			var jogosArray01 = [document.frm.JG0101.value, document.frm.JG0201.value, document.frm.JG0301.value, document.frm.JG0401.value, document.frm.JG0501.value, document.frm.JG0601.value];     // OK 		
+			var jogosArray02 = [document.frm.JG0102.value, document.frm.JG0202.value, document.frm.JG0302.value, document.frm.JG0402.value, document.frm.JG0502.value, document.frm.JG0602.value];     // OK 		
+			var jogosArray03 = [document.frm.JG0103.value, document.frm.JG0203.value, document.frm.JG0303.value, document.frm.JG0403.value, document.frm.JG0503.value, document.frm.JG0603.value];     // OK 		
+			var jogosArray04 = [document.frm.JG0104.value, document.frm.JG0204.value, document.frm.JG0304.value, document.frm.JG0404.value, document.frm.JG0504.value, document.frm.JG0604.value];     // OK 		
+			var jogosArray05 = [document.frm.JG0105.value, document.frm.JG0205.value, document.frm.JG0305.value, document.frm.JG0405.value, document.frm.JG0505.value, document.frm.JG0605.value];     // OK 		
+			var jogosArray06 = [document.frm.JG0106.value, document.frm.JG0206.value, document.frm.JG0306.value, document.frm.JG0406.value, document.frm.JG0506.value, document.frm.JG0606.value];     // OK  
+			var jogosArray07 = [document.frm.JG0107.value, document.frm.JG0207.value, document.frm.JG0307.value, document.frm.JG0407.value, document.frm.JG0507.value, document.frm.JG0607.value];     // OK 		
+			var jogosArray08 = [document.frm.JG0108.value, document.frm.JG0208.value, document.frm.JG0308.value, document.frm.JG0408.value, document.frm.JG0508.value, document.frm.JG0608.value];     // OK 		
+			var jogosArray09 = [document.frm.JG0109.value, document.frm.JG0209.value, document.frm.JG0309.value, document.frm.JG0409.value, document.frm.JG0509.value, document.frm.JG0605.value];     // OK 		
+			var jogosArray10 = [document.frm.JG0110.value, document.frm.JG0210.value, document.frm.JG0310.value, document.frm.JG0410.value, document.frm.JG0510.value, document.frm.JG0610.value];     // OK  			
+			
+			escreveJogos = "JOGOS EM ORDEM CRESCENTE" + "\n\n" + "JOGOS de 01 ao 10" + "\n" + jogosArray01.sort() + "\n" + jogosArray02.sort() + "\n" + jogosArray03.sort() + "\n" + jogosArray04.sort() + "\n" + jogosArray05.sort() + "\n"; 
+			escreveJogos = escreveJogos + jogosArray06.sort() + "\n" + jogosArray07.sort() + "\n" + jogosArray08.sort() + "\n" + jogosArray09.sort() + "\n" + jogosArray10.sort() + "\n\n"; 
+
+			var jogosArray11 = [document.frm.JG0111.value, document.frm.JG0211.value, document.frm.JG0311.value, document.frm.JG0411.value, document.frm.JG0511.value, document.frm.JG0611.value];     // OK 		
+			var jogosArray12 = [document.frm.JG0112.value, document.frm.JG0212.value, document.frm.JG0312.value, document.frm.JG0412.value, document.frm.JG0512.value, document.frm.JG0612.value];     // OK 		
+			var jogosArray13 = [document.frm.JG0113.value, document.frm.JG0213.value, document.frm.JG0313.value, document.frm.JG0413.value, document.frm.JG0513.value, document.frm.JG0613.value];     // OK 		
+			var jogosArray14 = [document.frm.JG0114.value, document.frm.JG0214.value, document.frm.JG0314.value, document.frm.JG0414.value, document.frm.JG0514.value, document.frm.JG0614.value];     // OK 		
+			var jogosArray15 = [document.frm.JG0115.value, document.frm.JG0215.value, document.frm.JG0315.value, document.frm.JG0415.value, document.frm.JG0515.value, document.frm.JG0615.value];     // OK 		
+			var jogosArray16 = [document.frm.JG0116.value, document.frm.JG0216.value, document.frm.JG0316.value, document.frm.JG0416.value, document.frm.JG0516.value, document.frm.JG0616.value];     // OK  
+			var jogosArray17 = [document.frm.JG0117.value, document.frm.JG0217.value, document.frm.JG0317.value, document.frm.JG0417.value, document.frm.JG0517.value, document.frm.JG0617.value];     // OK 		
+			var jogosArray18 = [document.frm.JG0118.value, document.frm.JG0218.value, document.frm.JG0318.value, document.frm.JG0418.value, document.frm.JG0518.value, document.frm.JG0618.value];     // OK 		
+			var jogosArray19 = [document.frm.JG0119.value, document.frm.JG0219.value, document.frm.JG0319.value, document.frm.JG0419.value, document.frm.JG0519.value, document.frm.JG0619.value];     // OK 		
+			var jogosArray20 = [document.frm.JG0120.value, document.frm.JG0220.value, document.frm.JG0320.value, document.frm.JG0420.value, document.frm.JG0520.value, document.frm.JG0620.value];     // OK  			
+			
+			escreveJogos = escreveJogos + "JOGOS de 11 ao 20" + "\n" + jogosArray11.sort() + "\n" + jogosArray12.sort() + "\n" + jogosArray13.sort() + "\n" + jogosArray14.sort() + "\n" + jogosArray15.sort() + "\n"; 
+			escreveJogos = escreveJogos + jogosArray16.sort() + "\n" + jogosArray17.sort() + "\n" + jogosArray18.sort() + "\n" + jogosArray19.sort() + "\n" + jogosArray20.sort() + "\n\n"; 
+
+
+			var jogosArray21 = [document.frm.JG0121.value, document.frm.JG0221.value, document.frm.JG0321.value, document.frm.JG0421.value, document.frm.JG0521.value, document.frm.JG0621.value];     // OK 		
+			var jogosArray22 = [document.frm.JG0122.value, document.frm.JG0222.value, document.frm.JG0322.value, document.frm.JG0422.value, document.frm.JG0522.value, document.frm.JG0622.value];     // OK 		
+			var jogosArray23 = [document.frm.JG0123.value, document.frm.JG0223.value, document.frm.JG0323.value, document.frm.JG0423.value, document.frm.JG0523.value, document.frm.JG0623.value];     // OK 		
+			var jogosArray24 = [document.frm.JG0124.value, document.frm.JG0224.value, document.frm.JG0324.value, document.frm.JG0424.value, document.frm.JG0524.value, document.frm.JG0624.value];     // OK 		
+			var jogosArray25 = [document.frm.JG0125.value, document.frm.JG0225.value, document.frm.JG0325.value, document.frm.JG0425.value, document.frm.JG0525.value, document.frm.JG0625.value];     // OK 		
+			var jogosArray26 = [document.frm.JG0126.value, document.frm.JG0226.value, document.frm.JG0326.value, document.frm.JG0426.value, document.frm.JG0526.value, document.frm.JG0626.value];     // OK  
+			var jogosArray27 = [document.frm.JG0127.value, document.frm.JG0227.value, document.frm.JG0327.value, document.frm.JG0427.value, document.frm.JG0527.value, document.frm.JG0627.value];     // OK 		
+			var jogosArray28 = [document.frm.JG0128.value, document.frm.JG0228.value, document.frm.JG0328.value, document.frm.JG0428.value, document.frm.JG0528.value, document.frm.JG0628.value];     // OK 		
+			var jogosArray29 = [document.frm.JG0129.value, document.frm.JG0229.value, document.frm.JG0329.value, document.frm.JG0429.value, document.frm.JG0529.value, document.frm.JG0629.value];     // OK 		
+			var jogosArray30 = [document.frm.JG0130.value, document.frm.JG0230.value, document.frm.JG0330.value, document.frm.JG0430.value, document.frm.JG0530.value, document.frm.JG0630.value];     // OK  			
+			
+			escreveJogos = escreveJogos + "JOGOS de 21 ao 30" + "\n" + jogosArray21.sort() + "\n" + jogosArray22.sort() + "\n" + jogosArray23.sort() + "\n" + jogosArray24.sort() + "\n" + jogosArray25.sort() + "\n"; 
+			escreveJogos = escreveJogos + jogosArray26.sort() + "\n" + jogosArray27.sort() + "\n" + jogosArray28.sort() + "\n" + jogosArray29.sort() + "\n" + jogosArray30.sort() + "\n\n"; 			
+
+			var jogosArray31 = [document.frm.JG0131.value, document.frm.JG0231.value, document.frm.JG0331.value, document.frm.JG0431.value, document.frm.JG0531.value, document.frm.JG0631.value];     // OK 		
+			var jogosArray32 = [document.frm.JG0132.value, document.frm.JG0232.value, document.frm.JG0332.value, document.frm.JG0432.value, document.frm.JG0532.value, document.frm.JG0632.value];     // OK 		
+			var jogosArray33 = [document.frm.JG0133.value, document.frm.JG0233.value, document.frm.JG0333.value, document.frm.JG0433.value, document.frm.JG0533.value, document.frm.JG0633.value];     // OK 		
+			var jogosArray34 = [document.frm.JG0134.value, document.frm.JG0234.value, document.frm.JG0334.value, document.frm.JG0434.value, document.frm.JG0534.value, document.frm.JG0634.value];     // OK 		
+			var jogosArray35 = [document.frm.JG0135.value, document.frm.JG0235.value, document.frm.JG0335.value, document.frm.JG0435.value, document.frm.JG0535.value, document.frm.JG0635.value];     // OK 		
+			var jogosArray36 = [document.frm.JG0136.value, document.frm.JG0236.value, document.frm.JG0336.value, document.frm.JG0436.value, document.frm.JG0536.value, document.frm.JG0636.value];     // OK  
+			var jogosArray37 = [document.frm.JG0137.value, document.frm.JG0237.value, document.frm.JG0337.value, document.frm.JG0437.value, document.frm.JG0537.value, document.frm.JG0637.value];     // OK 		
+			var jogosArray38 = [document.frm.JG0138.value, document.frm.JG0238.value, document.frm.JG0338.value, document.frm.JG0438.value, document.frm.JG0538.value, document.frm.JG0638.value];     // OK 		
+			var jogosArray39 = [document.frm.JG0139.value, document.frm.JG0239.value, document.frm.JG0339.value, document.frm.JG0439.value, document.frm.JG0539.value, document.frm.JG0639.value];     // OK 		
+			var jogosArray40 = [document.frm.JG0140.value, document.frm.JG0240.value, document.frm.JG0340.value, document.frm.JG0440.value, document.frm.JG0540.value, document.frm.JG0640.value];     // OK  			
+			
+			escreveJogos = escreveJogos + "JOGOS de 31 ao 40" + "\n" + jogosArray31.sort() + "\n" + jogosArray32.sort() + "\n" + jogosArray33.sort() + "\n" + jogosArray34.sort() + "\n" + jogosArray35.sort() + "\n"; 
+			escreveJogos = escreveJogos + jogosArray36.sort() + "\n" + jogosArray37.sort() + "\n" + jogosArray38.sort() + "\n" + jogosArray39.sort() + "\n" + jogosArray40.sort() + "\n\n"; 	
+			
+			var jogosArray41 = [document.frm.JG0141.value, document.frm.JG0241.value, document.frm.JG0341.value, document.frm.JG0441.value, document.frm.JG0541.value, document.frm.JG0641.value];     // OK 		
+			var jogosArray42 = [document.frm.JG0142.value, document.frm.JG0242.value, document.frm.JG0342.value, document.frm.JG0442.value, document.frm.JG0542.value, document.frm.JG0642.value];     // OK 		
+			var jogosArray43 = [document.frm.JG0143.value, document.frm.JG0243.value, document.frm.JG0343.value, document.frm.JG0443.value, document.frm.JG0543.value, document.frm.JG0643.value];     // OK 		
+			var jogosArray44 = [document.frm.JG0144.value, document.frm.JG0244.value, document.frm.JG0344.value, document.frm.JG0444.value, document.frm.JG0544.value, document.frm.JG0644.value];     // OK 		
+			var jogosArray45 = [document.frm.JG0145.value, document.frm.JG0245.value, document.frm.JG0345.value, document.frm.JG0445.value, document.frm.JG0545.value, document.frm.JG0645.value];     // OK 		
+			var jogosArray46 = [document.frm.JG0146.value, document.frm.JG0246.value, document.frm.JG0346.value, document.frm.JG0446.value, document.frm.JG0546.value, document.frm.JG0646.value];     // OK  
+			var jogosArray47 = [document.frm.JG0147.value, document.frm.JG0247.value, document.frm.JG0347.value, document.frm.JG0447.value, document.frm.JG0547.value, document.frm.JG0647.value];     // OK 		
+			var jogosArray48 = [document.frm.JG0148.value, document.frm.JG0248.value, document.frm.JG0348.value, document.frm.JG0448.value, document.frm.JG0548.value, document.frm.JG0648.value];     // OK 		
+			var jogosArray49 = [document.frm.JG0149.value, document.frm.JG0249.value, document.frm.JG0349.value, document.frm.JG0449.value, document.frm.JG0549.value, document.frm.JG0649.value];     // OK 		
+			var jogosArray50 = [document.frm.JG0150.value, document.frm.JG0250.value, document.frm.JG0350.value, document.frm.JG0450.value, document.frm.JG0550.value, document.frm.JG0650.value];     // OK  			
+			
+			escreveJogos = escreveJogos + "JOGOS de 41 ao 50" + "\n" + jogosArray41.sort() + "\n" + jogosArray42.sort() + "\n" + jogosArray43.sort() + "\n" + jogosArray44.sort() + "\n" + jogosArray45.sort() + "\n"; 
+			escreveJogos = escreveJogos + jogosArray46.sort() + "\n" + jogosArray47.sort() + "\n" + jogosArray48.sort() + "\n" + jogosArray49.sort() + "\n" + jogosArray50.sort() + "\n\n"; 				
+
+			
+			var jogosArray51 = [document.frm.JG0151.value, document.frm.JG0251.value, document.frm.JG0351.value, document.frm.JG0451.value, document.frm.JG0551.value, document.frm.JG0651.value];     // OK 		
+			var jogosArray52 = [document.frm.JG0152.value, document.frm.JG0252.value, document.frm.JG0352.value, document.frm.JG0452.value, document.frm.JG0552.value, document.frm.JG0652.value];     // OK 		
+			var jogosArray53 = [document.frm.JG0153.value, document.frm.JG0253.value, document.frm.JG0353.value, document.frm.JG0453.value, document.frm.JG0553.value, document.frm.JG0653.value];     // OK 		
+			var jogosArray54 = [document.frm.JG0154.value, document.frm.JG0254.value, document.frm.JG0354.value, document.frm.JG0454.value, document.frm.JG0554.value, document.frm.JG0654.value];     // OK 		
+			var jogosArray55 = [document.frm.JG0155.value, document.frm.JG0255.value, document.frm.JG0355.value, document.frm.JG0455.value, document.frm.JG0555.value, document.frm.JG0655.value];     // OK 		
+			var jogosArray56 = [document.frm.JG0156.value, document.frm.JG0256.value, document.frm.JG0356.value, document.frm.JG0456.value, document.frm.JG0556.value, document.frm.JG0656.value];     // OK  
+			var jogosArray57 = [document.frm.JG0157.value, document.frm.JG0257.value, document.frm.JG0357.value, document.frm.JG0457.value, document.frm.JG0557.value, document.frm.JG0657.value];     // OK 		
+			var jogosArray58 = [document.frm.JG0158.value, document.frm.JG0258.value, document.frm.JG0358.value, document.frm.JG0458.value, document.frm.JG0558.value, document.frm.JG0658.value];     // OK 		
+			var jogosArray59 = [document.frm.JG0159.value, document.frm.JG0259.value, document.frm.JG0359.value, document.frm.JG0459.value, document.frm.JG0559.value, document.frm.JG0659.value];     // OK 		
+			var jogosArray60 = [document.frm.JG0150.value, document.frm.JG0260.value, document.frm.JG0360.value, document.frm.JG0460.value, document.frm.JG0560.value, document.frm.JG0660.value];     // OK  			
+			
+			escreveJogos = escreveJogos + "JOGOS de 51 ao 60" + "\n" + jogosArray51.sort() + "\n" + jogosArray52.sort() + "\n" + jogosArray53.sort() + "\n" + jogosArray54.sort() + "\n" + jogosArray55.sort() + "\n"; 
+			escreveJogos = escreveJogos + jogosArray56.sort() + "\n" + jogosArray57.sort() + "\n" + jogosArray58.sort() + "\n" + jogosArray59.sort() + "\n" + jogosArray60.sort() + "\n\n"; 	
+
+			var jogosArray61 = [document.frm.JG0161.value, document.frm.JG0261.value, document.frm.JG0361.value, document.frm.JG0461.value, document.frm.JG0561.value, document.frm.JG0661.value];     // OK 		
+			var jogosArray62 = [document.frm.JG0162.value, document.frm.JG0262.value, document.frm.JG0362.value, document.frm.JG0462.value, document.frm.JG0562.value, document.frm.JG0662.value];     // OK 		
+			var jogosArray63 = [document.frm.JG0163.value, document.frm.JG0263.value, document.frm.JG0363.value, document.frm.JG0463.value, document.frm.JG0563.value, document.frm.JG0663.value];     // OK 		
+			var jogosArray64 = [document.frm.JG0164.value, document.frm.JG0264.value, document.frm.JG0364.value, document.frm.JG0464.value, document.frm.JG0564.value, document.frm.JG0664.value];     // OK 		
+			var jogosArray65 = [document.frm.JG0165.value, document.frm.JG0265.value, document.frm.JG0365.value, document.frm.JG0465.value, document.frm.JG0565.value, document.frm.JG0665.value];     // OK 		
+			var jogosArray66 = [document.frm.JG0166.value, document.frm.JG0266.value, document.frm.JG0366.value, document.frm.JG0466.value, document.frm.JG0566.value, document.frm.JG0666.value];     // OK  
+			var jogosArray67 = [document.frm.JG0167.value, document.frm.JG0267.value, document.frm.JG0367.value, document.frm.JG0467.value, document.frm.JG0567.value, document.frm.JG0667.value];     // OK 		
+			var jogosArray68 = [document.frm.JG0168.value, document.frm.JG0268.value, document.frm.JG0368.value, document.frm.JG0468.value, document.frm.JG0568.value, document.frm.JG0668.value];     // OK 		
+			var jogosArray69 = [document.frm.JG0169.value, document.frm.JG0269.value, document.frm.JG0369.value, document.frm.JG0469.value, document.frm.JG0569.value, document.frm.JG0669.value];     // OK 		
+			var jogosArray70 = [document.frm.JG0170.value, document.frm.JG0270.value, document.frm.JG0370.value, document.frm.JG0470.value, document.frm.JG0570.value, document.frm.JG0670.value];     // OK  			
+			
+			escreveJogos = escreveJogos + "JOGOS de 61 ao 70" + "\n" + jogosArray61.sort() + "\n" + jogosArray62.sort() + "\n" + jogosArray63.sort() + "\n" + jogosArray64.sort() + "\n" + jogosArray65.sort() + "\n"; 
+			escreveJogos = escreveJogos + jogosArray66.sort() + "\n" + jogosArray67.sort() + "\n" + jogosArray68.sort() + "\n" + jogosArray69.sort() + "\n" + jogosArray70.sort() + "\n\n"; 	
+
+
+			var jogosArray71 = [document.frm.JG0171.value, document.frm.JG0271.value, document.frm.JG0371.value, document.frm.JG0471.value, document.frm.JG0571.value, document.frm.JG0671.value];     // OK 		
+			var jogosArray72 = [document.frm.JG0172.value, document.frm.JG0272.value, document.frm.JG0372.value, document.frm.JG0472.value, document.frm.JG0572.value, document.frm.JG0672.value];     // OK 		
+			var jogosArray73 = [document.frm.JG0173.value, document.frm.JG0273.value, document.frm.JG0373.value, document.frm.JG0473.value, document.frm.JG0573.value, document.frm.JG0673.value];     // OK 		
+			var jogosArray74 = [document.frm.JG0174.value, document.frm.JG0274.value, document.frm.JG0374.value, document.frm.JG0474.value, document.frm.JG0574.value, document.frm.JG0674.value];     // OK 		
+			var jogosArray75 = [document.frm.JG0175.value, document.frm.JG0275.value, document.frm.JG0375.value, document.frm.JG0475.value, document.frm.JG0575.value, document.frm.JG0675.value];     // OK 		
+			var jogosArray76 = [document.frm.JG0176.value, document.frm.JG0276.value, document.frm.JG0376.value, document.frm.JG0476.value, document.frm.JG0576.value, document.frm.JG0676.value];     // OK  
+			var jogosArray77 = [document.frm.JG0177.value, document.frm.JG0277.value, document.frm.JG0377.value, document.frm.JG0477.value, document.frm.JG0577.value, document.frm.JG0677.value];     // OK 		
+			var jogosArray78 = [document.frm.JG0178.value, document.frm.JG0278.value, document.frm.JG0378.value, document.frm.JG0478.value, document.frm.JG0578.value, document.frm.JG0678.value];     // OK 		
+			var jogosArray79 = [document.frm.JG0179.value, document.frm.JG0279.value, document.frm.JG0379.value, document.frm.JG0479.value, document.frm.JG0579.value, document.frm.JG0679.value];     // OK 		
+			var jogosArray80 = [document.frm.JG0180.value, document.frm.JG0280.value, document.frm.JG0380.value, document.frm.JG0480.value, document.frm.JG0580.value, document.frm.JG0680.value];     // OK  			
+			
+			escreveJogos = escreveJogos + "JOGOS de 71 ao 80" + "\n" + jogosArray71.sort() + "\n" + jogosArray72.sort() + "\n" + jogosArray73.sort() + "\n" + jogosArray74.sort() + "\n" + jogosArray75.sort() + "\n"; 
+			escreveJogos = escreveJogos + jogosArray76.sort() + "\n" + jogosArray77.sort() + "\n" + jogosArray78.sort() + "\n" + jogosArray79.sort() + "\n" + jogosArray80.sort() + "\n\n"; 	
+
+
+			var jogosArray81 = [document.frm.JG0181.value, document.frm.JG0281.value, document.frm.JG0381.value, document.frm.JG0481.value, document.frm.JG0581.value, document.frm.JG0681.value];     // OK 		
+			var jogosArray82 = [document.frm.JG0182.value, document.frm.JG0282.value, document.frm.JG0382.value, document.frm.JG0482.value, document.frm.JG0582.value, document.frm.JG0682.value];     // OK 		
+			var jogosArray83 = [document.frm.JG0183.value, document.frm.JG0283.value, document.frm.JG0383.value, document.frm.JG0483.value, document.frm.JG0583.value, document.frm.JG0683.value];     // OK 		
+			var jogosArray84 = [document.frm.JG0184.value, document.frm.JG0284.value, document.frm.JG0384.value, document.frm.JG0484.value, document.frm.JG0584.value, document.frm.JG0684.value];     // OK 		
+			var jogosArray85 = [document.frm.JG0185.value, document.frm.JG0285.value, document.frm.JG0385.value, document.frm.JG0485.value, document.frm.JG0585.value, document.frm.JG0685.value];     // OK 		
+			var jogosArray86 = [document.frm.JG0186.value, document.frm.JG0286.value, document.frm.JG0386.value, document.frm.JG0486.value, document.frm.JG0586.value, document.frm.JG0686.value];     // OK  
+			var jogosArray87 = [document.frm.JG0187.value, document.frm.JG0287.value, document.frm.JG0387.value, document.frm.JG0487.value, document.frm.JG0587.value, document.frm.JG0687.value];     // OK 		
+			var jogosArray88 = [document.frm.JG0188.value, document.frm.JG0288.value, document.frm.JG0388.value, document.frm.JG0488.value, document.frm.JG0588.value, document.frm.JG0688.value];     // OK 		
+			var jogosArray89 = [document.frm.JG0189.value, document.frm.JG0289.value, document.frm.JG0389.value, document.frm.JG0489.value, document.frm.JG0589.value, document.frm.JG0689.value];     // OK 		
+			var jogosArray90 = [document.frm.JG0190.value, document.frm.JG0290.value, document.frm.JG0390.value, document.frm.JG0490.value, document.frm.JG0590.value, document.frm.JG0690.value];     // OK  			
+			
+			escreveJogos = escreveJogos + "JOGOS de 81 ao 90" + "\n" + jogosArray81.sort() + "\n" + jogosArray82.sort() + "\n" + jogosArray83.sort() + "\n" + jogosArray84.sort() + "\n" + jogosArray85.sort() + "\n"; 
+			escreveJogos = escreveJogos + jogosArray86.sort() + "\n" + jogosArray87.sort() + "\n" + jogosArray88.sort() + "\n" + jogosArray89.sort() + "\n" + jogosArray90.sort() + "\n\n"; 	
+
+
+			var jogosArray91 = [document.frm.JG0191.value, document.frm.JG0291.value, document.frm.JG0391.value, document.frm.JG0491.value, document.frm.JG0591.value, document.frm.JG0691.value];     // OK 		
+			var jogosArray92 = [document.frm.JG0192.value, document.frm.JG0292.value, document.frm.JG0392.value, document.frm.JG0492.value, document.frm.JG0592.value, document.frm.JG0692.value];     // OK 		
+			var jogosArray93 = [document.frm.JG0193.value, document.frm.JG0293.value, document.frm.JG0393.value, document.frm.JG0493.value, document.frm.JG0593.value, document.frm.JG0693.value];     // OK 		
+			var jogosArray94 = [document.frm.JG0194.value, document.frm.JG0294.value, document.frm.JG0394.value, document.frm.JG0494.value, document.frm.JG0594.value, document.frm.JG0694.value];     // OK 		
+			var jogosArray95 = [document.frm.JG0195.value, document.frm.JG0295.value, document.frm.JG0395.value, document.frm.JG0495.value, document.frm.JG0595.value, document.frm.JG0695.value];     // OK 		
+			var jogosArray96 = [document.frm.JG0196.value, document.frm.JG0296.value, document.frm.JG0396.value, document.frm.JG0496.value, document.frm.JG0596.value, document.frm.JG0696.value];     // OK  
+			var jogosArray97 = [document.frm.JG0197.value, document.frm.JG0297.value, document.frm.JG0397.value, document.frm.JG0497.value, document.frm.JG0597.value, document.frm.JG0697.value];     // OK 		
+			var jogosArray98 = [document.frm.JG0198.value, document.frm.JG0298.value, document.frm.JG0398.value, document.frm.JG0498.value, document.frm.JG0598.value, document.frm.JG0698.value];     // OK 		
+			var jogosArray99 = [document.frm.JG0199.value, document.frm.JG0299.value, document.frm.JG0399.value, document.frm.JG0499.value, document.frm.JG0599.value, document.frm.JG0699.value];     // OK 		
+			var jogosArray100 = [document.frm.JG01100.value, document.frm.JG02100.value, document.frm.JG03100.value, document.frm.JG04100.value, document.frm.JG05100.value, document.frm.JG06100.value];     // OK  			
+			
+			escreveJogos = escreveJogos + "JOGOS de 91 ao 100" + "\n" + jogosArray91.sort() + "\n" + jogosArray92.sort() + "\n" + jogosArray93.sort() + "\n" + jogosArray94.sort() + "\n" + jogosArray95.sort() + "\n"; 
+			escreveJogos = escreveJogos + jogosArray96.sort() + "\n" + jogosArray97.sort() + "\n" + jogosArray98.sort() + "\n" + jogosArray99.sort() + "\n" + jogosArray100.sort() + "\n\n"; 	
+
+
+			/* Chama a função de mostraJogos */ 		
+			mostraJogos(escreveJogos); 
+		
+		}    	                                                            
+  </script> 
+	
+		
+	<style>
+		body {font-family: Arial, Helvetica, sans-serif;}
+
+		/* The Modal (background) */
+		.modal {
+				display: none; /* Hidden by default */
+				position: fixed; /* Stay in place */
+				z-index: 1; /* Sit on top */
+				padding-top: 50px; /* Location of the box */
+				left: 0;
+				top: 0;
+				width: 100%; /* Full width */
+				height: 100%; /* Full height */			
+				/* allow vertical scrolling if required */
+				overflow-x: hidden;
+				overflow-y: auto;			
+				/*			overflow: auto; */ /* Enable scroll if needed */
+				background-color: rgb(0,0,0); /* Fallback color */
+				background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
+
+		/* Modal Content */
+		.modal-content {
+				background-color: #fefefe;
+				margin: auto;
+				padding: 20px;
+				border: 1px solid #888;
+				width: 40%;
+		}
+
+		/* The Close Button */
+		.close {
+				color: #aaaaaa;
+				float: right;
+				font-size: 28px;
+				font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+				color: #000;
+				text-decoration: none;
+				cursor: pointer;
+		}
+  </style>	
+
 </head>
 
 <body background="100reais1000dolares.jpg">
@@ -2013,64 +1688,64 @@
 	    </tr>
 	    <tr>				
 		    <td align="center">
-		        <input type="text" size="1" maxlength="2" name="NE01" style="font-size:20px; font-weight:bold; width:30px;" onblur="carregaNE01();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="1" maxlength="2" name="NE01" style="font-size:20px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE01();soma();numero_escolhido(this.value);">	
 		    </td>
 		    <td align="center">
-		        <input type="text" size="3" maxlength="2" name="NE02" style="font-size:20px; font-weight:bold; width:30px;" onblur="carregaNE02();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE02" style="font-size:20px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE02();soma();numero_escolhido(this.value);">	
 		    </td>
 		    <td align="center">
-		        <input type="text" size="3" maxlength="2" name="NE03" style="font-size:20px; font-weight:bold; width:30px;" onblur="carregaNE03();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE03" style="font-size:20px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE03();soma();numero_escolhido(this.value);">	
 		    </td>
 		    <td align="center">
-		        <input type="text" size="3" maxlength="2" name="NE04" style="font-size:20px; font-weight:bold; width:30px;" onblur="carregaNE04();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE04" style="font-size:20px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE04();soma();numero_escolhido(this.value);">	
 		    </td>
 		    <td align="center">
-		        <input type="text" size="3" maxlength="2" name="NE05" style="font-size:20px; font-weight:bold; width:30px;" onblur="carregaNE05();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE05" style="font-size:20px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE05();soma();numero_escolhido(this.value);">	
 		    </td>
 		    <td align="center">
-		        <input type="text" size="3" maxlength="2" name="NE06" style="font-size:20px; font-weight:bold; width:30px;" onblur="carregaNE06();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE06" style="font-size:20px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE06();soma();numero_escolhido(this.value);">	
 		    </td>
 		    <td align="center">
-		        <input type="text" size="3" maxlength="2" name="NE07" style="font-size:20px; font-weight:bold; width:30px;" onblur="carregaNE07();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE07" style="font-size:20px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE07();soma();numero_escolhido(this.value);">	
 		    </td>
 		    <td align="center">
-		        <input type="text" size="3" maxlength="2" name="NE08" style="font-size:20px; font-weight:bold; width:30px;" onblur="carregaNE08();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE08" style="font-size:20px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE08();soma();numero_escolhido(this.value);">	
 		    </td>
 		    <td align="center">
-		        <input type="text" size="3" maxlength="2" name="NE09" style="font-size:20px; font-weight:bold; width:30px;" onblur="carregaNE09();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE09" style="font-size:20px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE09();soma();numero_escolhido(this.value);">	
 		    </td>
 		    <td align="center">
-		        <input type="text" size="3" maxlength="2" name="NE10" style="font-size:20px; font-weight:bold; width:30px;" onblur="carregaNE10();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE10" style="font-size:20px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE10();soma();numero_escolhido(this.value);">	
 		    </td>
 		    <td align="center">
-		        <input type="text" size="3" maxlength="2" name="NE11" style="font-size:20px; font-weight:bold; width:30px;" onblur="carregaNE11();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE11" style="font-size:20px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE11();soma();numero_escolhido(this.value);">	
 		    </td>
 		    <td align="center">
-		        <input type="text" size="3" maxlength="2" name="NE12" style="font-size:20px; font-weight:bold; width:30px;" onblur="carregaNE12();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE12" style="font-size:20px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE12();soma();numero_escolhido(this.value);">	
 		    </td>
 		    <td align="center">
-		        <input type="text" size="3" maxlength="2" name="NE13" style="font-size:20px; font-weight:bold; width:30px;" onblur="carregaNE13();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE13" style="font-size:20px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE13();soma();numero_escolhido(this.value);">	
 		    </td>
 		    <td align="center">
-		        <input type="text" size="3" maxlength="2" name="NE14" style="font-size:20px; font-weight:bold; width:30px;" onblur="carregaNE14();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE14" style="font-size:20px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE14();soma();numero_escolhido(this.value);">	
 		    </td>
 		    <td align="center">
-		        <input type="text" size="3" maxlength="2" name="NE15" style="font-size:20px; font-weight:bold; width:30px;" onblur="carregaNE15();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE15" style="font-size:20px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE15();soma();numero_escolhido(this.value);">	
 		    </td>
 		    <td align="center">
-		        <input type="text" size="3" maxlength="2" name="NE16" style="font-size:20px; font-weight:bold; width:30px;" onblur="carregaNE16();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE16" style="font-size:20px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE16();soma();numero_escolhido(this.value);">	
 		    </td>
 		    <td align="center">
-		        <input type="text" size="3" maxlength="2" name="NE17" style="font-size:20px; font-weight:bold; width:30px;" onblur="carregaNE17();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE17" style="font-size:20px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE17();soma();numero_escolhido(this.value);">	
 		    </td>
 		    <td align="center">
-		        <input type="text" size="3" maxlength="2" name="NE18" style="font-size:20px; font-weight:bold; width:30px;" onblur="carregaNE18();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE18" style="font-size:20px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE18();soma();numero_escolhido(this.value);">	
 		    </td>
 		    <td align="center">
-		        <input type="text" size="3" maxlength="2" name="NE19" style="font-size:20px; font-weight:bold; width:30px;" onblur="carregaNE19();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE19" style="font-size:20px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE19();soma();numero_escolhido(this.value);">	
 		    </td>
 		    <td align="center">
-		        <input type="text" size="3" maxlength="2" name="NE20" style="font-size:20px; font-weight:bold; width:30px;" onblur="carregaNE20();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE20" style="font-size:20px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE20();soma();numero_escolhido(this.value);">	
 		    </td>
 		</tr>
     </table>
@@ -5114,30 +4789,52 @@
     <br>
     
     <div style="border: 1px; background-color:#87CEEB; font-size: 18px;width: 800px;"> 
-        <b>OBS.: O JOGO DEVE ESTº BALANCEADO, NA MINHA VISºO(JOSº CHARLES). </b> <br>
-        <b style="color:Green;">MEGA SENA = O NúmERO BALANCEADO º O 174, Jº QUE 6/60 = 6 * 29 = 174. </b> <br>
-        <b style="color:#8B3A3A;">DUPLA SENA = O NúmERO BALANCEADO º O 144, Jº QUE 6/50 = 6 * 24 = 144. </b> <br>
-        <b style="color:MidnightBlue;">QUINA = O NúmERO BALANCEADO º O 195, Jº QUE 6/80 = 5 * 39 = 195. </b> <br>
-        <b>UMA MºDIA DE +30 OU -30, QUE Dº 60 DE INTERVALO º UMA BOA SOMA.</b> <br>
-        <b>MºTODO DESENVOLVIDO POR : GAIL  HOWARD</b> <br>
-        <b>PROGRAMA DESENVOVIDO POR : JOSº CHARLES</b> <br>
+        <b>OBS.: O JOGO DEVE ESTÁ BALANCEADO, NA MINHA VISÃO(JOSÉ CHARLES). </b> <br>
+        <b style="color:Green;">MEGA SENA = O NúmERO BALANCEADO é O 174, Jº QUE 6/60 = 6 * 29 = 174. </b> <br>
+        <b style="color:#8B3A3A;">DUPLA SENA = O NúmERO BALANCEADO é O 144, Jº QUE 6/50 = 6 * 24 = 144. </b> <br>
+        <b style="color:MidnightBlue;">QUINA = O NúmERO BALANCEADO é O 195, Jº QUE 6/80 = 5 * 39 = 195. </b> <br>
+        <b>UMA MÉDIA DE +30 OU -30, QUE DÁ 60 DE INTERVALO é UMA BOA SOMA.</b> <br>
+        <b>MÉTODO DESENVOLVIDO POR : GAIL  HOWARD</b> <br>
+        <b>PROGRAMA DESENVOVIDO POR : JOSÉ CHARLES</b> <br>
         
           Esse é um sistema reduzido de 4 de 6, o que significa que vocº terá um mínimo 
 garantido de terceiro prêmio, se os seis números sorteados caºrem dentro do grupo de 20 
 números de rotação que você escolheu para jogar. É claro que sempre você poderá 
-ganhar muito mais do que o mínimo garantido. Vocº pode ganhar muitos prêmios. Até 
+ganhar muito mais do que o mínimo garantido. Você pode ganhar muitos prêmios. Até 
 mesmo o primeiro prêmio. (Se você fosse jogar todas as possíveis combinações de seis 
 números em um sistema de 20 números, você teria que jogar 38.760 jogos em somente 
 um sorteio!) 
 
 		<br> 
+		<br>
 		<b>                        
-			<a href="index.html">
-			Retornar à Página Inicial
-			</a>
-		</b>
-    </div>     
-    
+			<a href="index.html" style="font-size: large;">
+						 Retornar à Página Inicial
+					</a>
+		</b>	
+		<br>
+		<br>
+  </div>     
+
+
+		<br>
+		<table>
+				<tr>
+						<td align="center">
+								<input id="myBtn" type="button" name="ordenar"  value=" - Ordenar Jogos + "  style="background-color: aquamarine; font-size: 25px; border-radius: 10px;"  onclick="ordenarArray()"/>&nbsp;
+						</td>	
+				</tr>	
+		</table>
+		<br>
+	<!-- The Modal -->
+	<div id="myModal" class="modal" style="background-color: darkorange;">  
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times; </span>
+			<p id="ordem"></p>
+		</div>
+		<br><br>
+	</div>	
            
 </center> 
 </form>   

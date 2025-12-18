@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <title>SISTEMA PARA LOTERIA DA QUINA - 20 DEZENAS COMBINADAS - 40 JOGOS</title>
+    <title>SISTEMA QUINA, DUPLA, MEGA e MILIONÁRIA - 20 DZ - 40 JG</title>
     <script language="javascript">
 
 			var escreveJogos;
@@ -981,10 +981,10 @@
 			escreveJogos = escreveJogos + "JOGOS de 21 ao 30" + "\n" + jogosArray21.sort() + "\n" + jogosArray22.sort() + "\n" + jogosArray23.sort() + "\n" + jogosArray24.sort() + "\n" + jogosArray25.sort() + "\n"; 
 			escreveJogos = escreveJogos + jogosArray26.sort() + "\n" + jogosArray27.sort() + "\n" + jogosArray28.sort() + "\n" + jogosArray29.sort() + "\n" + jogosArray30.sort() + "\n\n"; 			
 
-			var jogosArray31 = [document.frm.JG0131.value, document.frm.JG0231.value, document.frm.JG0331.value, document.frm.JG0431.value, document.frm.JG0531.value, document.frm.JG0621.value];     // OK 		
+			var jogosArray31 = [document.frm.JG0131.value, document.frm.JG0231.value, document.frm.JG0331.value, document.frm.JG0431.value, document.frm.JG0531.value, document.frm.JG0631.value];     // OK 		
 			var jogosArray32 = [document.frm.JG0132.value, document.frm.JG0232.value, document.frm.JG0332.value, document.frm.JG0432.value, document.frm.JG0532.value, document.frm.JG0632.value];     // OK 		
 			var jogosArray33 = [document.frm.JG0133.value, document.frm.JG0233.value, document.frm.JG0333.value, document.frm.JG0433.value, document.frm.JG0533.value, document.frm.JG0633.value];     // OK 		
-			var jogosArray34 = [document.frm.JG0134.value, document.frm.JG0234.value, document.frm.JG0334.value, document.frm.JG0434.value, document.frm.JG0534.value, document.frm.JG0623.value];     // OK 		
+			var jogosArray34 = [document.frm.JG0134.value, document.frm.JG0234.value, document.frm.JG0334.value, document.frm.JG0434.value, document.frm.JG0534.value, document.frm.JG0634.value];     // OK 		
 			var jogosArray35 = [document.frm.JG0135.value, document.frm.JG0235.value, document.frm.JG0335.value, document.frm.JG0435.value, document.frm.JG0535.value, document.frm.JG0635.value];     // OK 		
 			var jogosArray36 = [document.frm.JG0136.value, document.frm.JG0236.value, document.frm.JG0336.value, document.frm.JG0436.value, document.frm.JG0536.value, document.frm.JG0636.value];     // OK  
 			var jogosArray37 = [document.frm.JG0137.value, document.frm.JG0237.value, document.frm.JG0337.value, document.frm.JG0437.value, document.frm.JG0537.value, document.frm.JG0637.value];     // OK 		
@@ -1000,7 +1000,54 @@
 		
 		}    				
                                                               
-    </script>    
+    </script>   
+		
+    <style>
+			body {font-family: Arial, Helvetica, sans-serif;}
+
+			/* The Modal (background) */
+			.modal {
+					display: none; /* Hidden by default */
+					position: fixed; /* Stay in place */
+					z-index: 1; /* Sit on top */
+					padding-top: 50px; /* Location of the box */
+					left: 0;
+					top: 0;
+					width: 100%; /* Full width */
+					height: 100%; /* Full height */			
+					/* allow vertical scrolling if required */
+					overflow-x: hidden;
+					overflow-y: auto;			
+					/*			overflow: auto; */ /* Enable scroll if needed */
+					background-color: rgb(0,0,0); /* Fallback color */
+					background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+			}
+
+			/* Modal Content */
+			.modal-content {
+					background-color: #fefefe;
+					margin: auto;
+					padding: 20px;
+					border: 1px solid #888;
+					width: 40%;
+			}
+
+			/* The Close Button */
+			.close {
+					color: #aaaaaa;
+					float: right;
+					font-size: 28px;
+					font-weight: bold;
+			}
+
+			.close:hover,
+			.close:focus {
+					color: #000;
+					text-decoration: none;
+					cursor: pointer;
+			}
+	</style>	        
+	
 </head>
 
 <body background="100reais1000dolares.jpg" bgcolor="#836FFF">
@@ -2543,30 +2590,32 @@
 
 		
     </div>     
-    <br> 
-    <b>                        
-      <a href="index.html">
-        Retornar à Página Inicial
-      </a>
-    </b>     
+
 		<br>
-		<br>
-		<table>
-			<tr>
-				<td align="center">
-					&nbsp;&nbsp; <input id="myBtn" type="button" name="ordenar" value=" Ordenar Jogos " style="background-color: aquamarine; font-size: 20px;" onclick="ordenarArray()"/> &nbsp;&nbsp;
-				</td>	
-			</tr>	
-		</table>	
-		<br>
+		<b>                        
+			<a href="index.html" style="font-size: large;">
+						 Retornar à Página Inicial
+					</a>
+		</b>	
+		 <br>
+			<br>
+			<table>
+					<tr>
+							<td align="center">
+									<input id="myBtn" type="button" name="ordenar"  value=" - Ordenar Jogos + "  style="background-color: aquamarine; font-size: 25px; border-radius: 10px;"  onclick="ordenarArray()"/>&nbsp;
+							</td>	
+					</tr>	
+			</table>
+			<br>
 		<!-- The Modal -->
-		<div id="myModal" class="modal">  
+		<div id="myModal" class="modal" style="background-color: darkorange;">  
 			<!-- Modal content -->
-			<div class="modal-content" style="background-color: darkorange; font-size: 28px;width: 450px;">
+			<div class="modal-content">
 				<span class="close">&times; </span>
-				<p id="ordem"></p> 	
+				<p id="ordem"></p>
 			</div>
-		</div>            
+			<br><br>
+		</div> 		
 </center> 
 </form>   
 </body>
