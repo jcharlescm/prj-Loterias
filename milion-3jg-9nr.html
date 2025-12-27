@@ -126,7 +126,7 @@
 			
 			var jogosArray03 = [document.frm.JG0301.value, document.frm.JG0302.value, document.frm.JG0303.value, document.frm.JG0304.value, document.frm.JG0305.value, document.frm.JG0306.value];     // OK 
 				
-			escreveJogos = "\n" + jogosArray01.sort() + "\n" + jogosArray02.sort() + "\n" + jogosArray03.sort() + "\n";
+			escreveJogos = " - JOGOS EM ORDEM CRESCENTE + " + "\n\n" + jogosArray01.sort() + "\n" + jogosArray02.sort() + "\n" + jogosArray03.sort() + "\n";
 			
 			/* Chama a funººo de mostraJogos */ 		
 			mostraJogos(escreveJogos); 
@@ -362,7 +362,54 @@
             }																                                         
         }                                         
     </script> 
-  
+
+
+<style>
+	body {font-family: Arial, Helvetica, sans-serif;}
+
+	/* The Modal (background) */
+	.modal {
+		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		padding-top: 50px; /* Location of the box */
+		left: 0;
+		top: 0;
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */			
+		/* allow vertical scrolling if required */
+		overflow-x: hidden;
+		overflow-y: auto;			
+		/*			overflow: auto; */ /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	}
+
+	/* Modal Content */
+	.modal-content {
+		background-color: #fefefe;
+		margin: auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 40%;
+	}
+
+	/* The Close Button */
+	.close {
+		color: #aaaaaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+</style>			
+
 </head>
 
 <body background="100reais1000dolares.jpg" bgcolor="#836FFF">
@@ -373,7 +420,7 @@
 	<table border="1" bgcolor="#87CEEB"> 
 		<tr>
 			<td colspan="25" align="center">
-				<b>3 JOGOS DA MILIONÁRIA - OBJETIVANDO O ACERTO DE 4 E 5 NÚMEROS ENTRE OS 9 COMBINADOS</b> 		
+				<b> 3 JOGOS DA MILIONÁRIA </b> <br> <b> OBJETIVANDO O ACERTO DE 4 E 5 NÚMEROS ENTRE OS 9 COMBINADOS </b> 		
 			</td>		    		    
 		</tr>
 		<tr>
@@ -391,23 +438,24 @@
 				&nbsp;&nbsp;&nbsp;
 				<b>CONC. N. : </b> 		
 				&nbsp;
-				<input type="text" size="22" maxlength="30" name="CONCNR">
+				<input type="text" size="20" maxlength="30" name="CONCNR">
 				&nbsp;&nbsp;&nbsp;	
 				<b>DATA: </b> 		
-				<input type="text" size="22" maxlength="30" name="DTCONC">	
+				<input type="text" size="20" maxlength="30" name="DTCONC">	
 			</td>
 		</tr>
 	</table>
+<br>
 
-	<table>
-		<tr>	
-			<td>
 
 				<table border="1" bgcolor="#87CEEB"> 
 					<tr>
-						<td colspan="12" align="center">
-							<b>ESCOLHA 5 DEZENAS DA MOLDURA DE FORA</b> 		
-						</td>		    		    
+						<td colspan="5" align="center">
+							<b>ESCOLHA 5 DEZENAS DA </b> <br> <b>MOLDURA DE FORA</b> 		
+						</td>		
+						<td colspan="4" align="center">
+							<b>ESCOLHA 4 DEZENAS DA  </b> <br> <b>MOLDURA DE DENTRO</b> 		
+						</td>							    		    
 					</tr>
 					<tr>			
 						<td align="center">
@@ -425,6 +473,19 @@
 						<td align="center">
 							<b>05º</b>
 						</td>
+						<td align="center">
+							<b>06º</b>
+						</td>
+						<td align="center">
+							<b>07º</b>
+						</td>
+						<td align="center">
+							<b>08º</b>
+						</td>
+						<td align="center">
+							<b>09º</b>
+						</td>		       
+
 					</tr>
 					<tr>							
 						<td align="center">
@@ -442,130 +503,7 @@
 						<td align="center">
 							<input type="text" size="3" maxlength="2" name="NE05" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE05();soma();numero_escolhido(this.value);">	
 						</td>
-					</tr>
-					
-					<tr>
-						<td colspan="12">+ + + + + + + + + + + + &nbsp;
-							<input type="button" name="nr01"  value="01" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr02"  value="02" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr03"  value="03" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr04"  value="04" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr05"  value="05" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-						</td>
-					</tr>		
-					<tr>
-						<td colspan="12">+ + + + + + + + + + + + &nbsp;
-							<input type="button" name="nr06"  value="06" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT1"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT2"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT3"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr10"  value="10" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-						</td>
-					</tr>		
-					<tr>
-						<td colspan="12">+ + + + + + + + + + + + &nbsp;
-							<input type="button" name="nr11"  value="11" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT4"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT5"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT6"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr15"  value="15" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-						</td>
-					</tr>		
-					<tr>
-						<td colspan="12">+ + + + + + + + + + + + &nbsp;
-							<input type="button" name="nr16"  value="16" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT17"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT18"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT19"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr20"  value="20" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
-						</td>
-					</tr>
-					<tr>
-						<td colspan="12">+ + + + + + + + + + + + &nbsp;
-							<input type="button" name="nr21"  value="21" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT22"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT23"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT24"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr25"  value="25" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
-						</td>
-					</tr>
-													
-					<tr>
-						<td colspan="12">+ + + + + + + + + + + + &nbsp;
-							<input type="button" name="nr26"  value="26" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT27"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT28"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT29"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr30"  value="30" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
-						</td>
-					</tr>
-													
-					<tr> 
-						<td colspan="12">+ + + + + + + + + + + + &nbsp;
-							<input type="button" name="nr31"  value="31" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT32"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT33"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT34"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr35"  value="35" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
-						</td>
-					</tr>
-													
-					<tr>
-						<td colspan="12">+ + + + + + + + + + + + &nbsp;
-							<input type="button" name="nr36"  value="36" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT37"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT38"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT39"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr40"  value="40" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
-						</td>
-					</tr>
-													
-					<tr>
-						<td colspan="12">+ + + + + + + + + + + + &nbsp;
-							<input type="button" name="nr41"  value="41" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT42"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT43"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT44"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr45"  value="45" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
-						</td>
-					</tr>
-																													
-					<tr>
-						<td colspan="12">+ + + + + + + + + + + + &nbsp;
-							<input type="button" name="nr46"  value="46" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr47"  value="47" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr48"  value="48" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr49"  value="49" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nr50"  value="50" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>                		    
-						</td>
-					</tr>	
 
-				</table>
-
-			</td>
-			<td>
-				<table border="1" bgcolor="#87CEEB"> 
-					<tr>
-						<td colspan="6" align="center">
-							<b>ESCOLHA 4 DEZENAS DA MOLDURA DE DENTRO</b> 		
-						</td>		    		    
-					</tr>
-					<tr>
-						<td align="center">
-							<b>6º</b>
-						</td>
-						<td align="center">
-							<b>7º</b>
-						</td>
-						<td align="center">
-							<b>8º</b>
-						</td>
-						<td align="center">
-							<b>9º</b>
-						</td>		       
-
-					</tr>					
-					<tr>
 						<td align="center">
 							<input type="text" size="3" maxlength="2" name="NE06" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE06();soma();numero_escolhido(this.value);">	
 						</td>
@@ -578,108 +516,139 @@
 						<td align="center">
 							<input type="text" size="3" maxlength="2" name="NE09" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE09();soma();numero_escolhido(this.value);">	
 						</td>
-													</tr>					
-					<tr style="align-items: center;">			
-						<td colspan="6">+ + + + + + &nbsp;
-							<input type="button" name="nrT10"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT11"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT12"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT13"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT14"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-						</td>
-					
-					</tr>		
-					<tr>
-						<td colspan="6">+ + + + + + &nbsp;
-								<input type="button" name="nrT15"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr07"  value="07" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr08"  value="08" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr09"  value="09" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nrT16"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							</td>
-					</tr>		
-					<tr>
-						<td colspan="6">+ + + + + + &nbsp;
-								<input type="button" name="nrT17"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr12"  value="12" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr13"  value="13" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr14"  value="14" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nrT18"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							</td>
-					</tr>		
-					<tr>
-						<td colspan="6">+ + + + + + &nbsp;
-								<input type="button" name="nrT19"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr17"  value="17" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr18"  value="18" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr19"  value="19" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nrT20"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
-							</td>
-					</tr>	
-					<tr>
-						<td colspan="6">+ + + + + + &nbsp;
-								<input type="button" name="nrT21"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr22"  value="22" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr23"  value="23" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr24"  value="24" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nrT25"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
-							</td>
-					</tr>	
-														
-					<tr>
-						<td colspan="6">+ + + + + + &nbsp;
-								<input type="button" name="nrT26"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr27"  value="27" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr28"  value="28" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr29"  value="29" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nrT30"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
-							</td>
-					</tr>	
-														
-					<tr>
-						<td colspan="6">+ + + + + + &nbsp;
-								<input type="button" name="nrT31"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr32"  value="32" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr33"  value="33" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr34"  value="34" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nrT35"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
-							</td>
-					</tr>	
-														
-					<tr>
-						<td colspan="6">+ + + + + + &nbsp;
-								<input type="button" name="nrT36"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr37"  value="37" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr38"  value="38" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr39"  value="39" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nrT40"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
-							</td>
-					</tr>	
-														
-					<tr>
-						<td colspan="6">+ + + + + + &nbsp;
-								<input type="button" name="nrT41"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr42"  value="42" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr43"  value="43" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nr44"  value="44" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-								<input type="button" name="nrT45"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
-							</td>
-					</tr>	
-														
-
-					<tr>
-						<td colspan="6">+ + + + + + &nbsp;
-							<input type="button" name="nrT46"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT47"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT48"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT49"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
-							<input type="button" name="nrT50"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>                		    
-						</td>
 					</tr>
-				</table>
-			</td>
+					
+			<tr>
+				<td colspan="5" align="center">
+					<br> &nbsp;
+					<input type="button" name="nr01"  value="01" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nr02"  value="02" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nr03"  value="03" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nr04"  value="04" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nr05"  value="05" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<br>  &nbsp;
+					<input type="button" name="nr06"  value="06" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT1"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT2"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT3"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nr10"  value="10" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<br>  &nbsp;
+					<input type="button" name="nr11"  value="11" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT4"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT5"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT6"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nr15"  value="15" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<br>  &nbsp;
+					<input type="button" name="nr16"  value="16" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT17"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT18"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT19"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nr20"  value="20" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
+					<br>  &nbsp;
+					<input type="button" name="nr21"  value="21" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT22"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT23"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT24"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nr25"  value="25" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
+					<br> &nbsp;
+					<input type="button" name="nr26"  value="26" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT27"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT28"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT29"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nr30"  value="30" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
+					<br>  &nbsp;
+					<input type="button" name="nr31"  value="31" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT32"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT33"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT34"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nr35"  value="35" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
+					<br> &nbsp;
+					<input type="button" name="nr36"  value="36" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT37"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT38"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT39"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nr40"  value="40" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
+					<br> &nbsp;
+					<input type="button" name="nr41"  value="41" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT42"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT43"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nrT44"  value="xx" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nr45"  value="45" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
+					<br> &nbsp;
+					<input type="button" name="nr46"  value="46" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nr47"  value="47" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nr48"  value="48" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nr49"  value="49" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+					<input type="button" name="nr50"  value="50" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>    <br> <br>           		    
+				</td>
+
+
+			<td colspan="6" align="center">
+				<br> &nbsp;
+				<input type="button" name="nrT10"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nrT11"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nrT12"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nrT13"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nrT14"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<br>  &nbsp;
+				<input type="button" name="nrT15"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr07"  value="07" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr08"  value="08" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr09"  value="09" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nrT16"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<br> &nbsp;
+				<input type="button" name="nrT17"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr12"  value="12" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr13"  value="13" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr14"  value="14" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nrT18"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<br>  &nbsp;
+				<input type="button" name="nrT19"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr17"  value="17" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr18"  value="18" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr19"  value="19" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nrT20"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
+				<br>  &nbsp;
+				<input type="button" name="nrT21"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr22"  value="22" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr23"  value="23" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr24"  value="24" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nrT25"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
+				<br>  &nbsp;
+				<input type="button" name="nrT26"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr27"  value="27" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr28"  value="28" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr29"  value="29" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nrT30"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
+				<br>  &nbsp;
+				<input type="button" name="nrT31"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr32"  value="32" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr33"  value="33" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr34"  value="34" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nrT35"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
+				<br> &nbsp;
+				<input type="button" name="nrT36"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr37"  value="37" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr38"  value="38" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr39"  value="39" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nrT40"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
+				<br>  &nbsp;
+				<input type="button" name="nrT41"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr42"  value="42" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr43"  value="43" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nr44"  value="44" style="color: #00000F; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nrT45"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;                    
+				<br>  &nbsp;
+				<input type="button" name="nrT46"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nrT47"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nrT48"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nrT49"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>&nbsp;
+				<input type="button" name="nrT50"  value="YY" style="color: #b5b5c4e3; font-family: Comic Sans MS; font-weight: bold"/>  <br><br> 
+
+			</td>	
 		</tr>		
-	</table>        
+	</table>  
+        
 
 	<br> 
 
@@ -897,22 +866,22 @@
 
 	<br>
 	<b>OBS.: ESTE JOGO FOI SISTEMATIZADO, PENSADO E ELABORADO POR JOSÉ CHARLES. </b>
-	<br> 
-
-	<table>
-		<tr>
-			<td align="center">
-				<input id="myBtn" type="button" name="ordenar"  value=" Ordenar Jogos " onclick="ordenarArray()"/>&nbsp;
-				</td>	
-		</tr>	
-	</table>
-	<br>   
+	<br> <br>
 	<b>                        
 		<a href="index.html">
-				Retornar à Página Inicial
-		</a>
+           Retornar à Página Inicial
+        </a>
 	</b>	
-	<br>
+	<br><br>
+	
+    <table>
+			<tr>
+				<td align="center">
+					<input id="myBtn" type="button" name="ordenar"  value=" - Ordenar Jogos + "  style="background-color: aquamarine; font-size: 25px; border-radius: 10px;"  onclick="ordenarArray()"/>&nbsp;
+					</td>	
+			</tr>	
+    </table>
+		<br><br>
 	<!-- The Modal -->
 	<div id="myModal" class="modal" style="background-color: darkorange;">  
 
@@ -922,7 +891,8 @@
 			<p id="ordem"></p>
 		</div>
 		<br><br>
-	</div>  	
+
+	</div> 		
 	</center>                      
 </form>   
 
