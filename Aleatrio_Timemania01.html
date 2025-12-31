@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorteio de Números</title>
+
+    <style>
+        body {
+            display: grid;
+            align-self: center;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 25px;
+            font: bold;
+            cursor: pointer;
+            font-style:italic;
+            background-color: blue;
+            border-radius: 15px;
+        }
+
+    </style>
+</head>
+<body background="100reais1000dolares.jpg">
+    <table align="center">
+        <tr>
+            <td>
+                <h1 style="background: green; width: 500px; border-radius: 15px;">Sorteio Aleatório para a LOTOMANIA</h1> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h3 style="background: white; width: 500px;">JOGO 01: Junte o Grupo01 + Grupo02</h3>  
+                <h3 style="background: white; width: 500px;">JOGO 02: Junte o Grupo01 + Grupo03</h3> 
+                <h3 style="background: white; width: 500px;">JOGO 03: Junte o Grupo01 + Grupo04</h3>      
+            </td>
+        </tr>  
+        <tr>
+            <td>
+                <!-- Botão que chama a função JavaScript -->
+                <button onclick="iniciarSorteio()">Iniciar Geração de Grupos </button>  <br>
+            </td>
+        </tr>                
+    </table>
+
+    <table align="center">
+        <tr>
+            <td>
+                <!-- Área onde o resultado será exibido -->
+                <div id="resultado1" style="background-color: DeepSkyBlue; font-size: 20px;"></div> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!-- Área onde o resultado será exibido -->
+                <div id="resultado2" style="background-color: DeepSkyBlue; font-size: 20px;"></div> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <!-- Área onde o resultado será exibido -->
+                <div id="resultado3" style="background-color: DeepSkyBlue; font-size: 20px;"></div> 
+            </td>
+        </tr> 
+        <tr>
+            <td>
+                <!-- Área onde o resultado será exibido -->
+                <div id="resultado4" style="background-color: DeepSkyBlue; font-size: 20px;"></div> 
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="background-color: lightblue; font-size: 20px;"> <b>OBS.: Marcar a Aposta Espelho </b> </div> 
+            </td>
+        </tr>                       
+    </table>
+
+	<br>
+	<b>OBS.: ESTE JOGO FOI SISTEMATIZADO, PENSADO E ELABORADO POR JOSÉ CHARLES. </b>
+	<br> 
+	<b>                        
+		<a href="index.html">
+           Retornar à Página Inicial
+        </a>
+	</b>	
+	<br>    
+
+    <script>
+        function iniciarSorteio() {
+
+            // Cria um array com os números de 1 a 25
+            let numeros = [];
+            for (let i = 1; i <= 100; i++) {
+                numeros.push(i);
+            }
+
+            // Embaralha o array (algoritmo simples de ordenação aleatória)
+            numeros.sort(() => Math.random() - 0.5);
+
+            // Seleciona os primeiros 17 números do array embaralhado
+            let sorteados1 = numeros.slice(0, 25);
+            let sorteados2 = numeros.slice(25, 50);
+            let sorteados3 = numeros.slice(50, 75);
+            let sorteados4 = numeros.slice(75, 100);
+
+            // Ordena os números sorteados (opcional, apenas para visualização)
+            sorteados1.sort((a, b) => a - b);
+            sorteados2.sort((a, b) => a - b);
+            sorteados3.sort((a, b) => a - b);
+            sorteados4.sort((a, b) => a - b);
+
+            // Exibe o resultado na tela
+            document.getElementById("resultado1").innerHTML =
+                "Números sorteados Grupo01: --- " + sorteados1.join(", ") + " +++";
+            document.getElementById("resultado2").innerHTML =
+                "Números sorteados Grupo02: --- " + sorteados2.join(", ") + " +++";
+            document.getElementById("resultado3").innerHTML =
+                "Números sorteados Grupo03: --- " + sorteados3.join(", ") + " +++";
+            document.getElementById("resultado4").innerHTML =
+                "Números sorteados Grupo04: --- " + sorteados4.join(", ") + " +++";
+
+        }
+    </script>
+
+</body>
+</html>
