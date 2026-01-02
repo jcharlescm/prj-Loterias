@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorteio com Fisher-Yates</title>
+
+    <style>
+        body {
+            display: grid;
+            align-self: center;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 25px;
+            font: bold;
+            cursor: pointer;
+            font-style:italic;
+            background-color: blue;
+            border-radius: 15px;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .container {
+          display: flex; /* Ativa o Flexbox */
+          justify-content: center; /* Centraliza horizontalmente */
+          align-items: center; /* Centraliza verticalmente */
+          height: 24vh; /* Garante que o container ocupe toda a altura da tela */
+          background-color: #f0f0f0;
+        }
+
+        .minha-div {
+          width: 200px;
+          height: 160px;
+          background-color: #3498db;
+          color: black;
+          text-align: center;
+          padding: 20px;
+        }
+
+    </style>
+</head>
+<body background="100reais1000dolares.jpg">
+  <table align="center">
+    <tr>      
+      <td>
+        <h1 style="background: green; width: 500px; border-radius: 15px;">Sorteio Aleatório para as 7 colunas da SUPER-SETE</h1> 
+      </td>
+    </tr>
+    <tr>      
+      <td>    
+        <!-- Botão que dispara a função JavaScript -->
+        <button onclick="iniciarSorteio()">Iniciar</button>
+      </td>
+    </tr> 
+  </table>
+
+  <table align="center"></table>
+    <tr>      
+      <td>    
+        <div class="container">
+          <h2> Números sorteados: </h2>
+          <!-- Local onde os números sorteados serão exibidos -->
+          <div class="minha-div" id="resultado" style="background-color: DeepSkyBlue; width: 460px; font-size: 20px;"></div>
+        </div>    
+      </td>
+    </tr>
+    <tr>      
+      <td>        
+        &nbsp;
+      </td>
+    </tr> 
+    <tr>      
+      <td>        
+        <br><br>
+        <b>OBS.: ESTE JOGO FOI SISTEMATIZADO, PENSADO E ELABORADO POR JOSÉ CHARLES. </b>
+      </td>
+    </tr>   
+    <tr>      
+      <td>        
+        &nbsp;
+      </td>
+    </tr>     
+    <tr>      
+      <td>
+        <b>                        
+          <a href="index.html">
+                Retornar à Página Inicial
+              </a>
+        </b>	
+      </td>
+    </tr> 
+  </table>
+
+    <script>
+        function iniciarSorteio() {
+
+            // 1. Cria a lista de números de 0 a 9
+            let numero0 = [];
+            let numero1 = [];
+            let numero2 = [];
+            let numero3 = [];
+            let numero4 = [];
+            let numero5 = [];
+            let numero6 = [];
+            let numero7 = [];
+            let numero8 = [];
+            let numero9 = [];
+
+            for (let i = 0; i <= 9; i++) {
+                numero0.push(i);
+                numero1.push(i);
+                numero2.push(i);
+                numero3.push(i);
+                numero4.push(i);
+                numero5.push(i);
+                numero6.push(i);
+                numero7.push(i);
+                numero8.push(i);
+                numero9.push(i);
+            }
+
+            // 2. Aplica o algoritmo Fisher-Yates para embaralhar o array
+            fisherYatesShuffle(numero0);
+            fisherYatesShuffle(numero1);
+            fisherYatesShuffle(numero2);
+            fisherYatesShuffle(numero3);
+            fisherYatesShuffle(numero4);
+            fisherYatesShuffle(numero5);
+            fisherYatesShuffle(numero6);
+            fisherYatesShuffle(numero7);
+            fisherYatesShuffle(numero8);
+            fisherYatesShuffle(numero9);
+
+            // 3. Seleciona os primeiros 15 números do array embaralhado
+            let sorteado0 = numero0.slice(0, 1);
+            let sorteado1 = numero1.slice(0, 1);
+            let sorteado2 = numero2.slice(0, 1);
+            let sorteado3 = numero3.slice(0, 1);
+            let sorteado4 = numero4.slice(0, 1);
+            let sorteado5 = numero5.slice(0, 1);
+            let sorteado6 = numero6.slice(0, 1);
+            let sorteado7 = numero7.slice(0, 1);
+            let sorteado8 = numero8.slice(0, 1);
+            let sorteado9 = numero9.slice(0, 1);
+
+            // 4. Ordena apenas para melhor visualização (opcional)
+            // sorteados1.sort((a, b) => a - b);
+
+            // 5. Exibe o resultado na tela
+            document.getElementById("resultado").innerHTML =
+              "Coluna 01 = " + sorteado0.join(", ") 
+              + " <br> Coluna 02 = " + sorteado1.join(", ") 
+              + " <br> Coluna 03 = " + sorteado2.join(", ")
+              + " <br> Coluna 04 = " + sorteado3.join(", ") 
+              + " <br> Coluna 05 = " + sorteado4.join(", ") 
+              + " <br> Coluna 06 = " + sorteado5.join(", ")
+              + " <br> Coluna 07 = " + sorteado6.join(", ");
+        }
+
+        // Função que implementa o algoritmo Fisher-Yates
+        function fisherYatesShuffle(array) {
+
+            // Percorre o array do último índice até o primeiro
+            for (let i = array.length - 1; i > 0; i--) {
+
+                // Gera um índice aleatório entre 0 e i
+                let j = Math.floor(Math.random() * (i + 1));
+
+                // Troca os elementos de posição
+                let temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
+    </script>
+
+</body>
+</html>

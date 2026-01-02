@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorteio de Números Aleatórios</title>
+
+    <style>
+        body {
+            display: grid;
+            align-self: center;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 25px;
+            font: bold;
+            cursor: pointer;
+            font-style:italic;
+            background-color: blue;
+            border-radius: 15px;
+        }
+
+    </style>
+</head>
+<body background="100reais1000dolares.jpg">
+    <table align="center">
+        <tr>
+            <td>
+                <h1 style="background: green; width: 500px; border-radius: 15px;">Sorteio Aleatório para a LOTOFÁCIL</h1> 
+            </td>
+        </tr>
+        <tr>
+          <td>
+            <h3 style="background: white; width: 500px;">Clique no Botão Abaixo para Gerar um Jogo Aleatório de 16 Números</h3>     
+          </td>
+        </tr>  
+        <tr>
+          <td>
+            <!-- Botão que chama a função JavaScript -->
+            <button onclick="iniciarSorteio()">Iniciar Geração de Jogo - 16 Números</button>  <br>
+          </td>
+        </tr>                
+    </table>
+
+    <table align="center">
+      <tr>
+        <td>
+            &nbsp; 
+        </td>
+      </tr>      
+      <tr>
+        <td>
+            <!-- Área onde o resultado será exibido -->
+            <div id="resultado1" style="background-color: DeepSkyBlue; font-size: 20px;"></div> 
+        </td>
+      </tr>
+      <tr>
+        <td>
+            &nbsp; 
+        </td>
+      </tr>
+                      
+    </table>
+
+	<br> <br> 
+	<b>OBS.: ESTE JOGO FOI SISTEMATIZADO, PENSADO E ELABORADO POR JOSÉ CHARLES. </b>
+	<br> <br> <br> 
+	<b>                        
+		<a href="index.html">
+           Retornar à Página Inicial
+        </a>
+	</b>	
+	<br>    
+
+    <script>
+      function iniciarSorteio() {
+        // Cria um array com os números de 1 a 25
+        let numeros = [];
+        for (let i = 1; i <= 25; i++) {
+            numeros.push(i);
+        }
+
+        // Embaralha o array (algoritmo simples de ordenação aleatória)
+        numeros.sort(() => Math.random() - 0.5);
+
+        // Seleciona os primeiros 17 números do array embaralhado
+        let sorteados1 = numeros.slice(0, 16);
+
+        // Ordena os números sorteados (opcional, apenas para visualização)
+        sorteados1.sort((a, b) => a - b);
+
+        // Exibe o resultado na tela
+        document.getElementById("resultado1").innerHTML =
+            ".Números sorteados JOGO_01: --- " + sorteados1.join(", ") + " +++";
+      }
+
+      function fisherYatesShuffle(array) {
+        let n = array.length;
+        while (n > 0) {
+          let i = Math.floor(Math.random() * n--);
+          let temp = array[n];
+          array[n] = array[i];
+          array[i] = temp;
+        }
+        return array;
+      }      
+      
+    </script>
+
+</body>
+</html>
