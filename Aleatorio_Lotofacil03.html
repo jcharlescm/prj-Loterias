@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Lotofácil Jogos em Série</title>
+
+    <style>
+        body {
+            display: grid;
+            align-self: center;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 25px;
+            font: bold;
+            cursor: pointer;
+            font-style:italic;
+            background-color: blue;
+            border-radius: 15px;
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .container {
+          display: flex; /* Ativa o Flexbox */
+          justify-content: center; /* Centraliza horizontalmente */
+          align-items: center; /* Centraliza verticalmente */
+          height: 48vh; /* Garante que o container ocupe toda a altura da tela */
+          background-color: #f0f0f0;
+        }
+
+        .minha-div {
+          width: 650px;
+          height: 340px;
+          font-size: 18px;
+          background-color: #3498db;
+          color: black;
+          text-align: center;
+          padding: 20px;
+        }
+
+    </style>
+</head>
+<body background="100reais1000dolares.jpg">
+  <table align="center">
+    <tr>      
+      <td>
+        <h1 style="background: green; width: 600px; border-radius: 15px; padding: 15px;">Sorteio Aleatório para a LOTOFÁCIL</h1> 
+      </td>
+    </tr>
+    <tr>      
+      <td>    
+        <!-- Botão que dispara a função JavaScript -->
+        <button onclick="iniciarSorteio()">Iniciar Geração de 11 Jogos de 15 Números em Série</button>
+      </td>
+    </tr> 
+    <tr>      
+      <td>        
+        &nbsp;
+      </td>
+    </tr>     
+  </table>
+  <br><br><br>
+  <table align="center"></table>
+    <tr>      
+      <td>    
+        <div class="container">
+          <!-- Local onde os números sorteados serão exibidos -->
+          <div class="minha-div" id="resultado" style="background-color: DeepSkyBlue;"></div>
+        </div>    
+      </td>
+    </tr>
+    <tr>      
+      <td>        
+        &nbsp;
+      </td>
+    </tr> 
+    <tr>      
+      <td>        
+        <br><br>
+        <b>OBS.: ESTE JOGO FOI SISTEMATIZADO, PENSADO E ELABORADO POR JOSÉ CHARLES. </b>
+      </td>
+    </tr>   
+    <tr>      
+      <td>        
+        &nbsp;
+      </td>
+    </tr>     
+    <tr>      
+      <td>
+        <b>                        
+          <a href="index.html">
+                Retornar à Página Inicial
+              </a>
+        </b>	
+      </td>
+    </tr> 
+     
+  </table>
+
+    <script>
+        function iniciarSorteio() {
+
+            // 1. Cria a lista de números de 1 a 25
+            let numeros = [];
+            for (let i = 1; i <= 25; i++) {
+                numeros.push(i);
+            }
+
+            // 2. Aplica o algoritmo Fisher-Yates para embaralhar o array
+            fisherYatesShuffle(numeros);
+            fisherYatesShuffle(numeros);
+            fisherYatesShuffle(numeros);
+
+            // 3. Seleciona os primeiros 15 números do array embaralhado
+            let sorteados = numeros.slice(0, 25);
+            let sorteados01 = numeros.slice(0, 15);
+            let sorteados02 = numeros.slice(1, 16);
+            let sorteados03 = numeros.slice(2, 17);
+            let sorteados04 = numeros.slice(3, 18);
+            let sorteados05 = numeros.slice(4, 19);
+            let sorteados06 = numeros.slice(5, 20);
+            let sorteados07 = numeros.slice(6, 21);
+            let sorteados08 = numeros.slice(7, 22);
+            let sorteados09 = numeros.slice(8, 23);
+            let sorteados10 = numeros.slice(9, 24);
+            let sorteados11 = numeros.slice(10, 25);
+
+
+            // 5. Exibe o resultado na tela
+            document.getElementById("resultado").innerHTML =
+              " TODAS AS DEZENAS SORTEADAS ALEATÓRIAS <br>" + sorteados.join(", ")
+              + " <br><br>  JOGOS SORTEADOS ALEATÓRIOS EM SÉRIE: <br> "
+              + " <br> Jogo 01 = " + sorteados01.join(", ")
+              + " <br> Jogo 02 = " + sorteados02.join(", ")
+              + " <br> Jogo 03 = " + sorteados03.join(", ")
+              + " <br> Jogo 04 = " + sorteados04.join(", ")
+              + " <br> Jogo 05 = " + sorteados05.join(", ")
+              + " <br> Jogo 06 = " + sorteados06.join(", ")
+              + " <br> Jogo 07 = " + sorteados07.join(", ")
+              + " <br> Jogo 08 = " + sorteados08.join(", ")
+              + " <br> Jogo 09 = " + sorteados09.join(", ")
+              + " <br> Jogo 10 = " + sorteados10.join(", ")
+              + " <br> Jogo 11 = " + sorteados11.join(", ");
+        }
+
+        // Função que implementa o algoritmo Fisher-Yates
+        function fisherYatesShuffle(array) {
+
+            // Percorre o array do último índice até o primeiro
+            for (let i = array.length - 1; i > 0; i--) {
+
+                // Gera um índice aleatório entre 0 e i
+                let j = Math.floor(Math.random() * (i + 1));
+
+                // Troca os elementos de posição
+                let temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+            }
+        }
+    </script>
+
+</body>
+</html>
