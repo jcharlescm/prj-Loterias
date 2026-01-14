@@ -483,7 +483,7 @@
             document.frm.JG0812.value = document.frm.NE19.value;
             document.frm.JG0911.value = document.frm.NE19.value;
             document.frm.JG1010.value = document.frm.NE19.value;
-            document.frm.JG1109.value = document.frm.NE18.value;
+            document.frm.JG1109.value = document.frm.NE19.value;
         }
 
         // *********************************************************
@@ -642,40 +642,34 @@
 
 <center>
 <form name="frm">
-    <br>
-
  
     <table border="1" bgcolor="#87CEEB"> 
-			<tr>
-					<td colspan="12" align="center">
-					<b>SERAM GERADOS 11 JOGOS EM SÉRIE</b> 		
-			</td>		    		    
-			</tr>
+        <tr>
+            <td colspan="12" align="center" bgcolor="SlateBlue" > 
+		        <h2 style="color: whitesmoke;"> + SERAM GERADOS 11 JOGOS EM SÉRIE - </h2>  
+		    </td>		    		    
+        </tr>  
+    
 		<tr>
-			<td colspan="12">
-							<hr size="2" color="black"/>
-			</td>
-		</tr>    
-			<tr>
-					<td colspan="12" nowrap>
-						&nbsp;<b>TIPO DE JOGO :</b> 		
-						&nbsp;
-						<select name="TIPO">
-							<option value="0"> LOTOFÁCIL </option>
-						</select> 
-						<br><br>
+			<td colspan="12" nowrap>
+				&nbsp;<b>TIPO DE JOGO :</b> 		
+				&nbsp;
+				<select name="TIPO">
+					<option value="0"> LOTOFÁCIL </option>
+				</select> 
+				<br><br>
 
-						&nbsp;<b>CONCURSO N. : </b>  &nbsp; 		
-						<input type="text" size="30" maxlength="30" name="CONCNR">
-						<br><br>	
+				&nbsp;<b>CONCURSO N. : </b>  &nbsp; 		
+				<input type="text" size="30" maxlength="30" name="CONCNR">
+				<br><br>	
 
-						&nbsp;<b>DATA DO CONCURSO : </b> 		
-						&nbsp;<input type="text" size="30" maxlength="30" name="DTCONC">	
+				&nbsp;<b>DATA DO CONCURSO : </b> 		
+				&nbsp;<input type="text" size="30" maxlength="30" name="DTCONC">	
 			</td>
-			</tr>
+		</tr>
 		<tr>
-			<td colspan="12">
-							<hr size="2" color="black"/>
+			<td colspan="12" bgcolor="green">
+				<hr size="2" color="black"/>
 			</td>
 		</tr>
 			<tr>				
@@ -751,10 +745,10 @@
 					<input type="text" size="3" maxlength="2" name="NE05" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE05();soma();numero_escolhido(this.value);">
 
 					<input type="text" size="3" maxlength="2" name="NE04" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE04();soma();numero_escolhido(this.value);">          
-			</td>	           
+				</td>	           
 			</tr>
 
-		 <tr>
+		 	<tr>
 				<td align="center" colspan="3" bgcolor="orange">
 					&nbsp;<b>Dezenas que TALVEZ VÃO SAIR:</b>&nbsp;
 				</td>
