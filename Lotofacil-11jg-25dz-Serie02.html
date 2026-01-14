@@ -643,141 +643,139 @@
 <center>
 <form name="frm">
     <br>
-
  
     <table border="1" bgcolor="#87CEEB"> 
-			<tr>
-					<td colspan="12" align="center">
-					<b>SERAM GERADOS 11 JOGOS EM SÉRIE</b> 		
-			</td>		    		    
-			</tr>
-		<tr>
-			<td colspan="12">
-							<hr size="2" color="black"/>
-			</td>
-		</tr>    
-			<tr>
-					<td colspan="12" nowrap>
-						&nbsp;<b>TIPO DE JOGO :</b> 		
-						&nbsp;
-						<select name="TIPO">
-							<option value="0"> LOTOFÁCIL </option>
-						</select> 
-						<br><br>
+        <tr>
+            <td colspan="12" align="center">
+		        <b>SERAM GERADOS 11 JOGOS EM SÉRIE</b> 		
+		    </td>		    		    
+        </tr>
+	    <tr>
+		    <td colspan="12">
+                <hr size="2" color="black"/>
+		    </td>
+	    </tr>    
+        <tr>
+            <td colspan="12" nowrap>
+							&nbsp;<b>TIPO DE JOGO :</b> 		
+							&nbsp;
+							<select name="TIPO">
+								<option value="0"> LOTOFÁCIL </option>
+							</select> 
+							<br><br>
 
-						&nbsp;<b>CONCURSO N. : </b>  &nbsp; 		
-						<input type="text" size="30" maxlength="30" name="CONCNR">
-						<br><br>	
+		        	&nbsp;<b>CONCURSO N. : </b>  &nbsp; 		
+              <input type="text" size="30" maxlength="30" name="CONCNR">
+		        	<br><br>	
 
-						&nbsp;<b>DATA DO CONCURSO : </b> 		
-						&nbsp;<input type="text" size="30" maxlength="30" name="DTCONC">	
-			</td>
-			</tr>
-		<tr>
-			<td colspan="12">
-							<hr size="2" color="black"/>
-			</td>
+							&nbsp;<b>DATA DO CONCURSO : </b> 		
+							&nbsp;<input type="text" size="30" maxlength="30" name="DTCONC">	
+		    </td>
+        </tr>
+	    <tr>
+		    <td colspan="12">
+                <hr size="2" color="black"/>
+		    </td>
+	    </tr>
+        <tr>				
+		    <td align="center" colspan="12" bgcolor="green">
+		        <b>INFORME TODAS AS 25 DEZENAS </b>
+		    </td>		    	
 		</tr>
-			<tr>				
-			<td align="center" colspan="12" bgcolor="green">
-					<b>INFORME TODAS AS 25 DEZENAS </b>
-			</td>		    	
-	</tr>
 
-			<tr>
-				<td align="center" colspan="3" bgcolor="green">
-							&nbsp;<b>Dezenas que VÃO SAIR: </b>&nbsp;
-				</td>
-				<td colspan="9" bgcolor="green">
+        <tr>
+          <td align="center" colspan="3" bgcolor="green">
+                &nbsp;<b>Dezenas que VÃO SAIR: </b>&nbsp;
+          </td>
+          <td colspan="9" bgcolor="green">
 
-					<input type="text" size="3" maxlength="2" name="NE11" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE11();soma();numero_escolhido(this.value);">
+            <input type="text" size="3" maxlength="2" name="NE10" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE10();soma();numero_escolhido(this.value);">
 
-					<input type="text" size="3" maxlength="2" name="NE12" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE12();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE11" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE11();soma();numero_escolhido(this.value);">
 
-					<input type="text" size="3" maxlength="2" name="NE13" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE13();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE12" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE12();soma();numero_escolhido(this.value);">	
 
-					<input type="text" size="3" maxlength="2" name="NE14" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE14();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE13" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE13();soma();numero_escolhido(this.value);">	
 
-					<input type="text" size="3" maxlength="2" name="NE15" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE15();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE14" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE14();soma();numero_escolhido(this.value);">	
 
-				</td>	           
-			</tr>
+		        <input type="text" size="3" maxlength="2" name="NE15" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE15();soma();numero_escolhido(this.value);">	
 
-			<tr>
-				<td colspan="12" bgcolor="red">
-								<hr size="2" color="black"/>
-				</td>
-			</tr>
+		        <input type="text" size="3" maxlength="2" name="NE16" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE16();soma();numero_escolhido(this.value);">
 
-			<tr>
-				<td align="center" colspan="3" bgcolor="red">
-					&nbsp;<b>Dezenas que NÃO VÃO SAIR: </b>&nbsp;
-				</td>
-				<td colspan="14" bgcolor="red">
-					<input type="text" size="3" maxlength="2" name="NE01" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE01();soma();numero_escolhido(this.value);">
+		    	</td>	           
+        </tr>
 
-					<input type="text" size="3" maxlength="2" name="NE02" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE02();soma();numero_escolhido(this.value);">	
+        <tr>
+					<td colspan="12" bgcolor="red">
+									<hr size="2" color="black"/>
+					</td>
+	    	</tr>
 
-					<input type="text" size="3" maxlength="2" name="NE03" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE03();soma();numero_escolhido(this.value);">	
+        <tr>
+          <td align="center" colspan="3" bgcolor="red">
+            &nbsp;<b>Dezenas que NÃO VÃO SAIR: </b>&nbsp;
+          </td>
+          <td colspan="14" bgcolor="red">
+		        <input type="text" size="3" maxlength="2" name="NE01" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE01();soma();numero_escolhido(this.value);">
 
-					<input type="text" size="3" maxlength="2" name="NE23" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE23();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE02" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE02();soma();numero_escolhido(this.value);">	
 
-					<input type="text" size="3" maxlength="2" name="NE24" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE24();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE03" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE03();soma();numero_escolhido(this.value);">	
 
-					<input type="text" size="3" maxlength="2" name="NE25" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE25();soma();numero_escolhido(this.value);">	
-			</td>	           
-			</tr>
-		<tr>
-			<td colspan="12" bgcolor="red">
-							<hr size="2" color="black"/>
-			</td>
-		</tr>
-			<tr>
-				<td align="center" colspan="3" bgcolor="orange">
-					&nbsp;<b>Dezenas que TALVEZ VÃO SAIR:</b>&nbsp;
-				</td>
-				<td colspan="14" bgcolor="orange">
+		        <input type="text" size="3" maxlength="2" name="NE23" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE23();soma();numero_escolhido(this.value);">	
 
-					<input type="text" size="3" maxlength="2" name="NE10" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE10();soma();numero_escolhido(this.value);">
+		        <input type="text" size="3" maxlength="2" name="NE24" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE24();soma();numero_escolhido(this.value);">	
 
-					<input type="text" size="3" maxlength="2" name="NE09" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE09();soma();numero_escolhido(this.value);">	
+                <input type="text" size="3" maxlength="2" name="NE25" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE25();soma();numero_escolhido(this.value);">	
+		    </td>	           
+        </tr>
+	    <tr>
+		    <td colspan="12" bgcolor="red">
+                <hr size="2" color="black"/>
+		    </td>
+	    </tr>
+        <tr>
+          <td align="center" colspan="3" bgcolor="orange">
+            &nbsp;<b>Dezenas que TALVEZ VÃO SAIR:</b>&nbsp;
+          </td>
+          <td colspan="14" bgcolor="orange">
+            <input type="text" size="3" maxlength="2" name="NE09" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE09();soma();numero_escolhido(this.value);">	
 
-					<input type="text" size="3" maxlength="2" name="NE08" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE08();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE08" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE08();soma();numero_escolhido(this.value);">	
 
-					<input type="text" size="3" maxlength="2" name="NE07" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE07();soma();numero_escolhido(this.value);">
+		        <input type="text" size="3" maxlength="2" name="NE07" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE07();soma();numero_escolhido(this.value);">
 
-					<input type="text" size="3" maxlength="2" name="NE06" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE06();soma();numero_escolhido(this.value);">
+		        <input type="text" size="3" maxlength="2" name="NE06" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE06();soma();numero_escolhido(this.value);">
 
-					<input type="text" size="3" maxlength="2" name="NE05" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE05();soma();numero_escolhido(this.value);">
+		        <input type="text" size="3" maxlength="2" name="NE05" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE05();soma();numero_escolhido(this.value);">
 
-					<input type="text" size="3" maxlength="2" name="NE04" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE04();soma();numero_escolhido(this.value);">          
-			</td>	           
-			</tr>
+		        <input type="text" size="3" maxlength="2" name="NE04" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE04();soma();numero_escolhido(this.value);">          
+		    </td>	           
+        </tr>
 
-		 <tr>
-				<td align="center" colspan="3" bgcolor="orange">
-					&nbsp;<b>Dezenas que TALVEZ VÃO SAIR:</b>&nbsp;
-				</td>
-				<td colspan="14" bgcolor="orange">
+       <tr>
+          <td align="center" colspan="3" bgcolor="orange">
+            &nbsp;<b>Dezenas que TALVEZ VÃO SAIR:</b>&nbsp;
+          </td>
+          <td colspan="14" bgcolor="orange">
 
-					<input type="text" size="3" maxlength="2" name="NE16" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE16();soma();numero_escolhido(this.value);">
+		        <input type="text" size="3" maxlength="2" name="NE17" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE17();soma();numero_escolhido(this.value);">   
 
-					<input type="text" size="3" maxlength="2" name="NE17" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE17();soma();numero_escolhido(this.value);">   
+		        <input type="text" size="3" maxlength="2" name="NE18" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE18();soma();numero_escolhido(this.value);">	
 
-					<input type="text" size="3" maxlength="2" name="NE18" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE18();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE19" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE19();soma();numero_escolhido(this.value);">	
 
-					<input type="text" size="3" maxlength="2" name="NE19" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE19();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE20" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE20();soma();numero_escolhido(this.value);">                       
 
-					<input type="text" size="3" maxlength="2" name="NE20" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE20();soma();numero_escolhido(this.value);">                       
+            <input type="text" size="3" maxlength="2" name="NE21" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE21();soma();numero_escolhido(this.value);">
+            
+            <input type="text" size="3" maxlength="2" name="NE22" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE22();soma();numero_escolhido(this.value);">
+         
+		    </td>	           
+        </tr>        
 
-					<input type="text" size="3" maxlength="2" name="NE21" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE21();soma();numero_escolhido(this.value);">
-					
-					<input type="text" size="3" maxlength="2" name="NE22" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="carregaNE22();soma();numero_escolhido(this.value);">
-			 
-			</td>	           
-		</tr>        
-</table>		
-		
+	</table>
     <table>
 	    <tr>
 		    <td colspan="5">&nbsp;&nbsp;
