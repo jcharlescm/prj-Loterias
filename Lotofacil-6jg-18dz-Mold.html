@@ -294,7 +294,14 @@
 				
 				var jogosArray06 = [document.frm.JG0601.value, document.frm.JG0602.value, document.frm.JG0603.value, document.frm.JG0604.value, document.frm.JG0605.value, document.frm.JG0606.value, document.frm.JG0607.value, document.frm.JG0608.value, document.frm.JG0609.value, document.frm.JG0610.value, document.frm.JG0611.value, document.frm.JG0612.value, document.frm.JG0613.value, document.frm.JG0614.value, document.frm.JG0615.value];     // OK 			
 				
-				escreveJogos = " - JOGOS EM ORDEM CRESCENTE + " + "\n\n" + jogosArray01.sort() + "\n" + jogosArray02.sort() + "\n" + jogosArray03.sort() + "\n" + jogosArray04.sort() + "\n" + jogosArray05.sort() + "\n" + jogosArray06.sort() + "\n" ;
+				var soma1 = [document.frm.SOMA01.value]
+				var soma2 = [document.frm.SOMA02.value]
+				var soma3 = [document.frm.SOMA03.value]
+				var soma4 = [document.frm.SOMA04.value]
+				var soma5 = [document.frm.SOMA05.value]
+				var soma6 = [document.frm.SOMA06.value]
+
+				escreveJogos = " - JOGOS EM ORDEM CRESCENTE + " + "\n\n" + jogosArray01.sort() + " = " + soma1 + "\n" + jogosArray02.sort() + " = " + soma2 + "\n" + jogosArray03.sort() + " = " + soma3 + "\n" + jogosArray04.sort() + " = " + soma4 + "\n" + jogosArray05.sort() + " = " + soma5 + "\n" + jogosArray06.sort() + " = " + soma6 + "\n\n" + "Sempre marque somente jogos com a SOMA entre 180 e 200(90%)";
 				
 				/* Chama a funººo de mostraJogos */ 		
 				mostraJogos(escreveJogos); 
