@@ -382,7 +382,7 @@
             var jogosArray02 = [' ' + document.frm.JG21.value, ' ' + document.frm.JG22.value, ' ' + document.frm.JG23.value, ' ' + document.frm.JG24.value, ' ' + document.frm.JG25.value, ' ' + document.frm.JG26.value];     // OK 		
             var jogosArray03 = [' ' + document.frm.JG31.value, ' ' + document.frm.JG32.value, ' ' + document.frm.JG33.value, ' ' + document.frm.JG34.value, ' ' + document.frm.JG35.value, ' ' + document.frm.JG36.value];     // OK 		
                 
-            escreveJogos = "JOGOS EM ORDEM CRESCENTE" + "\n\n" + jogosArray01.sort() + "\n" + jogosArray02.sort() + "\n" + jogosArray03.sort() + "\n\n"; 
+            escreveJogos = "JOGOS EM ORDEM CRESCENTE / SOMA" + "\n\n" + jogosArray01.sort() + " = " + document.frm.SOMA01.value + "\n" + jogosArray02.sort() + " = " + document.frm.SOMA02.value + "\n" + jogosArray03.sort() + " = " + document.frm.SOMA03.value + "\n\n"; 
 
             /* Chama a função de mostraJogos */ 		
             mostraJogos(escreveJogos); 
@@ -399,7 +399,7 @@
             display: none; /* Hidden by default */
             position: fixed; /* Stay in place */
             z-index: 1; /* Sit on top */
-            padding-top: 50px; /* Location of the box */
+            padding-top: 20px; /* Location of the box */
             left: 0;
             top: 0;
             width: 100%; /* Full width */
@@ -412,13 +412,13 @@
             background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
         }
 
-        /* Modal Content */
+        /* Modal Content */ 
         .modal-content {
             background-color: #fefefe;
             margin: auto;
-            padding: 20px;
+            padding: 10px;
             border: 1px solid #888;
-            width: 40%;
+            width: 300px;
         }
 
         /* The Close Button */
@@ -798,9 +798,22 @@
             
         </tr>            	
     </table>  
-
-    <div style="filter: alpha(opacity=40); font-size: 12px;">   
-    <!--    <div style="border: 1; background-color: #87CEEB; font-size: 12px; ">   -->
+	<br>
+	
+    <table>
+        <tr>
+            <td align="center">
+                <input id="myBtn" type="button" name="ordenar"  value=" - Ordenar Jogos + "  style="background-color: aquamarine; font-size: 25px; border-radius: 10px;"  onclick="ordenarArray()"/>&nbsp;
+            </td>	
+        </tr>	
+    </table>
+    <br>
+    <br>
+    <div style="border: 1px; background-color:#87CEEB; font-size: 18px; width: 80%;"> 
+        <br>
+        GARANTIA: Esse jogo tem a garantia de 3 QUADRAS(4 acertos), se os 6 números sorteados estiverem entre os 9 números escolhidos. 
+        <br> 
+        <br>
         <b>OBS.: O JOGO DEVE ESTÁ BALANCEADO, NA MINHA VISÃO(JOSÉ CHARLES). </b> <br>
         <b style="color:Green;">MEGA SENA = O NÚMERO BALANCEADO É O 174, JÁ QUE 6/60 = 6 * 29 = 174. </b> <br>
         <b style="color:#8B3A3A;">DUPLA SENA = O NÚMERO BALANCEADO É O 144, JÁ QUE 6/50 = 6 * 24 = 144. </b> <br>
@@ -815,15 +828,7 @@
             </a>
         </b>        
     </div>   
-	<br>
-	
-    <table>
-        <tr>
-            <td align="center">
-                <input id="myBtn" type="button" name="ordenar"  value=" - Ordenar Jogos + "  style="background-color: aquamarine; font-size: 25px; border-radius: 10px;"  onclick="ordenarArray()"/>&nbsp;
-            </td>	
-        </tr>	
-    </table>
+
     <br>
 	<!-- The Modal -->
 	<div id="myModal" class="modal" style="background-color: darkorange;">  
