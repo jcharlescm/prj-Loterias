@@ -1,71 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <title>LOTOFÁCIL - 4 Jogos - 18dz - 3fx</title>
+    <title>LOTOFÁCIL - 3jg - 19dz - 11 fixas</title>
     <script language="javascript">
 
-			var escreveJogos;
+      var escreveJogos;
 
-			function mostraJogos(x) {
-							
-				// Get the modal
-				var modal = document.getElementById('myModal');
-				var ordem = document.getElementById('ordem');
-				console.log(ordem);
-				ordem.innerText = x;
+      function mostraJogos(x) {
+              
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        var ordem = document.getElementById('ordem');
+        console.log(ordem);
+        ordem.innerText = x;
 
-				modal.style.display = "block";
-				// Get the button that opens the modal
-				
-				//var btn = document.getElementById("myBtn");
+        modal.style.display = "block";
+        // Get the button that opens the modal
+        
+        //var btn = document.getElementById("myBtn");
 
-				// Get the <span> element that closes the modal
-				var span = document.getElementsByClassName("close")[0];
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
 
-				// When the user clicks the button, open the modal 
-				//btn.onclick = function() {
-					//modal.style.display = "block";
-				//}
+        // When the user clicks the button, open the modal 
+        //btn.onclick = function() {
+          //modal.style.display = "block";
+        //}
 
-				// When the user clicks on <span> (x), close the modal
-				span.onclick = function() {
-					modal.style.display = "none";
-				}
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
 
-				// When the user clicks anywhere outside of the modal, close it  
-				window.onclick = function(event) {
-					if (event.target == modal) {
-						modal.style.display = "none";
-					}
-				}
-						
-				console.log(escreveJogos);
+        // When the user clicks anywhere outside of the modal, close it  
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+            
+        console.log(escreveJogos);
 
-			}
-
+      }
 
 
         // *********************************************************
         // Carrega os campos de soma de cada cartela
         // *********************************************************
         function soma() {
-					var total01;
-					var total02;
-					var total03;
-					var total04;
-							
-					total01 = parseFloat(document.frm.JG0101.value) + parseFloat(document.frm.JG0102.value) + parseFloat(document.frm.JG0103.value) + parseFloat(document.frm.JG0104.value) + parseFloat(document.frm.JG0105.value) + parseFloat(document.frm.JG0106.value) + parseFloat(document.frm.JG0107.value) + parseFloat(document.frm.JG0108.value) + parseFloat(document.frm.JG0109.value) + parseFloat(document.frm.JG0110.value) + parseFloat(document.frm.JG0111.value) + parseFloat(document.frm.JG0112.value) + parseFloat(document.frm.JG0113.value) + parseFloat(document.frm.JG0114.value) + parseFloat(document.frm.JG0115.value);
-					
-					total02 = parseFloat(document.frm.JG0201.value) + parseFloat(document.frm.JG0202.value) + parseFloat(document.frm.JG0203.value) + parseFloat(document.frm.JG0204.value) + parseFloat(document.frm.JG0205.value) + parseFloat(document.frm.JG0206.value) + parseFloat(document.frm.JG0207.value) + parseFloat(document.frm.JG0208.value) + parseFloat(document.frm.JG0209.value) + parseFloat(document.frm.JG0210.value) + parseFloat(document.frm.JG0211.value) + parseFloat(document.frm.JG0212.value) + parseFloat(document.frm.JG0213.value) + parseFloat(document.frm.JG0214.value) + parseFloat(document.frm.JG0215.value);
-								
-					total03 = parseFloat(document.frm.JG0301.value) + parseFloat(document.frm.JG0302.value) + parseFloat(document.frm.JG0303.value) + parseFloat(document.frm.JG0304.value) + parseFloat(document.frm.JG0305.value) + parseFloat(document.frm.JG0306.value) + parseFloat(document.frm.JG0307.value) + parseFloat(document.frm.JG0308.value) + parseFloat(document.frm.JG0309.value) + parseFloat(document.frm.JG0310.value) + parseFloat(document.frm.JG0311.value) + parseFloat(document.frm.JG0312.value) + parseFloat(document.frm.JG0313.value) + parseFloat(document.frm.JG0314.value) + parseFloat(document.frm.JG0315.value);
-								
-					total04 = parseFloat(document.frm.JG0401.value) + parseFloat(document.frm.JG0402.value) + parseFloat(document.frm.JG0403.value) + parseFloat(document.frm.JG0404.value) + parseFloat(document.frm.JG0405.value) + parseFloat(document.frm.JG0406.value) + parseFloat(document.frm.JG0407.value) + parseFloat(document.frm.JG0408.value) + parseFloat(document.frm.JG0409.value) + parseFloat(document.frm.JG0410.value) + parseFloat(document.frm.JG0411.value) + parseFloat(document.frm.JG0412.value) + parseFloat(document.frm.JG0413.value) + parseFloat(document.frm.JG0414.value) + parseFloat(document.frm.JG0415.value);
 
-					document.frm.SOMA01.value = total01;
-					document.frm.SOMA02.value = total02;
-					document.frm.SOMA03.value = total03;
-					document.frm.SOMA04.value = total04;
+            var total01;
+            var total02;
+            var total03;							
+
+            total01 = parseFloat(0 + document.frm.JG0101.value) + parseFloat(0 + document.frm.JG0102.value) + parseFloat(0 + document.frm.JG0103.value) + parseFloat(0 + document.frm.JG0104.value) + parseFloat(0 + document.frm.JG0105.value) + parseFloat(0 + document.frm.JG0106.value) + parseFloat(0 + document.frm.JG0107.value) + parseFloat(0 + document.frm.JG0108.value) + parseFloat(0 + document.frm.JG0109.value) + parseFloat(0 + document.frm.JG0110.value) + parseFloat(0 + document.frm.JG0111.value) + parseFloat(0 + document.frm.JG0112.value) + parseFloat(0 + document.frm.JG0113.value) + parseFloat(0 + document.frm.JG0114.value) + parseFloat(0 + document.frm.JG0115.value);
+           
+            total02 = parseFloat(0 + document.frm.JG0201.value) + parseFloat(0 + document.frm.JG0202.value) + parseFloat(0 + document.frm.JG0203.value) + parseFloat(0 + document.frm.JG0204.value) + parseFloat(0 + document.frm.JG0205.value) + parseFloat(0 + document.frm.JG0206.value) + parseFloat(0 + document.frm.JG0207.value) + parseFloat(0 + document.frm.JG0208.value) + parseFloat(0 + document.frm.JG0209.value) + parseFloat(0 + document.frm.JG0210.value) + parseFloat(0 + document.frm.JG0211.value) + parseFloat(0 + document.frm.JG0212.value) + parseFloat(0 + document.frm.JG0213.value) + parseFloat(0 + document.frm.JG0214.value) + parseFloat(0 + document.frm.JG0215.value);
+            
+            total03 = parseFloat(0 + document.frm.JG0301.value) + parseFloat(0 + document.frm.JG0302.value) + parseFloat(0 + document.frm.JG0303.value) + parseFloat(0 + document.frm.JG0304.value) + parseFloat(0 + document.frm.JG0302.value) + parseFloat(0 + document.frm.JG0306.value) + parseFloat(0 + document.frm.JG0307.value) + parseFloat(0 + document.frm.JG0308.value) + parseFloat(0 + document.frm.JG0309.value) + parseFloat(0 + document.frm.JG0310.value) + parseFloat(0 + document.frm.JG0311.value) + parseFloat(0 + document.frm.JG0312.value) + parseFloat(0 + document.frm.JG0313.value) + parseFloat(0 + document.frm.JG0314.value) + parseFloat(0 + document.frm.JG0315.value);
+
+			      document.frm.SOMA01.value = total01;
+            document.frm.SOMA02.value = total02;
+            document.frm.SOMA03.value = total03;
  						
         }
 
@@ -76,29 +72,26 @@
         function carregaNE01() {
             document.frm.JG0101.value = document.frm.NE01.value;
             document.frm.JG0201.value = document.frm.NE01.value;
-            document.frm.JG0301.value = document.frm.NE01.value;
-            document.frm.JG0401.value = document.frm.NE01.value;
+            document.frm.JG0301.value = document.frm.NE01.value;			
         }
 
         // *********************************************************
         // Carrega o Primeiro Número NE02 nos campos
         // *********************************************************
         function carregaNE02() {
-					document.frm.JG0102.value = document.frm.NE02.value;
-					document.frm.JG0202.value = document.frm.NE02.value;
-					document.frm.JG0302.value = document.frm.NE02.value;
-					document.frm.JG0402.value = document.frm.NE02.value;
+          document.frm.JG0102.value = document.frm.NE02.value;
+          document.frm.JG0202.value = document.frm.NE02.value;
+          document.frm.JG0302.value = document.frm.NE02.value;
         }
 
         // *********************************************************
         // Carrega o Primeiro Número NE03 nos campos 
         // *********************************************************
         function carregaNE03() {
-					document.frm.JG0103.value = document.frm.NE03.value;
-					document.frm.JG0203.value = document.frm.NE03.value;
-					document.frm.JG0303.value = document.frm.NE03.value;
-					document.frm.JG0403.value = document.frm.NE03.value;
-        }
+          document.frm.JG0103.value = document.frm.NE03.value;
+          document.frm.JG0203.value = document.frm.NE03.value;
+          document.frm.JG0303.value = document.frm.NE03.value;																						
+		    }
 
         // *********************************************************
         // Carrega o Primeiro Número NE04 nos campos
@@ -106,18 +99,16 @@
         function carregaNE04() {
             document.frm.JG0104.value = document.frm.NE04.value;
             document.frm.JG0204.value = document.frm.NE04.value;
-            document.frm.JG0404.value = document.frm.NE04.value;
-	
+            document.frm.JG0304.value = document.frm.NE04.value;		
         }
 
         // *********************************************************
         // Carrega o Primeiro Número NE05 nos campos 
         // *********************************************************
         function carregaNE05() {
-            document.frm.JG0105.value = document.frm.NE05.value;
-            document.frm.JG0304.value = document.frm.NE05.value;
-            document.frm.JG0405.value = document.frm.NE05.value;
-		
+            document.frm.JG0105.value = document.frm.NE05.value;	
+            document.frm.JG0205.value = document.frm.NE05.value;	
+            document.frm.JG0305.value = document.frm.NE05.value;	
         }
 
         // *********************************************************
@@ -125,9 +116,8 @@
         // *********************************************************
         function carregaNE06() {
             document.frm.JG0106.value = document.frm.NE06.value;
-            document.frm.JG0205.value = document.frm.NE06.value;
-            document.frm.JG0305.value = document.frm.NE06.value;
-            document.frm.JG0406.value = document.frm.NE06.value;
+            document.frm.JG0206.value = document.frm.NE06.value;
+            document.frm.JG0306.value = document.frm.NE06.value;
         }
 
         // *********************************************************
@@ -135,101 +125,90 @@
         // *********************************************************
         function carregaNE07() {
             document.frm.JG0107.value = document.frm.NE07.value;
-            document.frm.JG0206.value = document.frm.NE07.value;
-            document.frm.JG0306.value = document.frm.NE07.value;
+            document.frm.JG0207.value = document.frm.NE07.value;
+            document.frm.JG0307.value = document.frm.NE07.value;
 		}
 
         // *********************************************************
         // Carrega o Primeiro Número NE08 nos campos
         // *********************************************************
         function carregaNE08() {
-            document.frm.JG0207.value = document.frm.NE08.value;
-            document.frm.JG0307.value = document.frm.NE08.value;
-            document.frm.JG0407.value = document.frm.NE08.value;
+            document.frm.JG0108.value = document.frm.NE08.value;
+            document.frm.JG0208.value = document.frm.NE08.value;
+            document.frm.JG0308.value = document.frm.NE08.value;
         }
 
         // *********************************************************
         // Carrega o Primeiro Número NE09 nos campos
         // *********************************************************
         function carregaNE09() {
-            document.frm.JG0108.value = document.frm.NE09.value;
-            document.frm.JG0208.value = document.frm.NE09.value;
-            document.frm.JG0408.value = document.frm.NE09.value;
-        }
+            document.frm.JG0109.value = document.frm.NE09.value;
+            document.frm.JG0209.value = document.frm.NE09.value;
+            document.frm.JG0309.value = document.frm.NE09.value;            
+        } 
 
         // *********************************************************
         // Carrega o Primeiro Número NE10 nos campos
         // *********************************************************
         function carregaNE10() {	
-            document.frm.JG0109.value = document.frm.NE10.value;
-            document.frm.JG0308.value = document.frm.NE10.value;
-            document.frm.JG0409.value = document.frm.NE10.value;
-
+            document.frm.JG0110.value = document.frm.NE10.value;
+            document.frm.JG0210.value = document.frm.NE10.value;
+            document.frm.JG0310.value = document.frm.NE10.value;
         }
 
         // *********************************************************
         // Carrega o Primeiro Número NE11 nos campos JG35, JG55 e JG65
         // *********************************************************
         function carregaNE11() {
-            document.frm.JG0110.value = document.frm.NE11.value;
-            document.frm.JG0209.value = document.frm.NE11.value;
-            document.frm.JG0309.value = document.frm.NE11.value;
+            document.frm.JG0111.value = document.frm.NE11.value;
+            document.frm.JG0211.value = document.frm.NE11.value;
+            document.frm.JG0311.value = document.frm.NE11.value;
         }
 
         // *********************************************************
         // Carrega o Primeiro Número NE12 nos campos 
         // *********************************************************
         function carregaNE12() {
-            document.frm.JG0111.value = document.frm.NE12.value;
-            document.frm.JG0210.value = document.frm.NE12.value;
-            document.frm.JG0310.value = document.frm.NE12.value;
-            document.frm.JG0411.value = document.frm.NE12.value;
+            document.frm.JG0112.value = document.frm.NE12.value;
+            document.frm.JG0212.value = document.frm.NE12.value;
         }
 
         // *********************************************************
         // Carrega o Primeiro Número NE13 nos campos 
         // *********************************************************
         function carregaNE13() {
-					document.frm.JG0211.value = document.frm.NE13.value;
-					document.frm.JG0311.value = document.frm.NE13.value;
-					document.frm.JG0410.value = document.frm.NE13.value;
+          document.frm.JG0113.value = document.frm.NE13.value;
+          document.frm.JG0213.value = document.frm.NE13.value;
         }
 
         // *********************************************************
         // Carrega o Primeiro Número NE14 nos campos 
         // *********************************************************
         function carregaNE14() {
-            document.frm.JG0112.value = document.frm.NE14.value;
-            document.frm.JG0212.value = document.frm.NE14.value;
-            document.frm.JG0412.value = document.frm.NE14.value;
+            document.frm.JG0114.value = document.frm.NE14.value;
         }
 
         // *********************************************************
         // Carrega o Primeiro Número NE15 nos campos JG36, JG56 e JG66
         // *********************************************************
         function carregaNE15() {
-            document.frm.JG0113.value = document.frm.NE15.value;
-            document.frm.JG0312.value = document.frm.NE15.value;
-            document.frm.JG0413.value = document.frm.NE15.value;
+            document.frm.JG0115.value = document.frm.NE15.value;
         }
 
         // *********************************************************
         // Carrega o Primeiro Número NE16 nos campos JG36, JG56 e JG66
         // *********************************************************
         function carregaNE16() {
-            document.frm.JG0114.value = document.frm.NE16.value;            
-            document.frm.JG0213.value = document.frm.NE16.value;            
-            document.frm.JG0313.value = document.frm.NE16.value;            
-            document.frm.JG0415.value = document.frm.NE16.value;                    
+            document.frm.JG0214.value = document.frm.NE16.value;            
+            document.frm.JG0312.value = document.frm.NE16.value;                       
 		}
 
         // *********************************************************
         // Carrega o Primeiro Número NE17 nos campos 
         // *********************************************************
         function carregaNE17() {
-            document.frm.JG0115.value = document.frm.NE17.value;            
-            document.frm.JG0214.value = document.frm.NE17.value;            
-            document.frm.JG0314.value = document.frm.NE17.value;                     
+            document.frm.JG0215.value = document.frm.NE17.value;            
+            document.frm.JG0313.value = document.frm.NE17.value;                       
         }
                 
 
@@ -237,12 +216,16 @@
         // Carrega o Primeiro Número NE18 nos campos
         // *********************************************************
         function carregaNE18() {
-            document.frm.JG0215.value = document.frm.NE18.value;            
-            document.frm.JG0315.value = document.frm.NE18.value;            
-            document.frm.JG0414.value = document.frm.NE18.value;                      
+            document.frm.JG0314.value = document.frm.NE18.value;                       			          
         }
 
-				
+        // *********************************************************
+        // Carrega o Primeiro Número NE19 nos campos 
+        // *********************************************************
+        function carregaNE19() {
+            document.frm.JG0315.value = document.frm.NE19.value;	
+        }
+
 		// *********************************************************   
 		// Ordena os numeros distribuidos nos jogos
 		// *********************************************************   
@@ -253,15 +236,14 @@
 			var jogosArray02 = [document.frm.JG0201.value, document.frm.JG0202.value, document.frm.JG0203.value, document.frm.JG0204.value, document.frm.JG0205.value, document.frm.JG0206.value, document.frm.JG0207.value, document.frm.JG0208.value, document.frm.JG0209.value, document.frm.JG0210.value, document.frm.JG0211.value, document.frm.JG0212.value, document.frm.JG0213.value, document.frm.JG0214.value, document.frm.JG0215.value];     // OK 
 			
 			var jogosArray03 = [document.frm.JG0301.value, document.frm.JG0302.value, document.frm.JG0303.value, document.frm.JG0304.value, document.frm.JG0305.value, document.frm.JG0306.value, document.frm.JG0307.value, document.frm.JG0308.value, document.frm.JG0309.value, document.frm.JG0310.value, document.frm.JG0311.value, document.frm.JG0312.value, document.frm.JG0313.value, document.frm.JG0314.value, document.frm.JG0315.value];     // OK 
-			
-			var jogosArray04 = [document.frm.JG0401.value, document.frm.JG0402.value, document.frm.JG0403.value, document.frm.JG0404.value, document.frm.JG0405.value, document.frm.JG0406.value, document.frm.JG0407.value, document.frm.JG0408.value, document.frm.JG0409.value, document.frm.JG0410.value, document.frm.JG0411.value, document.frm.JG0412.value, document.frm.JG0413.value, document.frm.JG0414.value, document.frm.JG0415.value];     // OK 
 				
-			escreveJogos = " JOGOS EM ORDEM CRESCENTE " + "\n\n" + jogosArray01.sort() + "\n" + jogosArray02.sort() + "\n" + jogosArray03.sort() + "\n" + jogosArray04.sort() + "\n" ;
+			escreveJogos = " JOGOS EM ORDEM CRESCENTE " + "\n\n Jogo 01 : " + jogosArray01.sort() + " = " + document.frm.SOMA01.value + "\n Jogo 02 : " + jogosArray02.sort() + " = " +  document.frm.SOMA02.value + "\n Jogo 03 : " + jogosArray03.sort() + " = " + document.frm.SOMA03.value + "\n";
 			
 			/* Chama a funººo de mostraJogos */ 		
 			mostraJogos(escreveJogos); 
 			
-		}				
+		}	
+
 
 
 		// *********************************************************
@@ -323,10 +305,12 @@
 				if (nomeComp == "NE18") {
 					document.frm.NE18.value = "0" + document.frm.NE18.value;
 				}
+				if (nomeComp == "NE19") {
+					document.frm.NE19.value = "0" + document.frm.NE19.value;
+				}        
 			}
-		}			
+		}	    
 
-			
         // *********************************************************
         // Muda a cor do botão igual ao numero digitado 
         // *********************************************************
@@ -417,56 +401,11 @@
                                          
         }                                         
     </script> 
-
-	<style>
-		body {font-family: Arial, Helvetica, sans-serif;}
-
-		/* The Modal (background) */
-		.modal {
-			display: none; /* Hidden by default */
-			position: fixed; /* Stay in place */
-			z-index: 1; /* Sit on top */
-			padding-top: 50px; /* Location of the box */
-			left: 0;
-			top: 0;
-			width: 100%; /* Full width */
-			height: 100%; /* Full height */			
-			/* allow vertical scrolling if required */
-			overflow-x: hidden;
-			overflow-y: auto;			
-			/*			overflow: auto; */ /* Enable scroll if needed */
-			background-color: rgb(0,0,0); /* Fallback color */
-			background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-		}
-
-		/* Modal Content */
-		.modal-content {
-			background-color: #fefefe;
-			margin: auto;
-			padding: 20px;
-			border: 1px solid #888;
-			width: 40%;
-		}
-
-		/* The Close Button */
-		.close {
-			color: #aaaaaa;
-			float: right;
-			font-size: 28px;
-			font-weight: bold;
-		}
-
-		.close:hover,
-		.close:focus {
-			color: #000;
-			text-decoration: none;
-			cursor: pointer;
-		}
-	</style>			
   
 </head>
 
-<body background="100reais1000dolares.jpg" bgcolor="#836FFF">
+<body background="ouro1.jpg" bgcolor="#836FFF">
+
 
 <center>
 <form name="frm">
@@ -474,24 +413,24 @@
  
     <table border="1" bgcolor="#87CEEB"> 
         <tr>
-            <td colspan="25" align="center">
-		        <b>4 JOGOS DA LOTOFÁCIL - OBJETIVANDO O ACERTO DE 12, 13 e 14 NÚMEROS ENTRE OS 18 COMBINADOS</b> 		
+            <td colspan="19" align="center">
+		        <b>3 JOGOS - ACERTOS DE 12, 13 e 14 NÚMEROS.</b> 		
 		    </td>		    		    
         </tr>
 	    <tr>
-		    <td colspan="25">
+		    <td colspan="19">
                 <hr size="2" color="black"/>
 		    </td>
 	    </tr>    
         <tr>
-            <td colspan="25" nowrap>
-		        <b>TIPO: </b> 		
+            <td colspan="19" nowrap>
+		        <b>TIPO:</b> 		
                 &nbsp;
                 <select name="TIPO">
                   <option value="0"> LOTOFÁCIL </option>
                 </select>
                 &nbsp;&nbsp;&nbsp;
-		        <b>CONC. N. : </b> 		
+		        <b>CONC. N.: </b> 		
                 &nbsp;
 		        <input type="text" size="25" maxlength="30" name="CONCNR">
 		        &nbsp;&nbsp;&nbsp;	
@@ -500,16 +439,16 @@
 		    </td>
         </tr>
 	    <tr>
-		    <td colspan="25">
+		    <td colspan="19">
                 <hr size="2" color="black"/>
 		    </td>
 	    </tr>
         <tr>				
-		    <td align="center" colspan="3">
-		        <b>NÚM. FIXOS </b>		
+		    <td align="center" colspan="11">
+		        <b>11 NÚM. FIXOS </b>		
 		    </td>
-		    <td align="center" colspan="22">
-		        <b>SISTEMA DE NÚMEROS = 18 NÚMEROS = 3 Fixos + 15 Variáveis</b>
+		    <td align="center" colspan="8">
+		        <b>8 NÚMEROS ALTERNADOS</b>
 		    </td>		    	
 		</tr>
 	    <tr>				
@@ -567,7 +506,10 @@
 		    <td align="center">
 		        <b>18º</b>
 		    </td>		    
-      
+		    <td align="center">
+		        <b>19º</b>
+		    </td>	    
+   
 	    </tr>
 	    <tr>				
 		    <td align="center">
@@ -592,7 +534,7 @@
 		        <input type="text" size="3" maxlength="2" name="NE07" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE07();soma();numero_escolhido(this.value);">	
 		    </td>
 		    <td align="center">
-		        <input type="text" size="3" maxlength="2" name="NE08" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE08();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="3" maxlength="2" name="NE08" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);tamanhoTexto(this.value, this.name);carregaNE08();soma();numero_escolhido(this.value);">	
 		    </td>
 		    <td align="center">
 		        <input type="text" size="3" maxlength="2" name="NE09" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE09();soma();numero_escolhido(this.value);">	
@@ -624,7 +566,11 @@
 		    <td align="center">
 		        <input type="text" size="3" maxlength="2" name="NE18" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE18();soma();numero_escolhido(this.value);">	
 		    </td>
-
+		    <td align="center">
+		        <input type="text" size="3" maxlength="2" name="NE19" style="font-size:18px; font-weight:bold; width:30px; height:20px;" onblur="tamanhoTexto(this.value, this.name);carregaNE19();soma();numero_escolhido(this.value);">	
+		    </td>
+		
+		</tr>
 	</table>
     <table>
 	    <tr>
@@ -890,59 +836,8 @@
 		        <input type="text" size="1" maxlength="2" name="SOMA03" style="font-size:20px; font-weight:bold; width:50px; background: #c8c0ee;" value="0">	
 		    </td> 					    		    
 		</tr>			
-	    <tr>	    			
-		    <td align="center">
-		        <b>Jogo 04 </b> 		
-		    </td>
-		    <td>
-		        <input type="text" size="1" maxlength="2" name="JG0401" style="font-size:20px; font-weight:bold; width:35px;">	
-		    </td>
-		    <td>
-		        <input type="text" size="1" maxlength="2" name="JG0402" style="font-size:20px; font-weight:bold; width:35px;">	
-		    </td>
-		    <td>
-		        <input type="text" size="1" maxlength="2" name="JG0403" style="font-size:20px; font-weight:bold; width:35px;">	
-		    </td>
-		    <td>
-		        <input type="text" size="1" maxlength="2" name="JG0404" style="font-size:20px; font-weight:bold; width:35px;">	
-		    </td>
-		    <td>
-		        <input type="text" size="1" maxlength="2" name="JG0405" style="font-size:20px; font-weight:bold; width:35px;">	
-		    </td>
-		    <td>
-		        <input type="text" size="1" maxlength="2" name="JG0406" style="font-size:20px; font-weight:bold; width:35px;">	
-		    </td>
-		    <td>
-		        <input type="text" size="1" maxlength="2" name="JG0407" style="font-size:20px; font-weight:bold; width:35px;">	
-		    </td>
-		    <td>
-		        <input type="text" size="1" maxlength="2" name="JG0408" style="font-size:20px; font-weight:bold; width:35px;">	
-		    </td>
-		    <td>
-		        <input type="text" size="1" maxlength="2" name="JG0409" style="font-size:20px; font-weight:bold; width:35px;">	
-		    </td>
-		    <td>
-		        <input type="text" size="1" maxlength="2" name="JG0410" style="font-size:20px; font-weight:bold; width:35px;">	
-		    </td>
-		    <td>
-		        <input type="text" size="1" maxlength="2" name="JG0411" style="font-size:20px; font-weight:bold; width:35px;">	
-		    </td>
-		    <td>
-		        <input type="text" size="1" maxlength="2" name="JG0412" style="font-size:20px; font-weight:bold; width:35px;">	
-		    </td>
-		    <td>
-		        <input type="text" size="1" maxlength="2" name="JG0413" style="font-size:20px; font-weight:bold; width:35px;">	
-		    </td>
-		    <td>
-		        <input type="text" size="1" maxlength="2" name="JG0414" style="font-size:20px; font-weight:bold; width:35px;">	
-		    </td>
-		    <td>
-		        <input type="text" size="1" maxlength="2" name="JG0415" style="font-size:20px; font-weight:bold; width:35px;">	
-		    </td>		
-		    <td bgcolor="orange">
-		        <input type="text" size="1" maxlength="2" name="SOMA04" style="font-size:20px; font-weight:bold; width:50px; background: #c8c0ee;" value="0">	
-		    </td> 			    		    
-		</tr>			
+		
+
 	    <tr>
 		    <td rowspan="">
 		        &nbsp;	
@@ -1013,14 +908,14 @@
 		</tr> 
 	</table> 
 
-	<br>
-	<b>OBS.: ESTE JOGO FOI SISTEMATIZADO, PENSADO E ELABORADO POR JOSÉ CHARLES. </b>
+	<br><b>OBS.: ESTE JOGO FOI SISTEMATIZADO, PENSADO E ELABORADO POR JOSÉ CHARLES. </b> 	
 	<br> 
 	<b>                        
 		<a href="index.html">
-      Retornar à Página Inicial
-    </a>
-	</b>	
+           Retornar à Página Inicial
+        </a>
+	</b>
+
 	<br>
 	
     <table>
@@ -1041,8 +936,8 @@
 		</div>
 		<br><br>
 
-	</div> 	
-                        
+	</div> 	  
+
 </center> 
 </form>   
 </body>
