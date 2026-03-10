@@ -1,131 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <title>LOTOFÁCIL - 7 Jg - 21 dz</title>
+    <title>LOTOFÁCIL - 8Jg - 21Dz - 3Fx</title>
     <script language="javascript">
+
+		var escreveJogos;
+
+	    function mostraJogos(x) {
+							
+			// Get the modal
+			var modal = document.getElementById('myModal');
+			var ordem = document.getElementById('ordem');
+			console.log(ordem);
+			ordem.innerText = x;
+		
+			modal.style.display = "block";
+			// Get the button that opens the modal
+			
+			//var btn = document.getElementById("myBtn");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal 
+			//btn.onclick = function() {
+				//modal.style.display = "block";
+			//}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+				modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it  
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+					
+			console.log(escreveJogos);
+		
+		}
+
 
         // *********************************************************
         // Carrega os campos de soma de cada cartela
         // *********************************************************
-        function soma() {
-            // Campos do primeiro jogo
-            document.frm.JG0101.value = parseFloat(0 + document.frm.JG0101.value);
-            document.frm.JG0102.value = parseFloat(0 + document.frm.JG0102.value);
-            document.frm.JG0103.value = parseFloat(0 + document.frm.JG0103.value);
-            document.frm.JG0104.value = parseFloat(0 + document.frm.JG0104.value);
-            document.frm.JG0105.value = parseFloat(0 + document.frm.JG0105.value);                        
-            document.frm.JG0106.value = parseFloat(0 + document.frm.JG0106.value);                        
-            document.frm.JG0107.value = parseFloat(0 + document.frm.JG0107.value);                        
-            document.frm.JG0108.value = parseFloat(0 + document.frm.JG0108.value);                        
-            document.frm.JG0109.value = parseFloat(0 + document.frm.JG0109.value);                        
-            document.frm.JG0110.value = parseFloat(0 + document.frm.JG0110.value);                        
-            document.frm.JG0111.value = parseFloat(0 + document.frm.JG0111.value);                        
-            document.frm.JG0112.value = parseFloat(0 + document.frm.JG0112.value);                        
-            document.frm.JG0113.value = parseFloat(0 + document.frm.JG0113.value);                        
-            document.frm.JG0114.value = parseFloat(0 + document.frm.JG0114.value);                        
-            document.frm.JG0115.value = parseFloat(0 + document.frm.JG0115.value);                        
-
-            // Campos do segundo jogo
-            document.frm.JG0201.value = parseFloat(0 + document.frm.JG0201.value);
-            document.frm.JG0202.value = parseFloat(0 + document.frm.JG0202.value);  
-            document.frm.JG0203.value = parseFloat(0 + document.frm.JG0203.value);  
-            document.frm.JG0204.value = parseFloat(0 + document.frm.JG0204.value);  
-            document.frm.JG0205.value = parseFloat(0 + document.frm.JG0205.value);  
-            document.frm.JG0206.value = parseFloat(0 + document.frm.JG0206.value);  
-            document.frm.JG0207.value = parseFloat(0 + document.frm.JG0207.value);  
-            document.frm.JG0208.value = parseFloat(0 + document.frm.JG0208.value);  
-            document.frm.JG0209.value = parseFloat(0 + document.frm.JG0209.value);  
-            document.frm.JG0210.value = parseFloat(0 + document.frm.JG0210.value);  
-            document.frm.JG0211.value = parseFloat(0 + document.frm.JG0211.value);  
-            document.frm.JG0212.value = parseFloat(0 + document.frm.JG0212.value);  
-            document.frm.JG0213.value = parseFloat(0 + document.frm.JG0213.value);  
-            document.frm.JG0214.value = parseFloat(0 + document.frm.JG0214.value);  
-            document.frm.JG0215.value = parseFloat(0 + document.frm.JG0215.value);  
-
-            // Campos do terceiro jogo
-            document.frm.JG0301.value = parseFloat(0 + document.frm.JG0301.value);
-            document.frm.JG0302.value = parseFloat(0 + document.frm.JG0302.value);
-            document.frm.JG0303.value = parseFloat(0 + document.frm.JG0303.value);
-            document.frm.JG0304.value = parseFloat(0 + document.frm.JG0304.value);
-            document.frm.JG0305.value = parseFloat(0 + document.frm.JG0305.value);
-            document.frm.JG0306.value = parseFloat(0 + document.frm.JG0306.value);
-            document.frm.JG0307.value = parseFloat(0 + document.frm.JG0307.value);
-            document.frm.JG0308.value = parseFloat(0 + document.frm.JG0308.value);
-            document.frm.JG0309.value = parseFloat(0 + document.frm.JG0309.value);
-            document.frm.JG0310.value = parseFloat(0 + document.frm.JG0310.value);
-            document.frm.JG0311.value = parseFloat(0 + document.frm.JG0311.value);
-            document.frm.JG0312.value = parseFloat(0 + document.frm.JG0312.value);
-            document.frm.JG0313.value = parseFloat(0 + document.frm.JG0313.value);
-            document.frm.JG0314.value = parseFloat(0 + document.frm.JG0314.value);
-            document.frm.JG0315.value = parseFloat(0 + document.frm.JG0315.value);
-
-            // Campos do quarto jogo
-            document.frm.JG0401.value = parseFloat(0 + document.frm.JG0401.value);
-            document.frm.JG0402.value = parseFloat(0 + document.frm.JG0402.value);
-            document.frm.JG0403.value = parseFloat(0 + document.frm.JG0403.value);
-            document.frm.JG0404.value = parseFloat(0 + document.frm.JG0404.value);
-            document.frm.JG0405.value = parseFloat(0 + document.frm.JG0405.value);
-            document.frm.JG0406.value = parseFloat(0 + document.frm.JG0406.value);
-            document.frm.JG0407.value = parseFloat(0 + document.frm.JG0407.value);
-            document.frm.JG0408.value = parseFloat(0 + document.frm.JG0408.value);
-            document.frm.JG0409.value = parseFloat(0 + document.frm.JG0409.value);
-            document.frm.JG0410.value = parseFloat(0 + document.frm.JG0410.value);
-            document.frm.JG0411.value = parseFloat(0 + document.frm.JG0411.value);
-            document.frm.JG0412.value = parseFloat(0 + document.frm.JG0412.value);
-            document.frm.JG0413.value = parseFloat(0 + document.frm.JG0413.value);
-            document.frm.JG0414.value = parseFloat(0 + document.frm.JG0414.value);
-            document.frm.JG0415.value = parseFloat(0 + document.frm.JG0415.value);
-
-            // Campos do quinto jogo
-            document.frm.JG0501.value = parseFloat(0 + document.frm.JG0501.value);
-            document.frm.JG0502.value = parseFloat(0 + document.frm.JG0502.value);
-            document.frm.JG0503.value = parseFloat(0 + document.frm.JG0503.value);
-            document.frm.JG0504.value = parseFloat(0 + document.frm.JG0504.value);
-            document.frm.JG0505.value = parseFloat(0 + document.frm.JG0505.value);
-            document.frm.JG0506.value = parseFloat(0 + document.frm.JG0506.value);
-            document.frm.JG0507.value = parseFloat(0 + document.frm.JG0507.value);
-            document.frm.JG0508.value = parseFloat(0 + document.frm.JG0508.value);
-            document.frm.JG0509.value = parseFloat(0 + document.frm.JG0509.value);
-            document.frm.JG0510.value = parseFloat(0 + document.frm.JG0510.value);
-            document.frm.JG0511.value = parseFloat(0 + document.frm.JG0511.value);
-            document.frm.JG0512.value = parseFloat(0 + document.frm.JG0512.value);
-            document.frm.JG0513.value = parseFloat(0 + document.frm.JG0513.value);
-            document.frm.JG0514.value = parseFloat(0 + document.frm.JG0514.value);
-            document.frm.JG0515.value = parseFloat(0 + document.frm.JG0515.value);
-
-            // Campos do sexto jogo
-            document.frm.JG0601.value = parseFloat(0 + document.frm.JG0601.value);
-            document.frm.JG0602.value = parseFloat(0 + document.frm.JG0602.value);
-            document.frm.JG0603.value = parseFloat(0 + document.frm.JG0603.value);
-            document.frm.JG0604.value = parseFloat(0 + document.frm.JG0604.value);
-            document.frm.JG0605.value = parseFloat(0 + document.frm.JG0605.value);
-            document.frm.JG0606.value = parseFloat(0 + document.frm.JG0606.value);
-            document.frm.JG0607.value = parseFloat(0 + document.frm.JG0607.value);
-            document.frm.JG0608.value = parseFloat(0 + document.frm.JG0608.value);
-            document.frm.JG0609.value = parseFloat(0 + document.frm.JG0609.value);
-            document.frm.JG0610.value = parseFloat(0 + document.frm.JG0610.value);
-            document.frm.JG0611.value = parseFloat(0 + document.frm.JG0611.value);
-            document.frm.JG0612.value = parseFloat(0 + document.frm.JG0612.value);
-            document.frm.JG0613.value = parseFloat(0 + document.frm.JG0613.value);
-            document.frm.JG0614.value = parseFloat(0 + document.frm.JG0614.value);
-            document.frm.JG0615.value = parseFloat(0 + document.frm.JG0615.value);
-
-            // Campos do setimo jogo
-            document.frm.JG0701.value = parseFloat(0 + document.frm.JG0701.value);            
-            document.frm.JG0702.value = parseFloat(0 + document.frm.JG0702.value);            
-            document.frm.JG0703.value = parseFloat(0 + document.frm.JG0703.value);            
-            document.frm.JG0704.value = parseFloat(0 + document.frm.JG0704.value);            
-            document.frm.JG0705.value = parseFloat(0 + document.frm.JG0705.value);            
-            document.frm.JG0706.value = parseFloat(0 + document.frm.JG0706.value);            
-            document.frm.JG0707.value = parseFloat(0 + document.frm.JG0707.value);            
-            document.frm.JG0708.value = parseFloat(0 + document.frm.JG0708.value);            
-            document.frm.JG0709.value = parseFloat(0 + document.frm.JG0709.value);            
-            document.frm.JG0710.value = parseFloat(0 + document.frm.JG0710.value);            
-            document.frm.JG0711.value = parseFloat(0 + document.frm.JG0711.value);            
-            document.frm.JG0712.value = parseFloat(0 + document.frm.JG0712.value);            
-            document.frm.JG0713.value = parseFloat(0 + document.frm.JG0713.value);            
-            document.frm.JG0714.value = parseFloat(0 + document.frm.JG0714.value);            
-            document.frm.JG0715.value = parseFloat(0 + document.frm.JG0715.value);            
+        function soma() {       
 
             var total01;
             var total02;
@@ -134,14 +56,24 @@
             var total05;
             var total06;
             var total07;
+            var total08;
 
-            total01 = parseFloat(document.frm.JG0101.value) + parseFloat(document.frm.JG0102.value) + parseFloat(document.frm.JG0103.value) + parseFloat(document.frm.JG0104.value) + parseFloat(document.frm.JG0105.value) + parseFloat(document.frm.JG0106.value) + parseFloat(document.frm.JG0107.value) + parseFloat(document.frm.JG0108.value) + parseFloat(document.frm.JG0109.value) + parseFloat(document.frm.JG0110.value) + parseFloat(document.frm.JG0111.value) + parseFloat(document.frm.JG0112.value) + parseFloat(document.frm.JG0113.value) + parseFloat(document.frm.JG0114.value) + parseFloat(document.frm.JG0115.value);
-            total02 = parseFloat(document.frm.JG0201.value) + parseFloat(document.frm.JG0202.value) + parseFloat(document.frm.JG0203.value) + parseFloat(document.frm.JG0204.value) + parseFloat(document.frm.JG0205.value) + parseFloat(document.frm.JG0206.value) + parseFloat(document.frm.JG0207.value) + parseFloat(document.frm.JG0208.value) + parseFloat(document.frm.JG0209.value) + parseFloat(document.frm.JG0210.value) + parseFloat(document.frm.JG0211.value) + parseFloat(document.frm.JG0212.value) + parseFloat(document.frm.JG0213.value) + parseFloat(document.frm.JG0214.value) + parseFloat(document.frm.JG0215.value);
-            total03 = parseFloat(document.frm.JG0301.value) + parseFloat(document.frm.JG0302.value) + parseFloat(document.frm.JG0303.value) + parseFloat(document.frm.JG0304.value) + parseFloat(document.frm.JG0302.value) + parseFloat(document.frm.JG0306.value) + parseFloat(document.frm.JG0307.value) + parseFloat(document.frm.JG0308.value) + parseFloat(document.frm.JG0309.value) + parseFloat(document.frm.JG0310.value) + parseFloat(document.frm.JG0311.value) + parseFloat(document.frm.JG0312.value) + parseFloat(document.frm.JG0313.value) + parseFloat(document.frm.JG0314.value) + parseFloat(document.frm.JG0315.value);
-            total04 = parseFloat(document.frm.JG0401.value) + parseFloat(document.frm.JG0402.value) + parseFloat(document.frm.JG0403.value) + parseFloat(document.frm.JG0404.value) + parseFloat(document.frm.JG0405.value) + parseFloat(document.frm.JG0406.value) + parseFloat(document.frm.JG0407.value) + parseFloat(document.frm.JG0408.value) + parseFloat(document.frm.JG0409.value) + parseFloat(document.frm.JG0410.value) + parseFloat(document.frm.JG0411.value) + parseFloat(document.frm.JG0412.value) + parseFloat(document.frm.JG0413.value) + parseFloat(document.frm.JG0414.value) + parseFloat(document.frm.JG0415.value);
-            total05 = parseFloat(document.frm.JG0501.value) + parseFloat(document.frm.JG0502.value) + parseFloat(document.frm.JG0503.value) + parseFloat(document.frm.JG0504.value) + parseFloat(document.frm.JG0505.value) + parseFloat(document.frm.JG0506.value) + parseFloat(document.frm.JG0507.value) + parseFloat(document.frm.JG0508.value) + parseFloat(document.frm.JG0509.value) + parseFloat(document.frm.JG0510.value) + parseFloat(document.frm.JG0511.value) + parseFloat(document.frm.JG0512.value) + parseFloat(document.frm.JG0513.value) + parseFloat(document.frm.JG0514.value) + parseFloat(document.frm.JG0515.value) ;
-            total06 = parseFloat(document.frm.JG0601.value) + parseFloat(document.frm.JG0602.value) + parseFloat(document.frm.JG0603.value) + parseFloat(document.frm.JG0604.value) + parseFloat(document.frm.JG0605.value) + parseFloat(document.frm.JG0606.value) + parseFloat(document.frm.JG0607.value) + parseFloat(document.frm.JG0608.value) + parseFloat(document.frm.JG0609.value) + parseFloat(document.frm.JG0610.value) + parseFloat(document.frm.JG0611.value) + parseFloat(document.frm.JG0612.value) + parseFloat(document.frm.JG0613.value) + parseFloat(document.frm.JG0614.value) + parseFloat(document.frm.JG0615.value) ;
-            total07 = parseFloat(document.frm.JG0701.value) + parseFloat(document.frm.JG0702.value) + parseFloat(document.frm.JG0703.value) + parseFloat(document.frm.JG0704.value) + parseFloat(document.frm.JG0705.value) + parseFloat(document.frm.JG0706.value) + parseFloat(document.frm.JG0707.value) + parseFloat(document.frm.JG0708.value) + parseFloat(document.frm.JG0709.value) + parseFloat(document.frm.JG0710.value) + parseFloat(document.frm.JG0711.value) + parseFloat(document.frm.JG0712.value) + parseFloat(document.frm.JG0713.value) + parseFloat(document.frm.JG0714.value) + parseFloat(document.frm.JG0715.value) ;
+
+            total01 = parseFloat(0 + document.frm.JG0101.value) + parseFloat(0 + document.frm.JG0102.value) + parseFloat(0 + document.frm.JG0103.value) + parseFloat(0 + document.frm.JG0104.value) + parseFloat(0 + document.frm.JG0105.value) + parseFloat(0 + document.frm.JG0106.value) + parseFloat(0 + document.frm.JG0107.value) + parseFloat(0 + document.frm.JG0108.value) + parseFloat(0 + document.frm.JG0109.value) + parseFloat(0 + document.frm.JG0110.value) + parseFloat(0 + document.frm.JG0111.value) + parseFloat(0 + document.frm.JG0112.value) + parseFloat(0 + document.frm.JG0113.value) + parseFloat(0 + document.frm.JG0114.value) + parseFloat(0 + document.frm.JG0115.value);
+     
+			total02 = parseparseFloat(0 + document.frm.JG0201.value) + parseparseFloat(0 + document.frm.JG0202.value) + parseparseFloat(0 + document.frm.JG0203.value) + parseparseFloat(0 + document.frm.JG0204.value) + parseparseFloat(0 + document.frm.JG0205.value) + parseparseFloat(0 + document.frm.JG0206.value) + parseparseFloat(0 + document.frm.JG0207.value) + parseparseFloat(0 + document.frm.JG0208.value) + parseparseFloat(0 + document.frm.JG0209.value) + parseparseFloat(0 + document.frm.JG0210.value) + parseparseFloat(0 + document.frm.JG0211.value) + parseparseFloat(0 + document.frm.JG0212.value) + parseparseFloat(0 + document.frm.JG0213.value) + parseparseFloat(0 + document.frm.JG0214.value) + parseparseFloat(0 + document.frm.JG0215.value);
+alert(total02);              
+			total03 = parseparseFloat(0 + document.frm.JG0301.value) + parseparseFloat(0 + document.frm.JG0302.value) + parseparseFloat(0 + document.frm.JG0303.value) + parseparseFloat(0 + document.frm.JG0304.value) + parseparseFloat(0 + document.frm.JG0302.value) + parseparseFloat(0 + document.frm.JG0306.value) + parseparseFloat(0 + document.frm.JG0307.value) + parseparseFloat(0 + document.frm.JG0308.value) + parseparseFloat(0 + document.frm.JG0309.value) + parseparseFloat(0 + document.frm.JG0310.value) + parseparseFloat(0 + document.frm.JG0311.value) + parseparseFloat(0 + document.frm.JG0312.value) + parseparseFloat(0 + document.frm.JG0313.value) + parseparseFloat(0 + document.frm.JG0314.value) + parseparseFloat(0 + document.frm.JG0315.value);
+            
+			total04 = parseparseFloat(0 + document.frm.JG0401.value) + parseparseFloat(0 + document.frm.JG0402.value) + parseparseFloat(0 + document.frm.JG0403.value) + parseparseFloat(0 + document.frm.JG0404.value) + parseparseFloat(0 + document.frm.JG0405.value) + parseparseFloat(0 + document.frm.JG0406.value) + parseparseFloat(0 + document.frm.JG0407.value) + parseparseFloat(0 + document.frm.JG0408.value) + parseparseFloat(0 + document.frm.JG0409.value) + parseparseFloat(0 + document.frm.JG0410.value) + parseparseFloat(0 + document.frm.JG0411.value) + parseparseFloat(0 + document.frm.JG0412.value) + parseparseFloat(0 + document.frm.JG0413.value) + parseparseFloat(0 + document.frm.JG0414.value) + parseparseFloat(0 + document.frm.JG0415.value);
+            
+			total05 = parseparseFloat(0 + document.frm.JG0501.value) + parseparseFloat(0 + document.frm.JG0502.value) + parseparseFloat(0 + document.frm.JG0503.value) + parseparseFloat(0 + document.frm.JG0504.value) + parseparseFloat(0 + document.frm.JG0505.value) + parseparseFloat(0 + document.frm.JG0506.value) + parseparseFloat(0 + document.frm.JG0507.value) + parseparseFloat(0 + document.frm.JG0508.value) + parseparseFloat(0 + document.frm.JG0509.value) + parseparseFloat(0 + document.frm.JG0510.value) + parseparseFloat(0 + document.frm.JG0511.value) + parseparseFloat(0 + document.frm.JG0512.value) + parseparseFloat(0 + document.frm.JG0513.value) + parseparseFloat(0 + document.frm.JG0514.value) + parseparseFloat(0 + document.frm.JG0515.value) ;
+            
+			total06 = parseparseFloat(0 + document.frm.JG0601.value) + parseparseFloat(0 + document.frm.JG0602.value) + parseparseFloat(0 + document.frm.JG0603.value) + parseparseFloat(0 + document.frm.JG0604.value) + parseparseFloat(0 + document.frm.JG0605.value) + parseparseFloat(0 + document.frm.JG0606.value) + parseparseFloat(0 + document.frm.JG0607.value) + parseparseFloat(0 + document.frm.JG0608.value) + parseparseFloat(0 + document.frm.JG0609.value) + parseparseFloat(0 + document.frm.JG0610.value) + parseparseFloat(0 + document.frm.JG0611.value) + parseparseFloat(0 + document.frm.JG0612.value) + parseparseFloat(0 + document.frm.JG0613.value) + parseparseFloat(0 + document.frm.JG0614.value) + parseparseFloat(0 + document.frm.JG0615.value) ;
+            
+			total07 = parseparseFloat(0 + document.frm.JG0701.value) + parseparseFloat(0 + document.frm.JG0702.value) + parseparseFloat(0 + document.frm.JG0703.value) + parseparseFloat(0 + document.frm.JG0704.value) + parseparseFloat(0 + document.frm.JG0705.value) + parseparseFloat(0 + document.frm.JG0706.value) + parseparseFloat(0 + document.frm.JG0707.value) + parseparseFloat(0 + document.frm.JG0708.value) + parseparseFloat(0 + document.frm.JG0709.value) + parseparseFloat(0 + document.frm.JG0710.value) + parseparseFloat(0 + document.frm.JG0711.value) + parseparseFloat(0 + document.frm.JG0712.value) + parseparseFloat(0 + document.frm.JG0713.value) + parseparseFloat(0 + document.frm.JG0714.value) + parseparseFloat(0 + document.frm.JG0715.value) ;
+
+			total08 = parseparseFloat(0 + document.frm.JG0801.value) + parseparseFloat(0 + document.frm.JG0802.value) + parseparseFloat(0 + document.frm.JG0803.value) + parseparseFloat(0 + document.frm.JG0804.value) + parseparseFloat(0 + document.frm.JG0805.value) + parseparseFloat(0 + document.frm.JG0806.value) + parseparseFloat(0 + document.frm.JG0807.value) + parseparseFloat(0 + document.frm.JG0808.value) + parseparseFloat(0 + document.frm.JG0809.value) + parseparseFloat(0 + document.frm.JG0810.value) + parseparseFloat(0 + document.frm.JG0811.value) + parseparseFloat(0 + document.frm.JG0812.value) + parseparseFloat(0 + document.frm.JG0813.value) + parseparseFloat(0 + document.frm.JG0814.value) + parseparseFloat(0 + document.frm.JG0815.value) ;
 
             document.frm.SOMA01.value = total01;
             document.frm.SOMA02.value = total02;
@@ -149,7 +81,8 @@
             document.frm.SOMA04.value = total04;
             document.frm.SOMA05.value = total05;
             document.frm.SOMA06.value = total06;
-            document.frm.SOMA07.value = total07;            
+            document.frm.SOMA07.value = total07;
+            document.frm.SOMA08.value = total08; 
         }
 
 
@@ -158,10 +91,13 @@
         // *********************************************************
         function carregaNE01() {
             document.frm.JG0101.value = document.frm.NE01.value;
-            document.frm.JG0405.value = document.frm.NE01.value;
-            document.frm.JG0504.value = document.frm.NE01.value;
-            document.frm.JG0603.value = document.frm.NE01.value;
-            document.frm.JG0702.value = document.frm.NE01.value;
+            document.frm.JG0201.value = document.frm.NE01.value;
+            document.frm.JG0301.value = document.frm.NE01.value;
+            document.frm.JG0401.value = document.frm.NE01.value;
+            document.frm.JG0501.value = document.frm.NE01.value;
+            document.frm.JG0601.value = document.frm.NE01.value;
+            document.frm.JG0701.value = document.frm.NE01.value;
+            document.frm.JG0801.value = document.frm.NE01.value;
         }
 
         // *********************************************************
@@ -169,10 +105,13 @@
         // *********************************************************
         function carregaNE02() {
             document.frm.JG0102.value = document.frm.NE02.value;
-            document.frm.JG0201.value = document.frm.NE02.value;
-            document.frm.JG0505.value = document.frm.NE02.value;
-            document.frm.JG0605.value = document.frm.NE02.value;
-            document.frm.JG0703.value = document.frm.NE02.value;
+            document.frm.JG0202.value = document.frm.NE02.value;
+            document.frm.JG0302.value = document.frm.NE02.value;
+            document.frm.JG0402.value = document.frm.NE02.value;
+            document.frm.JG0502.value = document.frm.NE02.value;
+            document.frm.JG0602.value = document.frm.NE02.value;
+            document.frm.JG0702.value = document.frm.NE02.value;  
+            document.frm.JG0802.value = document.frm.NE02.value;			
         }
 
         // *********************************************************
@@ -180,10 +119,13 @@
         // *********************************************************
         function carregaNE03() {
             document.frm.JG0103.value = document.frm.NE03.value;
-            document.frm.JG0202.value = document.frm.NE03.value;
-            document.frm.JG0301.value = document.frm.NE03.value;
-            document.frm.JG0604.value = document.frm.NE03.value;
-            document.frm.JG0704.value = document.frm.NE03.value;
+            document.frm.JG0203.value = document.frm.NE03.value;
+            document.frm.JG0303.value = document.frm.NE03.value;
+            document.frm.JG0403.value = document.frm.NE03.value;
+            document.frm.JG0503.value = document.frm.NE03.value;
+            document.frm.JG0603.value = document.frm.NE03.value;
+            document.frm.JG0703.value = document.frm.NE03.value;
+            document.frm.JG0803.value = document.frm.NE03.value;
         }
 
         // *********************************************************
@@ -191,10 +133,11 @@
         // *********************************************************
         function carregaNE04() {
             document.frm.JG0104.value = document.frm.NE04.value;
-            document.frm.JG0203.value = document.frm.NE04.value;
-            document.frm.JG0302.value = document.frm.NE04.value;
-            document.frm.JG0401.value = document.frm.NE04.value;
-            document.frm.JG0705.value = document.frm.NE04.value;
+            document.frm.JG0407.value = document.frm.NE04.value;
+            document.frm.JG0506.value = document.frm.NE04.value;
+            document.frm.JG0605.value = document.frm.NE04.value;
+            document.frm.JG0704.value = document.frm.NE04.value;
+            document.frm.JG0807.value = document.frm.NE04.value;
         }
 
         // *********************************************************
@@ -202,54 +145,55 @@
         // *********************************************************
         function carregaNE05() {
             document.frm.JG0105.value = document.frm.NE05.value;
-            document.frm.JG0303.value = document.frm.NE05.value;
-            document.frm.JG0402.value = document.frm.NE05.value;
-            document.frm.JG0501.value = document.frm.NE05.value;
-            document.frm.JG0602.value = document.frm.NE05.value;
+            document.frm.JG0204.value = document.frm.NE05.value;
+            document.frm.JG0507.value = document.frm.NE05.value;
+            document.frm.JG0606.value = document.frm.NE05.value;
+            document.frm.JG0804.value = document.frm.NE05.value;
         }
 
         // *********************************************************
         // Carrega o Primeiro Número NE06 nos campos
         // *********************************************************
         function carregaNE06() {
+            document.frm.JG0106.value = document.frm.NE06.value;
             document.frm.JG0205.value = document.frm.NE06.value;
             document.frm.JG0304.value = document.frm.NE06.value;
-            document.frm.JG0403.value = document.frm.NE06.value;
-            document.frm.JG0502.value = document.frm.NE06.value;
-            document.frm.JG0601.value = document.frm.NE06.value;
+            document.frm.JG0607.value = document.frm.NE06.value;
+            document.frm.JG0705.value = document.frm.NE06.value;
         }
 
         // *********************************************************
-        // Carrega o Primeiro Número NE06 nos campos
+        // Carrega o Primeiro Número NE07 nos campos
         // *********************************************************
         function carregaNE07() {
-            document.frm.JG0204.value = document.frm.NE07.value;
+            document.frm.JG0107.value = document.frm.NE07.value;
+            document.frm.JG0206.value = document.frm.NE07.value;
             document.frm.JG0305.value = document.frm.NE07.value;
             document.frm.JG0404.value = document.frm.NE07.value;
-            document.frm.JG0503.value = document.frm.NE07.value;
-            document.frm.JG0701.value = document.frm.NE07.value;
+            document.frm.JG0805.value = document.frm.NE07.value;
 		}
 
         // *********************************************************
         // Carrega o Primeiro Número NE08 nos campos
         // *********************************************************
         function carregaNE08() {
-            document.frm.JG0106.value = document.frm.NE08.value;
-            document.frm.JG0410.value = document.frm.NE08.value;
-            document.frm.JG0509.value = document.frm.NE08.value;
-            document.frm.JG0608.value = document.frm.NE08.value;
-            document.frm.JG0707.value = document.frm.NE08.value;
+            document.frm.JG0207.value = document.frm.NE08.value;
+            document.frm.JG0306.value = document.frm.NE08.value;
+            document.frm.JG0405.value = document.frm.NE08.value;
+            document.frm.JG0504.value = document.frm.NE08.value;
+            document.frm.JG0706.value = document.frm.NE08.value;
         }
 
         // *********************************************************
         // Carrega o Primeiro Número NE09 nos campos
         // *********************************************************
         function carregaNE09() {
-            document.frm.JG0107.value = document.frm.NE09.value;
-            document.frm.JG0206.value = document.frm.NE09.value;
-            document.frm.JG0510.value = document.frm.NE09.value;
-            document.frm.JG0610.value = document.frm.NE09.value;
-            document.frm.JG0708.value = document.frm.NE09.value;
+            document.frm.JG0307.value = document.frm.NE09.value;
+            document.frm.JG0406.value = document.frm.NE09.value;
+            document.frm.JG0505.value = document.frm.NE09.value;
+            document.frm.JG0604.value = document.frm.NE09.value;
+            document.frm.JG0707.value = document.frm.NE09.value;
+            document.frm.JG0806.value = document.frm.NE09.value;
         }
 
         // *********************************************************
@@ -257,10 +201,11 @@
         // *********************************************************
         function carregaNE10() {	
             document.frm.JG0108.value = document.frm.NE10.value;
-            document.frm.JG0207.value = document.frm.NE10.value;
-            document.frm.JG0306.value = document.frm.NE10.value;
+            document.frm.JG0411.value = document.frm.NE10.value;
+            document.frm.JG0510.value = document.frm.NE10.value;
             document.frm.JG0609.value = document.frm.NE10.value;
-            document.frm.JG0709.value = document.frm.NE10.value;
+            document.frm.JG0708.value = document.frm.NE10.value;
+			document.frm.JG0811.value = document.frm.NE10.value;
         }
 
         // *********************************************************
@@ -269,9 +214,9 @@
         function carregaNE11() {
             document.frm.JG0109.value = document.frm.NE11.value;
             document.frm.JG0208.value = document.frm.NE11.value;
-            document.frm.JG0307.value = document.frm.NE11.value;
-            document.frm.JG0406.value = document.frm.NE11.value;
-            document.frm.JG0710.value = document.frm.NE11.value;
+            document.frm.JG0511.value = document.frm.NE11.value;
+            document.frm.JG0610.value = document.frm.NE11.value;
+            document.frm.JG0808.value = document.frm.NE11.value;
         }
 
         // *********************************************************
@@ -279,43 +224,44 @@
         // *********************************************************
         function carregaNE12() {
             document.frm.JG0110.value = document.frm.NE12.value;
+            document.frm.JG0209.value = document.frm.NE12.value;
             document.frm.JG0308.value = document.frm.NE12.value;
-            document.frm.JG0407.value = document.frm.NE12.value;
-            document.frm.JG0506.value = document.frm.NE12.value;
-            document.frm.JG0607.value = document.frm.NE12.value;
+            document.frm.JG0611.value = document.frm.NE12.value;
+            document.frm.JG0709.value = document.frm.NE12.value;
         }
 
         // *********************************************************
         // Carrega o Primeiro Número NE13 nos campos 
         // *********************************************************
         function carregaNE13() {
+            document.frm.JG0111.value = document.frm.NE13.value;
             document.frm.JG0210.value = document.frm.NE13.value;
             document.frm.JG0309.value = document.frm.NE13.value;
             document.frm.JG0408.value = document.frm.NE13.value;
-            document.frm.JG0507.value = document.frm.NE13.value;
-            document.frm.JG0606.value = document.frm.NE13.value;
+            document.frm.JG0809.value = document.frm.NE13.value;
         }
 
         // *********************************************************
         // Carrega o Primeiro Número NE14 nos campos 
         // *********************************************************
         function carregaNE14() {
-            document.frm.JG0209.value = document.frm.NE14.value;
+            document.frm.JG0211.value = document.frm.NE14.value;
             document.frm.JG0310.value = document.frm.NE14.value;
             document.frm.JG0409.value = document.frm.NE14.value;
             document.frm.JG0508.value = document.frm.NE14.value;
-            document.frm.JG0706.value = document.frm.NE14.value;
+            document.frm.JG0710.value = document.frm.NE14.value;
         }
 
         // *********************************************************
         // Carrega o Primeiro Número NE15 nos campos JG36, JG56 e JG66
         // *********************************************************
         function carregaNE15() {
-            document.frm.JG0111.value = document.frm.NE15.value;
-            document.frm.JG0415.value = document.frm.NE15.value;
-            document.frm.JG0514.value = document.frm.NE15.value;
-            document.frm.JG0613.value = document.frm.NE15.value;
-            document.frm.JG0712.value = document.frm.NE15.value;
+            document.frm.JG0311.value = document.frm.NE15.value;
+            document.frm.JG0410.value = document.frm.NE15.value;
+            document.frm.JG0509.value = document.frm.NE15.value;
+            document.frm.JG0608.value = document.frm.NE15.value;
+            document.frm.JG0711.value = document.frm.NE15.value;
+			document.frm.JG0810.value = document.frm.NE15.value;
         }
 
         // *********************************************************
@@ -323,10 +269,11 @@
         // *********************************************************
         function carregaNE16() {
             document.frm.JG0112.value = document.frm.NE16.value;            
-			document.frm.JG0211.value = document.frm.NE16.value;
-            document.frm.JG0515.value = document.frm.NE16.value;            
-			document.frm.JG0615.value = document.frm.NE16.value;
-            document.frm.JG0713.value = document.frm.NE16.value; 
+			document.frm.JG0415.value = document.frm.NE16.value;
+            document.frm.JG0514.value = document.frm.NE16.value;            
+			document.frm.JG0613.value = document.frm.NE16.value;
+            document.frm.JG0712.value = document.frm.NE16.value; 
+			document.frm.JG0815.value = document.frm.NE16.value;
 		}
 
         // *********************************************************
@@ -335,9 +282,9 @@
         function carregaNE17() {
             document.frm.JG0113.value = document.frm.NE17.value;            
 			document.frm.JG0212.value = document.frm.NE17.value;
-            document.frm.JG0311.value = document.frm.NE17.value;            
+            document.frm.JG0515.value = document.frm.NE17.value;            
 			document.frm.JG0614.value = document.frm.NE17.value;
-            document.frm.JG0714.value = document.frm.NE17.value; 
+            document.frm.JG0812.value = document.frm.NE17.value; 
         }
                 
 
@@ -348,8 +295,8 @@
             document.frm.JG0114.value = document.frm.NE18.value;            
 			document.frm.JG0213.value = document.frm.NE18.value;
             document.frm.JG0312.value = document.frm.NE18.value;            
-			document.frm.JG0411.value = document.frm.NE18.value;
-            document.frm.JG0715.value = document.frm.NE18.value; 
+			document.frm.JG0615.value = document.frm.NE18.value;
+            document.frm.JG0713.value = document.frm.NE18.value; 
         }
 
         // *********************************************************
@@ -357,10 +304,10 @@
         // *********************************************************
         function carregaNE19() {
             document.frm.JG0115.value = document.frm.NE19.value;
+            document.frm.JG0214.value = document.frm.NE19.value;
             document.frm.JG0313.value = document.frm.NE19.value;
             document.frm.JG0412.value = document.frm.NE19.value;
-            document.frm.JG0511.value = document.frm.NE19.value;
-            document.frm.JG0612.value = document.frm.NE19.value;
+            document.frm.JG0813.value = document.frm.NE19.value;
         }
 
         // *********************************************************
@@ -371,18 +318,19 @@
             document.frm.JG0314.value = document.frm.NE20.value;
             document.frm.JG0413.value = document.frm.NE20.value;
             document.frm.JG0512.value = document.frm.NE20.value;
-            document.frm.JG0611.value = document.frm.NE20.value;
+            document.frm.JG0714.value = document.frm.NE20.value;
         }
  
         // *********************************************************
         // Carrega o Primeiro Número NE21 nos campos 
         // *********************************************************
         function carregaNE21() {
-            document.frm.JG0214.value = document.frm.NE21.value;
             document.frm.JG0315.value = document.frm.NE21.value;
             document.frm.JG0414.value = document.frm.NE21.value;
             document.frm.JG0513.value = document.frm.NE21.value;
-            document.frm.JG0711.value = document.frm.NE21.value;
+            document.frm.JG0612.value = document.frm.NE21.value;
+            document.frm.JG0715.value = document.frm.NE21.value;
+			document.frm.JG0814.value = document.frm.NE21.value;
         }
      
         // *********************************************************
@@ -473,20 +421,183 @@
                 document.frm.nr25.style.background = "#638cb5";
             }												
                                          
-        }                                         
+        }    
+		
+		// *********************************************************   
+		// Ordena os numeros distribuidos nos jogos
+		// *********************************************************   
+		function ordenarArray() {
+		
+			var jogosArray01 = [document.frm.JG0101.value, document.frm.JG0102.value, document.frm.JG0103.value, document.frm.JG0104.value, document.frm.JG0105.value, document.frm.JG0106.value, document.frm.JG0107.value, document.frm.JG0108.value, document.frm.JG0109.value, document.frm.JG0110.value, document.frm.JG0111.value, document.frm.JG0112.value, document.frm.JG0113.value, document.frm.JG0114.value, document.frm.JG0115.value];     // OK 
+
+			var jogosArray02 = [document.frm.JG0201.value, document.frm.JG0202.value, document.frm.JG0203.value, document.frm.JG0204.value, document.frm.JG0205.value, document.frm.JG0206.value, document.frm.JG0207.value, document.frm.JG0208.value, document.frm.JG0209.value, document.frm.JG0210.value, document.frm.JG0211.value, document.frm.JG0212.value, document.frm.JG0213.value, document.frm.JG0214.value, document.frm.JG0215.value];     // OK 
+			
+			var jogosArray03 = [document.frm.JG0301.value, document.frm.JG0302.value, document.frm.JG0303.value, document.frm.JG0304.value, document.frm.JG0305.value, document.frm.JG0306.value, document.frm.JG0307.value, document.frm.JG0308.value, document.frm.JG0309.value, document.frm.JG0310.value, document.frm.JG0311.value, document.frm.JG0312.value, document.frm.JG0313.value, document.frm.JG0314.value, document.frm.JG0315.value];     // OK 
+			
+			var jogosArray04 = [document.frm.JG0401.value, document.frm.JG0402.value, document.frm.JG0403.value, document.frm.JG0404.value, document.frm.JG0405.value, document.frm.JG0406.value, document.frm.JG0407.value, document.frm.JG0408.value, document.frm.JG0409.value, document.frm.JG0410.value, document.frm.JG0411.value, document.frm.JG0412.value, document.frm.JG0413.value, document.frm.JG0414.value, document.frm.JG0415.value];     // OK 
+			
+			var jogosArray05 = [document.frm.JG0501.value, document.frm.JG0502.value, document.frm.JG0503.value, document.frm.JG0504.value, document.frm.JG0505.value, document.frm.JG0506.value, document.frm.JG0507.value, document.frm.JG0508.value, document.frm.JG0509.value, document.frm.JG0510.value, document.frm.JG0511.value, document.frm.JG0512.value, document.frm.JG0513.value, document.frm.JG0514.value, document.frm.JG0515.value];     // OK 
+			
+			var jogosArray06 = [document.frm.JG0601.value, document.frm.JG0602.value, document.frm.JG0603.value, document.frm.JG0604.value, document.frm.JG0605.value, document.frm.JG0606.value, document.frm.JG0607.value, document.frm.JG0608.value, document.frm.JG0609.value, document.frm.JG0610.value, document.frm.JG0611.value, document.frm.JG0612.value, document.frm.JG0613.value, document.frm.JG0614.value, document.frm.JG0615.value];     // OK 			
+
+			var jogosArray07 = [document.frm.JG0701.value, document.frm.JG0702.value, document.frm.JG0703.value, document.frm.JG0704.value, document.frm.JG0705.value, document.frm.JG0706.value, document.frm.JG0707.value, document.frm.JG0708.value, document.frm.JG0709.value, document.frm.JG0710.value, document.frm.JG0711.value, document.frm.JG0712.value, document.frm.JG0713.value, document.frm.JG0714.value, document.frm.JG0715.value];     // OK 
+
+			var jogosArray08 = [document.frm.JG0801.value, document.frm.JG0802.value, document.frm.JG0803.value, document.frm.JG0804.value, document.frm.JG0805.value, document.frm.JG0706.value, document.frm.JG0807.value, document.frm.JG0808.value, document.frm.JG0809.value, document.frm.JG0810.value, document.frm.JG0811.value, document.frm.JG0812.value, document.frm.JG0813.value, document.frm.JG0814.value, document.frm.JG0815.value];     // OK 
+
+
+			var soma1 = [document.frm.SOMA01.value]
+			var soma2 = [document.frm.SOMA02.value]
+			var soma3 = [document.frm.SOMA03.value]
+			var soma4 = [document.frm.SOMA04.value]
+			var soma5 = [document.frm.SOMA05.value]
+			var soma6 = [document.frm.SOMA06.value]
+			var soma7 = [document.frm.SOMA07.value]																		
+			var soma8 = [document.frm.SOMA08.value]	
+
+			escreveJogos = " - JOGOS EM ORDEM CRESCENTE + " + "\n\n Jogo 01: " + jogosArray01.sort() + " = " + soma1 + "\n Jogo 02: " + jogosArray02.sort() + " = " + soma2 + "\n Jogo 03: " + jogosArray03.sort() + " = " + soma3 + "\n Jogo 04: " + jogosArray04.sort() + " = " + soma4 + "\n Jogo 05: " + jogosArray05.sort() + " = " + soma5 + "\n Jogo 06: " + jogosArray06.sort() + " = " + soma6 + "\n Jogo 07: " + jogosArray07.sort() + " = " + soma7 + "\n Jogo 08: " + jogosArray08.sort() + " = " + soma8 + "\n\n" + "Opnião: Sempre marque somente jogos com a SOMA entre 180 e 200(90%)";
+			
+			/* Chama a funººo de mostraJogos */ 		
+			mostraJogos(escreveJogos); 
+			
+		}		
+
+
+
+		// *********************************************************
+		// Se o texto tiver 1 carater concatena com 0 antes 
+		// *********************************************************
+		function tamanhoTexto(textoNum, nomeComp) {
+				if (textoNum.length == 1) {
+					if (nomeComp == "NE01") {
+						document.frm.NE01.value = "0" + document.frm.NE01.value;
+					}
+					if (nomeComp == "NE02") {
+						document.frm.NE02.value = "0" + document.frm.NE02.value;
+					}				
+					if (nomeComp == "NE03") {
+						document.frm.NE03.value = "0" + document.frm.NE03.value;
+					}
+					if (nomeComp == "NE04") {
+						document.frm.NE04.value = "0" + document.frm.NE04.value;
+					}
+					if (nomeComp == "NE05") {
+						document.frm.NE05.value = "0" + document.frm.NE05.value;
+					}
+					if (nomeComp == "NE06") {
+						document.frm.NE06.value = "0" + document.frm.NE06.value;
+					}
+					if (nomeComp == "NE07") {
+						document.frm.NE07.value = "0" + document.frm.NE07.value;
+					}
+					if (nomeComp == "NE08") {
+						document.frm.NE08.value = "0" + document.frm.NE08.value;
+					}
+					if (nomeComp == "NE09") {
+						document.frm.NE09.value = "0" + document.frm.NE09.value;
+					}
+					if (nomeComp == "NE10") {
+						document.frm.NE10.value = "0" + document.frm.NE10.value;
+					}
+					if (nomeComp == "NE11") {
+						document.frm.NE11.value = "0" + document.frm.NE11.value; 
+					}
+					if (nomeComp == "NE12") {
+						document.frm.NE12.value = "0" + document.frm.NE12.value;
+					}
+					if (nomeComp == "NE13") {
+						document.frm.NE13.value = "0" + document.frm.NE13.value;
+					}
+					if (nomeComp == "NE14") {
+						document.frm.NE14.value = "0" + document.frm.NE14.value;
+					}
+					if (nomeComp == "NE15") {
+						document.frm.NE15.value = "0" + document.frm.NE15.value;
+					}
+					if (nomeComp == "NE16") {
+						document.frm.NE16.value = "0" + document.frm.NE16.value;
+					}
+					if (nomeComp == "NE17") {
+						document.frm.NE17.value = "0" + document.frm.NE17.value;
+					}
+					if (nomeComp == "NE18") {
+						document.frm.NE18.value = "0" + document.frm.NE18.value;
+					}
+					if (nomeComp == "NE19") {
+						document.frm.NE19.value = "0" + document.frm.NE19.value;
+					}
+					if (nomeComp == "NE20") {
+						document.frm.NE20.value = "0" + document.frm.NE20.value;
+					}	
+					if (nomeComp == "NE21") {
+						document.frm.NE21.value = "0" + document.frm.NE21.value;
+					}	
+					if (nomeComp == "NE22") {
+						document.frm.NE22.value = "0" + document.frm.NE22.value;
+					}	
+					if (nomeComp == "NE23") {
+						document.frm.NE23.value = "0" + document.frm.NE23.value;
+					}	
+					if (nomeComp == "NE24") {
+						document.frm.NE24.value = "0" + document.frm.NE24.value;
+					}	
+					if (nomeComp == "NE25") {
+						document.frm.NE25.value = "0" + document.frm.NE25.value;
+					}																								
+				}															
+			}	
+
+
     </script> 
-<style type="text/css">
-.botao{
-   font-size:10px;
-   font-family:Verdana,Helvetica;
-   font-weight:bold;
-   color:red;
-   background:#638cb5;
-   border:0px;
-   width:80px;
-   height:19px;
-}
-</style>   
+
+
+
+<style>
+	body {font-family: Arial, Helvetica, sans-serif;}
+
+	/* The Modal (background) */
+	.modal {
+		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		padding-top: 50px; /* Location of the box */
+		left: 0;
+		top: 0;
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */			
+					/* allow vertical scrolling if required */
+					overflow-x: hidden;
+					overflow-y: auto;			
+/*			overflow: auto; */ /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	}
+
+	/* Modal Content */
+	.modal-content {
+		background-color: #fefefe;
+		margin: auto;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 40%;
+	}
+
+	/* The Close Button */
+	.close {
+		color: #aaaaaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+	}
+
+	.close:hover,
+	.close:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+</style>		
+
+
 </head>
 
 <body background="100reais1000dolares.jpg">
@@ -496,17 +607,17 @@
  
     <table border="2" bgcolor="#87CEEB"> 
         <tr>
-            <td colspan="21" align="center">
+            <td colspan="25" align="center">
 		        <b>7 JOGOS DA LOTOFÁCIL - OBJETIVANDO O ACERTO DE 12, 13 e 14 NúmeroS ENTRE 21 NUMEROS COMBINADOS</b> 		
 		    </td>		    		    
         </tr>
 	    <tr>
-		    <td colspan="21">
+		    <td colspan="25">
                 <hr size="3" color="black"/>
 		    </td>
 	    </tr>    
         <tr>
-            <td colspan="21" nowrap>
+            <td colspan="25" nowrap>
 		        <b>TIPO DE JOGO :</b> 		
                 &nbsp;
                 <select name="TIPO">
@@ -522,27 +633,46 @@
 		    </td>
         </tr>
 	    <tr>
-		    <td colspan="21">
+		    <td colspan="25">
                 <hr size="3" color="black"/>
 		    </td>
 	    </tr>
         <tr>				
-		    <td align="center" colspan="21">
+		    <td align="center" colspan="4" bgcolor="red">
+				<b> Não Será Sorteada </b>
+		    </td>
+			
+		    <td align="center" colspan="3" bgcolor="green">
+				<b> DZ Fixas </b>
+		    </td>
+			
+		    <td align="center" colspan="18">
 				<b> ESCOLHA 21 DEZENAS DE 1 A 25 - EM QUALQUER ORDEM </b>
 		    </td>
 		</tr>
 	    <tr>				
-
-		    <td align="center">
+		    <td align="center" bgcolor="red">
+		        <b>1Não</b>
+		    </td>
+		    <td align="center" bgcolor="red">
+		        <b>2Não</b>
+		    </td>	    
+		    <td align="center" bgcolor="red">
+		        <b>3Não</b>
+		    </td>
+		    <td align="center" bgcolor="red">
+		        <b>4Não</b>
+		    </td>
+		    <td align="center" bgcolor="green">
 		        <b>01º</b>
 		    </td>
-		    <td align="center">
+		    <td align="center" bgcolor="green">
 		        <b>02º</b>
 		    </td>	    
-		    <td align="center">
+		    <td align="center" bgcolor="green">
 		        <b>03º</b>
 		    </td>
-		    <td align="center">
+		    <td align="center"> 
 		        <b>04º</b>
 		    </td>
 		    <td align="center">
@@ -597,75 +727,83 @@
 		        <b>21º</b>
 		    </td>		    
    
-	    </tr>
+	    </tr> 
 	    <tr>
-		    <td colspan="21">
-                <hr size="3" color="black"/>
-		    </td>
-	    </tr>
-	    <tr>				
 		    <td>
-		        <input type="text" size="1" maxlength="2" name="NE01" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE01();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="1" maxlength="2" name="NE22" style="font-size:18px; font-weight:bold; width:30px; background: #e78787;" onblur="tamanhoTexto(this.value, this.name);numero_escolhido(this.value);">	
 		    </td>
 		    <td>
-		        <input type="text" size="3" maxlength="2" name="NE02" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE02();soma();numero_escolhido(this.value);">	
+		        <input type="text" size="1" maxlength="2" name="NE23" style="font-size:18px; font-weight:bold; width:30px; background: #e78787;" onblur="tamanhoTexto(this.value, this.name);numero_escolhido(this.value);">	
 		    </td>
 		    <td>
-		        <input type="text" size="3" maxlength="2" name="NE03" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE03();numero_escolhido(this.value);soma();">	
+		        <input type="text" size="1" maxlength="2" name="NE24" style="font-size:18px; font-weight:bold; width:30px; background: #e78787;" onblur="tamanhoTexto(this.value, this.name);numero_escolhido(this.value);">	
 		    </td>
 		    <td>
-		        <input type="text" size="3" maxlength="2" name="NE04" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE04();numero_escolhido(this.value);soma();">	
+		        <input type="text" size="1" maxlength="2" name="NE25" style="font-size:18px; font-weight:bold; width:30px; background: #e78787;" onblur="tamanhoTexto(this.value, this.name);numero_escolhido(this.value);">	
+		    </td>												
+			
+		    <td>
+		        <input type="text" size="1" maxlength="2" name="NE01" style="font-size:18px; font-weight:bold; width:30px; background: rgb(141, 207, 141);" onblur="tamanhoTexto(this.value, this.name);carregaNE01();numero_escolhido(this.value);soma();">	
 		    </td>
 		    <td>
-		        <input type="text" size="3" maxlength="2" name="NE05" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE05();numero_escolhido(this.value);soma();">	
+		        <input type="text" size="3" maxlength="2" name="NE02" style="font-size:18px; font-weight:bold; width:30px; background: rgb(141, 207, 141);" onblur="tamanhoTexto(this.value, this.name);carregaNE02();numero_escolhido(this.value);soma();">	
 		    </td>
 		    <td>
-		        <input type="text" size="3" maxlength="2" name="NE06" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE06();numero_escolhido(this.value);soma();">	
+		        <input type="text" size="3" maxlength="2" name="NE03" style="font-size:18px; font-weight:bold; width:30px; background:  rgb(141, 207, 141);" onblur="tamanhoTexto(this.value, this.name);carregaNE03();numero_escolhido(this.value);soma();">	
 		    </td>
 		    <td>
-		        <input type="text" size="3" maxlength="2" name="NE07" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE07();numero_escolhido(this.value);soma();">	
+		        <input type="text" size="3" maxlength="2" name="NE04" style="font-size:18px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE04();numero_escolhido(this.value);soma();">	
 		    </td>
 		    <td>
-		        <input type="text" size="3" maxlength="2" name="NE08" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE08();numero_escolhido(this.value);soma();">	
+		        <input type="text" size="3" maxlength="2" name="NE05" style="font-size:18px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE05();numero_escolhido(this.value);soma();">	
 		    </td>
 		    <td>
-		        <input type="text" size="3" maxlength="2" name="NE09" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE09();numero_escolhido(this.value);soma();">	
+		        <input type="text" size="3" maxlength="2" name="NE06" style="font-size:18px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE06();numero_escolhido(this.value);soma();">	
 		    </td>
 		    <td>
-		        <input type="text" size="3" maxlength="2" name="NE10" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE10();numero_escolhido(this.value);soma();">	
+		        <input type="text" size="3" maxlength="2" name="NE07" style="font-size:18px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE07();numero_escolhido(this.value);soma();">	
 		    </td>
 		    <td>
-		        <input type="text" size="3" maxlength="2" name="NE11" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE11();numero_escolhido(this.value);soma();">	
+		        <input type="text" size="3" maxlength="2" name="NE08" style="font-size:18px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE08();numero_escolhido(this.value);soma();">	
 		    </td>
 		    <td>
-		        <input type="text" size="3" maxlength="2" name="NE12" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE12();numero_escolhido(this.value);soma();">	
+		        <input type="text" size="3" maxlength="2" name="NE09" style="font-size:18px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE09();numero_escolhido(this.value);soma();">	
 		    </td>
 		    <td>
-		        <input type="text" size="1" maxlength="2" name="NE13" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE13();numero_escolhido(this.value);soma();">	
+		        <input type="text" size="3" maxlength="2" name="NE10" style="font-size:18px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE10();numero_escolhido(this.value);soma();">	
 		    </td>
 		    <td>
-		        <input type="text" size="3" maxlength="2" name="NE14" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE14();numero_escolhido(this.value);soma();">	
+		        <input type="text" size="3" maxlength="2" name="NE11" style="font-size:18px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE11();numero_escolhido(this.value);soma();">	
 		    </td>
 		    <td>
-		        <input type="text" size="3" maxlength="2" name="NE15" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE15();numero_escolhido(this.value);soma();">	
+		        <input type="text" size="3" maxlength="2" name="NE12" style="font-size:18px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE12();numero_escolhido(this.value);soma();">	
 		    </td>
 		    <td>
-		        <input type="text" size="3" maxlength="2" name="NE16" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE16();numero_escolhido(this.value);soma();">	
+		        <input type="text" size="1" maxlength="2" name="NE13" style="font-size:18px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE13();numero_escolhido(this.value);soma();">	
 		    </td>
 		    <td>
-		        <input type="text" size="3" maxlength="2" name="NE17" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE17();numero_escolhido(this.value);soma();">	
+		        <input type="text" size="3" maxlength="2" name="NE14" style="font-size:18px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE14();numero_escolhido(this.value);soma();">	
 		    </td>
 		    <td>
-		        <input type="text" size="3" maxlength="2" name="NE18" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE18();numero_escolhido(this.value);soma();">	
+		        <input type="text" size="3" maxlength="2" name="NE15" style="font-size:18px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE15();numero_escolhido(this.value);soma();">	
 		    </td>
 		    <td>
-		        <input type="text" size="3" maxlength="2" name="NE19" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE19();numero_escolhido(this.value);soma();">	
+		        <input type="text" size="3" maxlength="2" name="NE16" style="font-size:18px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE16();numero_escolhido(this.value);soma();">	
 		    </td>
 		    <td>
-		        <input type="text" size="3" maxlength="2" name="NE20" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE20();numero_escolhido(this.value);soma();">	
+		        <input type="text" size="3" maxlength="2" name="NE17" style="font-size:18px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE17();numero_escolhido(this.value);soma();">	
 		    </td>
 		    <td>
-		        <input type="text" size="3" maxlength="2" name="NE21" style="font-size:18px; font-weight:bold; width:30px;" onblur="carregaNE21();numero_escolhido(this.value);soma();">	
+		        <input type="text" size="3" maxlength="2" name="NE18" style="font-size:18px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE18();numero_escolhido(this.value);soma();">	
+		    </td>
+		    <td>
+		        <input type="text" size="3" maxlength="2" name="NE19" style="font-size:18px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE19();numero_escolhido(this.value);soma();">	
+		    </td>
+		    <td>
+		        <input type="text" size="3" maxlength="2" name="NE20" style="font-size:18px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE20();numero_escolhido(this.value);soma();">	
+		    </td>
+		    <td>
+		        <input type="text" size="3" maxlength="2" name="NE21" style="font-size:18px; font-weight:bold; width:30px;" onblur="tamanhoTexto(this.value, this.name);carregaNE21();numero_escolhido(this.value);soma();">	
 		    </td>
 		</tr>
 	</table>
@@ -1147,6 +1285,60 @@
 		    </td>              	    		    
 		</tr>
 	
+	    <tr>	    			
+		    <td align="center">
+		        <b>Jogo 08 </b> 		
+		    </td>
+		    <td>
+		        <input type="text" size="1" maxlength="2" name="JG0801" style="font-size:20px; font-weight:bold; width:35px;">	
+		    </td>
+		    <td>
+		        <input type="text" size="1" maxlength="2" name="JG0802" style="font-size:20px; font-weight:bold; width:35px;">	
+		    </td>
+		    <td>
+		        <input type="text" size="1" maxlength="2" name="JG0803" style="font-size:20px; font-weight:bold; width:35px;">	
+		    </td>
+		    <td>
+		        <input type="text" size="1" maxlength="2" name="JG0804" style="font-size:20px; font-weight:bold; width:35px;">	
+		    </td>
+		    <td>
+		        <input type="text" size="1" maxlength="2" name="JG0805" style="font-size:20px; font-weight:bold; width:35px;">	
+		    </td>
+		    <td>
+		        <input type="text" size="1" maxlength="2" name="JG0806" style="font-size:20px; font-weight:bold; width:35px;">	
+		    </td>
+		    <td>
+		        <input type="text" size="1" maxlength="2" name="JG0807" style="font-size:20px; font-weight:bold; width:35px;">	
+		    </td>
+		    <td>
+		        <input type="text" size="1" maxlength="2" name="JG0808" style="font-size:20px; font-weight:bold; width:35px;">	
+		    </td>
+		    <td>
+		        <input type="text" size="1" maxlength="2" name="JG0809" style="font-size:20px; font-weight:bold; width:35px;">	
+		    </td>
+		    <td>
+		        <input type="text" size="1" maxlength="2" name="JG0810" style="font-size:20px; font-weight:bold; width:35px;">	
+		    </td>
+		    <td>
+		        <input type="text" size="1" maxlength="2" name="JG0811" style="font-size:20px; font-weight:bold; width:35px;">	
+		    </td>
+		    <td>
+		        <input type="text" size="1" maxlength="2" name="JG0812" style="font-size:20px; font-weight:bold; width:35px;">	
+		    </td>
+		    <td>
+		        <input type="text" size="1" maxlength="2" name="JG0813" style="font-size:20px; font-weight:bold; width:35px;">	
+		    </td>
+		    <td>
+		        <input type="text" size="1" maxlength="2" name="JG0814" style="font-size:20px; font-weight:bold; width:35px;">	
+		    </td>
+		    <td>
+		        <input type="text" size="1" maxlength="2" name="JG0815" style="font-size:20px; font-weight:bold; width:35px;">	
+		    </td>	
+		    <td bgcolor="orange">
+		        <input type="text" size="1" maxlength="2" name="SOMA08" style="font-size:20px; font-weight:bold; width:50px; background: #c8c0ee;" value="0">	
+		    </td>              	    		    
+		</tr>
+
 
 	    <tr>
 		    <td rowspan="">
@@ -1204,7 +1396,8 @@
 						
     </table>  
 
- 	<table border="2" bgcolor="#87CEEB" align="center"> 
+	
+	<table border="2" bgcolor="#D1EEEE" align="center"> 
 		<tr>	
 			<td>	
 				<div align="center">
@@ -1217,13 +1410,39 @@
 			</td>
 		</tr> 
 	</table> 
-	<br><b> OBS.: ESTE JOGO FOI SISTEMATIZADO, PENSADO E ELABORADO POR JOSÉ CHARLES. </b> 	
-		<br> 
+
+	<br>
+	<b>OBS.: ESTE JOGO FOI SISTEMATIZADO, PENSADO E ELABORADO POR JOSÉ CHARLES. </b>
+	<br> 
+	<b>Atenção: trata-se de uma estratégia, não uma garantia.</b>
+	<br>
+
+	<br> <br>
+
 	<b>                        
-		<a href="index.html">
-           Retornar à Página Inicial
-        </a>
-	</b>
+		<a href="index.html" style="font-size: large;">
+		Retornar à Página Inicial
+		</a>
+	</b> 
+	<br><br> 
+	<table>
+		<tr>
+			<td align="center">
+					<input id="myBtn" type="button" name="ordenar"  value=" - Ordenar Jogos + "  style="background-color: aquamarine; font-size: 25px; border-radius: 10px;"  onclick="ordenarArray()"/>&nbsp;
+			</td>	
+		</tr>	
+	</table>
+	<br><br>
+<!-- The Modal -->
+<div id="myModal" class="modal" style="background-color: darkorange;">  
+	<!-- Modal content -->
+	<div class="modal-content">
+		<span class="close">&times; </span>
+		<p id="ordem"></p>
+	</div>
+	<br><br>
+</div> 	  
+	
 </center> 
 </form>   
 </body>
