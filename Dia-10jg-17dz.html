@@ -172,6 +172,33 @@
             document.frm.JG56.value = document.frm.NE14.value;
             document.frm.JG27.value = document.frm.NE14.value;
         }
+
+        // *********************************************************
+        // Carrega o Primeiro Número NE12 nos campos JG67, JG56 e JG27
+        // *********************************************************
+        function carregaNE15() {
+            document.frm.JG67.value = document.frm.NE15.value;
+            document.frm.JG56.value = document.frm.NE15.value;
+            document.frm.JG27.value = document.frm.NE15.value;
+        }    
+        
+        // *********************************************************
+        // Carrega o Primeiro Número NE12 nos campos JG67, JG56 e JG27
+        // *********************************************************
+        function carregaNE16() {
+            document.frm.JG67.value = document.frm.NE16.value;
+            document.frm.JG56.value = document.frm.NE16.value;
+            document.frm.JG27.value = document.frm.NE16.value;
+        }
+        
+        // *********************************************************
+        // Carrega o Primeiro Número NE12 nos campos JG67, JG56 e JG27
+        // *********************************************************
+        function carregaNE17() {
+            document.frm.JG67.value = document.frm.NE17.value;
+            document.frm.JG56.value = document.frm.NE17.value;
+            document.frm.JG27.value = document.frm.NE17.value;
+        }        
 		
         // *********************************************************
         // Carrega os campos de soma de cada cartela
@@ -191,12 +218,22 @@
             total05 = parseFloat(0 + document.frm.JG51.value) + parseFloat(0 + document.frm.JG52.value) + parseFloat(0 + document.frm.JG53.value) + parseFloat(0 + document.frm.JG54.value) + parseFloat(0 + document.frm.JG55.value) + parseFloat(0 + document.frm.JG56.value) + parseFloat(0 + document.frm.JG57.value);
             total06 = parseFloat(0 + document.frm.JG61.value) + parseFloat(0 + document.frm.JG62.value) + parseFloat(0 + document.frm.JG63.value) + parseFloat(0 + document.frm.JG64.value) + parseFloat(0 + document.frm.JG65.value) + parseFloat(0 + document.frm.JG66.value) + parseFloat(0 + document.frm.JG67.value);
 
+            total07 = parseFloat(0 + document.frm.JG71.value) + parseFloat(0 + document.frm.JG72.value) + parseFloat(0 + document.frm.JG73.value) + parseFloat(0 + document.frm.JG74.value) + parseFloat(0 + document.frm.JG75.value) + parseFloat(0 + document.frm.JG76.value) + parseFloat(0 + document.frm.JG77.value);
+            total08 = parseFloat(0 + document.frm.JG81.value) + parseFloat(0 + document.frm.JG82.value) + parseFloat(0 + document.frm.JG83.value) + parseFloat(0 + document.frm.JG84.value) + parseFloat(0 + document.frm.JG85.value) + parseFloat(0 + document.frm.JG86.value) + parseFloat(0 + document.frm.JG87.value);
+            total09 = parseFloat(0 + document.frm.JG91.value) + parseFloat(0 + document.frm.JG92.value) + parseFloat(0 + document.frm.JG93.value) + parseFloat(0 + document.frm.JG94.value) + parseFloat(0 + document.frm.JG95.value) + parseFloat(0 + document.frm.JG96.value) + parseFloat(0 + document.frm.JG97.value);
+            total10 = parseFloat(0 + document.frm.JG101.value) + parseFloat(0 + document.frm.JG102.value) + parseFloat(0 + document.frm.JG103.value) + parseFloat(0 + document.frm.JG104.value) + parseFloat(0 + document.frm.JG105.value) + parseFloat(0 + document.frm.JG106.value) + parseFloat(0 + document.frm.JG107.value);
+
             document.frm.SOMA01.value = total01;
             document.frm.SOMA02.value = total02;
             document.frm.SOMA03.value = total03;
             document.frm.SOMA04.value = total04;
             document.frm.SOMA05.value = total05;
             document.frm.SOMA06.value = total06;
+
+            document.frm.SOMA07.value = total07;
+            document.frm.SOMA08.value = total08;
+            document.frm.SOMA09.value = total09;
+            document.frm.SOMA10.value = total10;            
         }
 
         // *********************************************************
@@ -383,12 +420,12 @@
     <form name="frm">  
         <table border="2" bgcolor="#87CEEB"> 
             <tr>
-                <td colspan="14" align="center">
+                <td colspan="17" align="center">
                     <b> SISTEMA DIA DE SORTE  -  14 NÚMEROS  -  6 COMBINAÇÕES(JOGOS) </b> 		
                 </td>	                              	    		    
             </tr>
             <tr>
-                <td colspan="14">
+                <td colspan="147">
                     <hr size="3" color="black"/>
                 </td>
             </tr>    
@@ -413,7 +450,7 @@
                         </select>
                     </center>
                 </td>                    
-                <td colspan="4" align="center">
+                <td colspan="7" align="center">
                     <center>
                         <b>CONCURSO N. : </b> <br>		
                         &nbsp;
@@ -428,7 +465,7 @@
                 </td>                
             </tr>
             <tr>
-                <td colspan="14">
+                <td colspan="17">
                     <hr size="3" color="black"/>
                 </td>
             </tr>
@@ -474,10 +511,19 @@
                 </td>	
                 <td align="center">
                     <b>14º</b>
-                </td>				
+                </td>			
+                <td align="center">
+                    <b>15º</b>
+                </td>
+                <td align="center">
+                    <b>16º</b>
+                </td>
+                <td align="center">
+                    <b>17º</b>
+                </td>                                                	
             </tr>
             <tr>
-                <td colspan="15">
+                <td colspan="17">
                     <hr size="3" color="black"/>
                 </td>
             </tr>
@@ -523,6 +569,15 @@
                 </td>
                 <td align="center">
                     <input type="text" size="3" maxlength="2" name="NE14" style="font-size:25px; font-weight:bold; width:35px;" onblur="tamanhoTexto(this.value, this.name);carregaNE14();soma();numero_escolhido(this.value);">	
+                </td>			
+                <td align="center">
+                    <input type="text" size="3" maxlength="2" name="NE15" style="font-size:25px; font-weight:bold; width:35px;" onblur="tamanhoTexto(this.value, this.name);carregaNE14();soma();numero_escolhido(this.value);">	
+                </td>			
+                <td align="center">
+                    <input type="text" size="3" maxlength="2" name="NE16" style="font-size:25px; font-weight:bold; width:35px;" onblur="tamanhoTexto(this.value, this.name);carregaNE14();soma();numero_escolhido(this.value);">	
+                </td>			
+                <td align="center">
+                    <input type="text" size="3" maxlength="2" name="NE17" style="font-size:25px; font-weight:bold; width:35px;" onblur="tamanhoTexto(this.value, this.name);carregaNE14();soma();numero_escolhido(this.value);">	
                 </td>			
             </tr>
         </table>
@@ -791,6 +846,132 @@
                     <input type="text" size="1" maxlength="2" name="SOMA06" style="font-size:30px; font-weight:bold; width:50px; background-color: orange;" value="0">	
                 </td>                            
             </tr>            
+
+
+            <tr>	    			
+                <td align="center">
+                    <b> Jogo 07 </b> 		
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG71" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG72" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG73" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG74" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG75" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG76" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG77" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>    
+                <td>
+                    <input type="text" size="1" maxlength="2" name="SOMA07" style="font-size:30px; font-weight:bold; width:50px; background-color: orange;" value="0">	
+                </td>                            
+            </tr>            
+
+
+            <tr>	    			
+                <td align="center">
+                    <b> Jogo 08 </b> 		
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG81" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG82" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG83" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG84" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG85" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG86" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG87" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>    
+                <td>
+                    <input type="text" size="1" maxlength="2" name="SOMA08" style="font-size:30px; font-weight:bold; width:50px; background-color: orange;" value="0">	
+                </td>                            
+            </tr>            
+
+
+            <tr>	    			
+                <td align="center">
+                    <b> Jogo 09 </b> 		
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG91" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG92" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG93" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG94" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG95" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG96" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG97" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>    
+                <td>
+                    <input type="text" size="1" maxlength="2" name="SOMA09" style="font-size:30px; font-weight:bold; width:50px; background-color: orange;" value="0">	
+                </td>                            
+            </tr>            
+
+
+            <tr>	    			
+                <td align="center">
+                    <b> Jogo 10 </b> 		
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG101" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG102" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG103" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG104" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG105" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG106" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>
+                <td>
+                    <input type="text" size="1" maxlength="2" name="JG107" style="font-size:30px; font-weight:bold; width:50px;">	
+                </td>    
+                <td>
+                    <input type="text" size="1" maxlength="2" name="SOMA10" style="font-size:30px; font-weight:bold; width:50px; background-color: orange;" value="0">	
+                </td>                            
+            </tr>             
+
+ 
             <tr>
                 <td>
                     &nbsp;	
