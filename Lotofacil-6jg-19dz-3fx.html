@@ -67,11 +67,7 @@
             total05 = parseFloat(0 + document.frm.JG0501.value) + parseFloat(0 + document.frm.JG0502.value) + parseFloat(0 + document.frm.JG0503.value) + parseFloat(0 + document.frm.JG0504.value) + parseFloat(0 + document.frm.JG0505.value) + parseFloat(0 + document.frm.JG0506.value) + parseFloat(0 + document.frm.JG0507.value) + parseFloat(0 + document.frm.JG0508.value) + parseFloat(0 + document.frm.JG0509.value) + parseFloat(0 + document.frm.JG0510.value) + parseFloat(0 + document.frm.JG0511.value) + parseFloat(0 + document.frm.JG0512.value) + parseFloat(0 + document.frm.JG0513.value) + parseFloat(0 + document.frm.JG0514.value) + parseFloat(0 + document.frm.JG0515.value) ;
                         
             total06 = parseFloat(0 + document.frm.JG0601.value) + parseFloat(0 + document.frm.JG0602.value) + parseFloat(0 + document.frm.JG0603.value) + parseFloat(0 + document.frm.JG0604.value) + parseFloat(0 + document.frm.JG0605.value) + parseFloat(0 + document.frm.JG0606.value) + parseFloat(0 + document.frm.JG0607.value) + parseFloat(0 + document.frm.JG0608.value) + parseFloat(0 + document.frm.JG0609.value) + parseFloat(0 + document.frm.JG0610.value) + parseFloat(0 + document.frm.JG0611.value) + parseFloat(0 + document.frm.JG0612.value) + parseFloat(0 + document.frm.JG0613.value) + parseFloat(0 + document.frm.JG0614.value) + parseFloat(0 + document.frm.JG0615.value) ;
-                        
-            total07 = parseFloat(0 + document.frm.JG0701.value) + parseFloat(0 + document.frm.JG0702.value) + parseFloat(0 + document.frm.JG0703.value) + parseFloat(0 + document.frm.JG0704.value) + parseFloat(0 + document.frm.JG0705.value) + parseFloat(0 + document.frm.JG0706.value) + parseFloat(0 + document.frm.JG0707.value) + parseFloat(0 + document.frm.JG0708.value) + parseFloat(0 + document.frm.JG0709.value) + parseFloat(0 + document.frm.JG0710.value) + parseFloat(0 + document.frm.JG0711.value) + parseFloat(0 + document.frm.JG0712.value) + parseFloat(0 + document.frm.JG0713.value) + parseFloat(0 + document.frm.JG0714.value) + parseFloat(0 + document.frm.JG0715.value) ;
-
-            total08 = parseFloat(0 + document.frm.JG0801.value) + parseFloat(0 + document.frm.JG0802.value) + parseFloat(0 + document.frm.JG0803.value) + parseFloat(0 + document.frm.JG0804.value) + parseFloat(0 + document.frm.JG0805.value) + parseFloat(0 + document.frm.JG0806.value) + parseFloat(0 + document.frm.JG0807.value) + parseFloat(0 + document.frm.JG0808.value) + parseFloat(0 + document.frm.JG0809.value) + parseFloat(0 + document.frm.JG0810.value) + parseFloat(0 + document.frm.JG0811.value) + parseFloat(0 + document.frm.JG0812.value) + parseFloat(0 + document.frm.JG0813.value) + parseFloat(0 + document.frm.JG0814.value) + parseFloat(0 + document.frm.JG0815.value) ;
-
+                    
             document.frm.SOMA01.value = total01;
             document.frm.SOMA02.value = total02;
             document.frm.SOMA03.value = total03;
@@ -248,10 +244,10 @@
         // *********************************************************
         function carregaNE16() {
             document.frm.JG0113.value = document.frm.NE16.value;            
-			document.frm.JG0212.value = document.frm.NE16.value;
+						document.frm.JG0212.value = document.frm.NE16.value;
             document.frm.JG0415.value = document.frm.NE16.value;            
-			document.frm.JG0613.value = document.frm.NE16.value;
-		}
+						document.frm.JG0613.value = document.frm.NE16.value;
+				}
 
         // *********************************************************
         // Carrega o Primeiro Número NE17 nos campos 
@@ -270,9 +266,9 @@
         // *********************************************************
         function carregaNE18() {
             document.frm.JG0115.value = document.frm.NE18.value;            
-			document.frm.JG0214.value = document.frm.NE18.value;
+						document.frm.JG0214.value = document.frm.NE18.value;
             document.frm.JG0313.value = document.frm.NE18.value;            
-			document.frm.JG0412.value = document.frm.NE18.value;
+						document.frm.JG0412.value = document.frm.NE18.value;
             document.frm.JG0515.value = document.frm.NE18.value; 
             document.frm.JG0615.value = document.frm.NE18.value;
         }
@@ -402,8 +398,6 @@
 			var soma4 = [document.frm.SOMA04.value]
 			var soma5 = [document.frm.SOMA05.value]
 			var soma6 = [document.frm.SOMA06.value]
-			var soma7 = [document.frm.SOMA07.value]																		
-			var soma8 = [document.frm.SOMA08.value]	
 
 			escreveJogos = " - JOGOS EM ORDEM CRESCENTE + " + "\n\n Jogo 01: " + jogosArray01.sort() + " = " + soma1 + "\n Jogo 02: " + jogosArray02.sort() + " = " + soma2 + "\n Jogo 03: " + jogosArray03.sort() + " = " + soma3 + "\n Jogo 04: " + jogosArray04.sort() + " = " + soma4 + "\n Jogo 05: " + jogosArray05.sort() + " = " + soma5 + "\n Jogo 06: " + jogosArray06.sort() + " = " + soma6 + "\n\n" + "Recomendação: Sempre marque jogos com a SOMA entre 180 e 200(90%)";
 			
@@ -682,10 +676,10 @@
 	    </tr> 
 	    <tr>
 		    <td>
-		        <input type="text" size="3" maxlength="2" name="NE20" style="font-size:18px; font-weight:bold; width:30px; background: #e78787;" onblur="tamanhoTexto(this.value, this.name);">	
+		        <input type="text" size="3" maxlength="2" name="NE20" style="font-size:18px; font-weight:bold; width:30px; background: #e78787;" onblur="tamanhoTexto(this.value, this.name);numero_escolhido(this.value);">	
 		    </td>
 		    <td>
-		        <input type="text" size="3" maxlength="2" name="NE21" style="font-size:18px; font-weight:bold; width:30px; background: #e78787;" onblur="tamanhoTexto(this.value, this.name);">	
+		        <input type="text" size="3" maxlength="2" name="NE21" style="font-size:18px; font-weight:bold; width:30px; background: #e78787;" onblur="tamanhoTexto(this.value, this.name);numero_escolhido(this.value);">	
 		    </td>            
 		    <td>
 		        <input type="text" size="1" maxlength="2" name="NE22" style="font-size:18px; font-weight:bold; width:30px; background: #e78787;" onblur="tamanhoTexto(this.value, this.name);numero_escolhido(this.value);">	
