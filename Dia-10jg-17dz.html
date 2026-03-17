@@ -452,8 +452,29 @@
             var jogosArray09 = [document.frm.JG91.value, document.frm.JG92.value, document.frm.JG93.value, document.frm.JG94.value, document.frm.JG95.value, document.frm.JG96.value, document.frm.JG97.value];     // OK 
             
             var jogosArray10 = [document.frm.JG101.value, document.frm.JG102.value, document.frm.JG103.value, document.frm.JG104.value, document.frm.JG105.value, document.frm.JG106.value, document.frm.JG107.value];     // OK 
-            
-            escreveJogos = "\n" + jogosArray01.sort() + "\n" + jogosArray02.sort() + "\n" + jogosArray03.sort() + "\n" + jogosArray04.sort() + "\n" + jogosArray05.sort() + "\n" + jogosArray06.sort() + "\n" + jogosArray07.sort() + "\n" + jogosArray08.sort() + "\n" + jogosArray09.sort() + "\n" + jogosArray10.sort() + "\n\n"; 
+
+            escreveJogos =
+            "\n Jogo 01 : " +
+            jogosArray01.sort() + "  =  " + document.frm.SOMA01.value + 
+            "\n Jogo 02 : " +
+            jogosArray02.sort() + "  =  " + document.frm.SOMA02.value + 
+            "\n Jogo 03 : " +
+            jogosArray03.sort() + "  =  " + document.frm.SOMA03.value + 
+            "\n Jogo 04 : " +
+            jogosArray04.sort() + "  =  " + document.frm.SOMA04.value + 
+            "\n Jogo 05 : " +
+            jogosArray05.sort() + "  =  " + document.frm.SOMA05.value + 
+            "\n Jogo 06 : " +
+            jogosArray06.sort() + "  =  " + document.frm.SOMA06.value + 
+            "\n Jogo 07 : " +
+            jogosArray07.sort() + "  =  " + document.frm.SOMA07.value + 
+            "\n Jogo 08 : " +
+            jogosArray08.sort() + "  =  " + document.frm.SOMA08.value + 
+            "\n Jogo 09 : " +
+            jogosArray09.sort() + "  =  " + document.frm.SOMA09.value + 
+            "\n Jogo 10 : " +
+            jogosArray10.sort() + "  =  " + document.frm.SOMA10.value +  
+            "\n\n";
 
             /* Chama a função de mostraJogos */ 		
             mostraJogos(escreveJogos); 
